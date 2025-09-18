@@ -21,7 +21,7 @@ dev = [
 
 [tool.hatch.build.targets.sdist]
 only-include = [
-    "src/kabosu",
+    "src/kabosu-core",
     "LICENSE",
     "pyproject.toml",
     "README.md",
