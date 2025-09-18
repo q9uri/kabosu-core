@@ -26,6 +26,8 @@ only-include = [
     "pyproject.toml",
     "README.md",
 ]
+[tool.hatch.build.targets.wheel]
+packages = ["src/kabosu-core"]
 
 [tool.uv.sources]
 yomikata = { git = "https://github.com/q9uri/yomikata", rev = "ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb" }
