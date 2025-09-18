@@ -1,3 +1,8 @@
+onnxruntime
+numpy==1.26.4
+marine-plus
+sudachipy
+sudachidict_core
 jaconv
 jpreprocess
 kanalizer

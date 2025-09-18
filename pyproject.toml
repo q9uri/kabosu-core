@@ -1,6 +1,6 @@
 [project]
 name = "kabosu-core"
-version = "0.1.0"
+version = "0.2.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -8,6 +8,11 @@ dependencies = [
     "jaconv>=0.4.0",
     "jpreprocess>=0.1.5",
     "kanalizer>=0.1.1",
+    "marine-plus>=0.0.6.post3",
+    "numpy==1.26.4",
+    "onnxruntime>=1.22.1",
+    "sudachidict-core>=20250825",
+    "sudachipy>=0.6.10",
     "yomikata",
 ]
 
