@@ -1,0 +1,35 @@
+[project]
+name = "kabosu"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jaconv>=0.4.0",
+    "jpreprocess>=0.1.5",
+    "kanalizer>=0.1.1",
+    "yomikata",
+]
+
+[dependency-groups]
+dev = [
+    "taskipy>=1.14.1",
+    "pytest"
+]
+
+
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+    "src/kabosu",
+    "LICENSE",
+    "pyproject.toml",
+    "README.md",
+]
+
+[tool.uv.sources]
+yomikata = { git = "https://github.com/q9uri/yomikata", rev = "ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
