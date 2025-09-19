@@ -77,7 +77,6 @@ def load_marine_model(model_dir: Union[str, None] = None, dict_dir: Union[str, N
         _global_marine = Predictor(model_dir=model_dir, postprocess_vocab_dir=dict_dir)
 
 def update_global_jtalk_with_user_dict(
-        dictionary: str | Path | None = None,
         user_dictionary: str | Path | None = None
         ) -> None:
     """Update global openjtalk instance with the user dictionary
@@ -89,7 +88,7 @@ def update_global_jtalk_with_user_dict(
     global _global_jpreprocess
     with _global_jpreprocess():
         _global_jpreprocess = _global_instance_manager(
-            instance=jpreprocess.jpreprocess(dictionary = dictionary,user_dictionary=user_dictionary),
+            instance=jpreprocess.jpreprocess(user_dictionary=user_dictionary),
         )
 #-----------------------------------------------------------
 
@@ -106,7 +105,7 @@ def extract_fullcontext(
         kanalizer: bool = True,
         use_vanilla: bool = False,
         run_marine: bool = False,
-        jpreprocess: Union[jpreprocess.jpreprocess, None] = None
+        jpreprocess: Union[jpreprocess.JPreprocess, None] = None
         ) -> list[str]:
     
     """
