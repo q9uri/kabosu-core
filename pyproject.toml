@@ -1,6 +1,6 @@
 [project]
 name = "kabosu-core"
-version = "0.2.1"
+version = "0.2.2"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -35,7 +35,7 @@ only-include = [
 packages = ["src/kabosu_core"]
 
 [tool.uv.sources]
-yomikata = { git = "https://github.com/q9uri/yomikata", rev = "ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb" }
+yomikata = { git = "https://github.com/q9uri/yomikata", rev = "e0d23496dd17b1b97a2a91bef08a41f77d3932d8" }
 
 [build-system]
 requires = ["hatchling"]
