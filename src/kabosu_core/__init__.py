@@ -1,6 +1,9 @@
 from .itaiji import normalize_itaiji
 from .ojt_plus import apply_postprocessing
+from .hougen import convert_to_keihan_acc
+from .types import NjdObject
 
+from .hougen import convert_to_keihan_acc
 from pathlib import Path
 import re
 
@@ -10,7 +13,7 @@ import jaconv
 from yomikata.dbert import dBert
 from yomikata.dictionary import Dictionary
 
-from .types import NjdObject
+
 
 #----------------------------------------------------
 #
@@ -61,7 +64,6 @@ def _global_instance_manager(
 
     return manager
 
-
 # Global instance of OpenJTalk
 _global_jpreprocess = _global_instance_manager(lambda: jpreprocess.jpreprocess())
 # Global instance of Marine
@@ -105,6 +107,7 @@ def extract_fullcontext(
         kanalizer: bool = True,
         use_vanilla: bool = False,
         run_marine: bool = False,
+        keihan:bool = False,
         jpreprocess: Union[jpreprocess.JPreprocess, None] = None
         ) -> list[str]:
     
@@ -122,7 +125,9 @@ def extract_fullcontext(
         yomikata=yomikata, 
         kanalizer=kanalizer,
         use_vanilla=use_vanilla,
-        run_marine=run_marine
+        run_marine=run_marine,
+        keihan=keihan,
+        jpreprocess=jpreprocess
         )
     
 
@@ -137,6 +142,7 @@ def g2p(
         kanalizer: bool = True,
         use_vanilla: bool = False,
         run_marine: bool = False,
+        keihan:bool = False,
         kana: bool = False,
         join: bool = True,
         jpreprocess: Union[jpreprocess.JPreprocess, None] = None
@@ -148,6 +154,8 @@ def g2p(
         itaiji=itaiji,
         yomikata=yomikata, 
         kanalizer=kanalizer,
+        run_marine=run_marine,
+        keihan=keihan,
         use_vanilla=use_vanilla
     )
 
@@ -175,6 +183,7 @@ def run_frontend(
             yomikata: bool = True,
             use_vanilla: bool = False,
             run_marine: bool = False,
+            keihan: bool = False,
             jpreprocess: Union[jpreprocess.JPreprocess, None] = None
             ) -> list[NjdObject]:
     """
@@ -209,6 +218,7 @@ def run_frontend(
                 njd_features=njd_features,
                 run_marine=run_marine,
                 use_vanilla=use_vanilla,
+                keihan=keihan,
                 jpreprocess=j
                 )
     
@@ -222,6 +232,7 @@ def run_frontend(
                 njd_features=njd_features,
                 run_marine=run_marine,
                 use_vanilla=use_vanilla,
+                keihan=keihan,
                 jpreprocess=jpreprocess
                 )
 

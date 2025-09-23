@@ -78,6 +78,7 @@ def apply_postprocessing(
     run_marine: bool = False,
     use_vanilla: bool = False,
     jpreprocess: Union[JPreprocess, None] = None,
+    keihan: bool = False
 ) -> list[NjdObject]:
     """Apply postprocessing to raw NJD features
 
@@ -104,4 +105,7 @@ def apply_postprocessing(
         njd_features = retreat_acc_nuc(njd_features)
         njd_features = modify_acc_after_chaining(njd_features)
         njd_features = process_odori_features(njd_features, jpreprocess=jpreprocess)
+    if keihan:
+        njd_features
+
     return njd_features

@@ -23,3 +23,10 @@ def test_g2p():
     output = kabosu_core.g2p("you are so cute! mii-chan!", kana=True)
     assert output == "ユー、アー、ソー、キュート、、ミイ、チャン、"
     print(output)
+
+def test_njd_features_to_keihan():
+    njd_features = kabosu_core.run_frontend("ぎょうさんおるねんな", run_marine=True)
+    kansai_njd_features = kabosu_core.convert_to_keihan_acc(njd_features)
+
+    assert njd_features != kansai_njd_features
+    print(njd_features)
