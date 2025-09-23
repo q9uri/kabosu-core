@@ -1,9 +1,7 @@
 from .itaiji import normalize_itaiji
 from .ojt_plus import apply_postprocessing
-from .hougen import convert_to_keihan_acc
 from .types import NjdObject
 
-from .hougen import convert_to_keihan_acc
 from pathlib import Path
 import re
 
@@ -213,7 +211,7 @@ def run_frontend(
         njd_features = j.run_frontend(text)
 
         if not use_vanilla:
-            apply_postprocessing(
+            njd_features = apply_postprocessing(
                 text,
                 njd_features=njd_features,
                 run_marine=run_marine,
@@ -227,7 +225,7 @@ def run_frontend(
         njd_features = jpreprocess.run_frontend(text)
 
         if not use_vanilla:
-            apply_postprocessing(
+            njd_features = apply_postprocessing(
                 text,
                 njd_features=njd_features,
                 run_marine=run_marine,

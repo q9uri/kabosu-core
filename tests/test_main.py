@@ -25,8 +25,8 @@ def test_g2p():
     print(output)
 
 def test_njd_features_to_keihan():
-    njd_features = kabosu_core.run_frontend("ぎょうさんおるねんな", run_marine=True)
-    kansai_njd_features = kabosu_core.convert_to_keihan_acc(njd_features)
 
-    assert njd_features != kansai_njd_features
-    print(njd_features)
+    fullcontext = kabosu_core.extract_fullcontext("ぎょうさんおるねんな")
+    kansai_fullcontext = kabosu_core.extract_fullcontext("ぎょうさんおるねんな", keihan=True)
+    assert fullcontext != kansai_fullcontext
+

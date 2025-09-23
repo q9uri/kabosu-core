@@ -23,7 +23,7 @@
 #/bAmFru).
 
 from.hougen import convert_to_keihan_acc
-from typing import Any, TypeVar, Union
+from typing import Union
 from .types import NjdObject
 from .utils import (
     merge_njd_marine_features,
@@ -100,12 +100,14 @@ def apply_postprocessing(
     if run_marine:
         pred_njd_features = estimate_accent(njd_features)
         njd_features = preserve_noun_accent(njd_features, pred_njd_features)
+
     if use_vanilla is False:
         njd_features = modify_filler_accent(njd_features)
         njd_features = modify_kanji_yomi(text, njd_features, MULTI_READ_KANJI_LIST)
         njd_features = retreat_acc_nuc(njd_features)
         njd_features = modify_acc_after_chaining(njd_features)
         njd_features = process_odori_features(njd_features, jpreprocess=jpreprocess)
+
     if keihan:
         njd_features = convert_to_keihan_acc(njd_features)
 

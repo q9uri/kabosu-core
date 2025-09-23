@@ -13,23 +13,30 @@ def convert_to_keihan_acc(
     # force chainflag to 0
     features = []
 
-    for node_index, njd_feature in enumerate(njd_features):
-        _feature = {}
+    for njd_feature in njd_features:
+        #force chainflag to 0
+        _feature = {"chain_flag": 0}
+
         mora_size = njd_feature["mora_size"] 
         acc = njd_feature["acc"] 
+
         if acc != 0 and acc != mora_size:
             _feature["acc"] = acc + 1
-        elif acc != 0 :
+
+        elif acc == 0 :
             _feature["acc"] = 1
+
         else:
             _feature["acc"] = acc
 
-        #force chainflag to 0
-        _feature["chain_flag"] = 0
-
         for feature_key in njd_feature.keys():
-            if feature_key != "acc":
+            if feature_key == "acc":
+                continue
+            elif feature_key == "chain_flag":
+                continue
+            else:
                 _feature[feature_key] = njd_feature[feature_key]
+
         features.append(_feature)
 
     return features
