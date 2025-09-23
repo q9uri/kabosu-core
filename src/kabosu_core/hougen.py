@@ -15,7 +15,7 @@ def convert_to_keihan_acc(
 
     for njd_feature in njd_features:
         #force chainflag to 0
-        _feature = {"chain_flag": 0}
+        _feature = {"chain_flag": -1}
 
         mora_size = njd_feature["mora_size"] 
         acc = njd_feature["acc"] 
