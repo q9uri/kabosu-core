@@ -22,6 +22,7 @@
 #> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #/bAmFru).
 
+from.hougen import convert_to_keihan_acc
 from typing import Any, TypeVar, Union
 from .types import NjdObject
 from .utils import (
@@ -34,7 +35,7 @@ from .utils import (
     preserve_noun_accent,
     MULTI_READ_KANJI_LIST
 )
-import jpreprocess
+
 from jpreprocess import JPreprocess
 
 _global_marine = None
@@ -106,6 +107,6 @@ def apply_postprocessing(
         njd_features = modify_acc_after_chaining(njd_features)
         njd_features = process_odori_features(njd_features, jpreprocess=jpreprocess)
     if keihan:
-        njd_features
+        njd_features = convert_to_keihan_acc(njd_features)
 
     return njd_features

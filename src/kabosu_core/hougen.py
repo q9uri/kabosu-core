@@ -14,6 +14,7 @@ def convert_to_keihan_acc(
     features = []
 
     for node_index, njd_feature in enumerate(njd_features):
+        _feature = {}
         mora_size = njd_feature["mora_size"] 
         acc = njd_feature["acc"] 
         if acc != 0 and acc != mora_size:
@@ -26,7 +27,6 @@ def convert_to_keihan_acc(
         #force chainflag to 0
         _feature["chain_flag"] = 0
 
-        _feature = {}
         for feature_key in njd_feature.keys():
             if feature_key != "acc":
                 _feature[feature_key] = njd_feature[feature_key]
