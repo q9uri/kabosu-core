@@ -106,6 +106,8 @@ def extract_fullcontext(
         use_vanilla: bool = False,
         run_marine: bool = False,
         keihan:bool = False,
+        babytalk: bool = False,
+        dakuten: bool = False,
         jpreprocess: Union[jpreprocess.JPreprocess, None] = None
         ) -> list[str]:
     
@@ -125,6 +127,8 @@ def extract_fullcontext(
         use_vanilla=use_vanilla,
         run_marine=run_marine,
         keihan=keihan,
+        babytalk=babytalk,
+        dakuten=dakuten,
         jpreprocess=jpreprocess
         )
     
@@ -141,6 +145,8 @@ def g2p(
         use_vanilla: bool = False,
         run_marine: bool = False,
         keihan:bool = False,
+        babytalk: bool = False,
+        dakuten: bool = False,
         kana: bool = False,
         join: bool = True,
         jpreprocess: Union[jpreprocess.JPreprocess, None] = None
@@ -154,6 +160,8 @@ def g2p(
         kanalizer=kanalizer,
         run_marine=run_marine,
         keihan=keihan,
+        babytalk=babytalk,
+        dakuten=dakuten,
         use_vanilla=use_vanilla
     )
 
@@ -182,6 +190,8 @@ def run_frontend(
             use_vanilla: bool = False,
             run_marine: bool = False,
             keihan: bool = False,
+            babytalk: bool = False,
+            dakuten: bool = False,
             jpreprocess: Union[jpreprocess.JPreprocess, None] = None
             ) -> list[NjdObject]:
     """
@@ -217,6 +227,8 @@ def run_frontend(
                 run_marine=run_marine,
                 use_vanilla=use_vanilla,
                 keihan=keihan,
+                babytalk=babytalk,
+                dakuten=dakuten,
                 jpreprocess=j
                 )
     
@@ -231,6 +243,8 @@ def run_frontend(
                 run_marine=run_marine,
                 use_vanilla=use_vanilla,
                 keihan=keihan,
+                babytalk=babytalk,
+                dakuten=dakuten,
                 jpreprocess=jpreprocess
                 )
 

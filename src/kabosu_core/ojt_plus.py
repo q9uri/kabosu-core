@@ -22,7 +22,8 @@
 #> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #/bAmFru).
 
-from.hougen import convert_to_keihan_acc
+from .hougen import convert_to_keihan_acc
+from .talk_styles import convert_to_babytalk, convert_to_dakuten
 from typing import Union
 from .types import NjdObject
 from .utils import (
@@ -79,7 +80,9 @@ def apply_postprocessing(
     run_marine: bool = False,
     use_vanilla: bool = False,
     jpreprocess: Union[JPreprocess, None] = None,
-    keihan: bool = False
+    keihan: bool = False,
+    babytalk: bool = False,
+    dakuten: bool = False,
 ) -> list[NjdObject]:
     """Apply postprocessing to raw NJD features
 
@@ -110,5 +113,11 @@ def apply_postprocessing(
 
     if keihan:
         njd_features = convert_to_keihan_acc(njd_features)
+
+    if babytalk:
+        njd_features = convert_to_babytalk(njd_features)
+
+    if dakuten:
+        njd_features = convert_to_dakuten(njd_features)
 
     return njd_features

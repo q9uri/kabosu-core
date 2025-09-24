@@ -30,3 +30,15 @@ def test_njd_features_to_keihan():
     kansai_fullcontext = kabosu_core.extract_fullcontext("ぎょうさんおるねんな", keihan=True)
     assert fullcontext != kansai_fullcontext
 
+def test_njd_features_to_babytalk():
+
+    fullcontext = kabosu_core.extract_fullcontext("可愛い赤ちゃんですねー。触ってもいいですか？")
+    babytalk_fullcontext = kabosu_core.extract_fullcontext("可愛い赤ちゃんですねー。触ってもいいですか？", babytalk=True)
+    assert fullcontext != babytalk_fullcontext
+
+def test_njd_features_to_dakuten():
+
+    fullcontext = kabosu_core.extract_fullcontext("それでも、僕は知らないッ")
+    dakuten_fullcontext = kabosu_core.extract_fullcontext("それでも、僕は知らないッ",  dakuten=True)
+    assert fullcontext != dakuten_fullcontext
+
