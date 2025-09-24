@@ -24,17 +24,20 @@ def convert_to_babytalk(
         pron = pron.replace("ト", "チョ")
         read = read.replace("ト", "チョ")
 
-        pron = pron.replace("サ", "シャ")
-        read = read.replace("サ", "シャ")
+        pron = pron.replace("サ", "チャ")
+        read = read.replace("サ", "チャ")
 
-        pron = pron.replace("ス", "シュ")
-        read = read.replace("ス", "シュ")
+        pron = pron.replace("シ", "チ")
+        read = read.replace("シ", "チ")
 
-        pron = pron.replace("セ", "シェ")
-        read = read.replace("セ", "シェ")
+        pron = pron.replace("ス", "チュ")
+        read = read.replace("ス", "チュ")
 
-        pron = pron.replace("ソ", "ショ")
-        read = read.replace("ソ", "ショ")
+        pron = pron.replace("セ", "チェ")
+        read = read.replace("セ", "チェ")
+
+        pron = pron.replace("ソ", "チョ")
+        read = read.replace("ソ", "チョ")
         _feature = {"pron" : pron, "read" : read}
 
         for feature_key in njd_feature.keys():
