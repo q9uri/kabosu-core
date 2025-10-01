@@ -23,7 +23,10 @@ dev = [
     "pytest"
 ]
 ko = [
-    "g2pk4",
+    "google-re2>=1.1.20250805",
+    "jamo>=0.4.1",
+    "mecab-ko>=1.0.2",
+    "nltk>=3.9.1",
 ]
 
 
@@ -39,7 +42,6 @@ packages = ["src/kabosu_core"]
 
 [tool.uv.sources]
 yomikata = { git = "https://github.com/q9uri/yomikata", rev = "ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb" }
-g2pk4 = { git = "https://github.com/q9uri/g2pk4", rev = "3593952878f4c79f705e15faf194a3f5abbb7e3a" }
 
 [build-system]
 requires = ["hatchling"]

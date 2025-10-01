@@ -10,7 +10,7 @@ _global_reader = dBert()
 _global_dictreader = Dictionary()
 
 
-from kabosu_core.pyopenjtalk.normalizer.ko import ko2ja
+
 from kabosu_core.pyopenjtalk.normalizer.itaiji import normalize_itaiji
 
 _FURIGANA_PATTERN = re2.compile("{.+/.+}")
@@ -78,6 +78,7 @@ def normalize_text(
             text = text.replace(word, yomi)
     
     if use_ko2ja:
+        from kabosu_core.pyopenjtalk.normalizer.korean import ko2ja
         text = ko2ja(text)
         
     return text

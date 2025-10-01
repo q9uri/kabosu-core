@@ -766,17 +766,6 @@ unidic-lite = [
 ]
 
 [[package]]
-name = "g2pk4"
-version = "0.0.1"
-source = { git = "https://github.com/q9uri/g2pk4?rev=3593952878f4c79f705e15faf194a3f5abbb7e3a#3593952878f4c79f705e15faf194a3f5abbb7e3a" }
-dependencies = [
-    { name = "google-re2" },
-    { name = "jamo" },
-    { name = "mecab-ko" },
-    { name = "nltk" },
-]
-
-[[package]]
 name = "gitdb"
 version = "4.0.12"
 source = { registry = "https://pypi.org/simple" }
@@ -1128,7 +1117,10 @@ dev = [
     { name = "taskipy" },
 ]
 ko = [
-    { name = "g2pk4" },
+    { name = "google-re2" },
+    { name = "jamo" },
+    { name = "mecab-ko" },
+    { name = "nltk" },
 ]
 
 [package.metadata]
@@ -1150,7 +1142,12 @@ dev = [
     { name = "pytest" },
     { name = "taskipy", specifier = ">=1.14.1" },
 ]
-ko = [{ name = "g2pk4", git = "https://github.com/q9uri/g2pk4?rev=3593952878f4c79f705e15faf194a3f5abbb7e3a" }]
+ko = [
+    { name = "google-re2", specifier = ">=1.1.20250805" },
+    { name = "jamo", specifier = ">=0.4.1" },
+    { name = "mecab-ko", specifier = ">=1.0.2" },
+    { name = "nltk", specifier = ">=3.9.1" },
+]
 
 [[package]]
 name = "kanalizer"

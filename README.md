@@ -6,10 +6,10 @@
 <br>
 <!--logo-->
 <p align="center">
-<img width="70"  src = "./web_resource/kabosu_icon.png" />
+<img width="70"  src = "./docs/web_resource/kabosu_icon.png" />
 </p>
 
-[日本語](./web_resource/README_JA.md)
+[日本語](./docs/README_JA.md)
 
 ## kabosu-core ~Japanese preprocesser for TTS~
 
