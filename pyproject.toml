@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "google-re2>=1.1.20250805",
     "jaconv>=0.4.0",
     "jpreprocess>=0.1.5",
     "kanalizer>=0.1.1",
@@ -21,7 +22,9 @@ dev = [
     "taskipy>=1.14.1",
     "pytest"
 ]
-
+ko = [
+    "g2pk4",
+]
 
 
 [tool.hatch.build.targets.sdist]
@@ -35,7 +38,8 @@ only-include = [
 packages = ["src/kabosu_core"]
 
 [tool.uv.sources]
-yomikata = { git = "https://github.com/q9uri/yomikata", rev = "e0d23496dd17b1b97a2a91bef08a41f77d3932d8" }
+yomikata = { git = "https://github.com/q9uri/yomikata", rev = "ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb" }
+g2pk4 = { git = "https://github.com/q9uri/g2pk4", rev = "3593952878f4c79f705e15faf194a3f5abbb7e3a" }
 
 [build-system]
 requires = ["hatchling"]

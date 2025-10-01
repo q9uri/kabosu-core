@@ -1,4 +1,4 @@
-from .types import NjdObject
+from kabosu_core.pyopenjtalk.types import NjdObject
 
 def convert_to_babytalk(
     njd_features: list[NjdObject]

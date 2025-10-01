@@ -3,7 +3,7 @@ from typing import Union
 
 import numpy as np
 
-from ..types import NjdObject
+from kabosu_core.pyopenjtalk.types import NjdObject
 
 
 X_COLS = ["pos", "pos_group1", "pos_group2", "pron", "ctype", "cform"]
