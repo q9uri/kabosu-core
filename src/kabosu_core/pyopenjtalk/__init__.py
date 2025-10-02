@@ -9,7 +9,7 @@ from kabosu_core.pyopenjtalk.normalizer import (
     normalize_text
 )
 
-from typing import Union
+from typing import Union, TypeVar
 from kabosu_core.pyopenjtalk.types import NjdObject
 from kabosu_core.pyopenjtalk.njd import apply_postprocessing
 

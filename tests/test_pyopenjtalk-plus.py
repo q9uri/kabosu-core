@@ -143,7 +143,7 @@ def test_jtalk():
         "どんまい！",
         "パソコンのとりあえず知っておきたい使い方",
     ]:
-        njd_features = pyopenjtalk.run_frontend(text, yomikata=False)
+        njd_features = pyopenjtalk.run_frontend(text)
         labels = pyopenjtalk.make_label(njd_features)
         _print_results(njd_features, labels)
 
@@ -159,7 +159,7 @@ def test_jtalk_marine():
         "どんまい！",
         "パソコンのとりあえず知っておきたい使い方",
     ]:
-        njd_features = pyopenjtalk.run_frontend(text, run_marine=True, yomikata=False)
+        njd_features = pyopenjtalk.run_frontend(text, run_marine=True)
         labels = pyopenjtalk.make_label(njd_features)
         _print_results(njd_features, labels)
 

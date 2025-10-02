@@ -19,16 +19,19 @@ def test_kanalizer_convert_test():
     print(output)
 
 def test_g2p_yomikata():
-    output = pyopenjtalk.g2p("そして、畳の表は、すでに幾年前に換えられたのか分らなかった。", kana=True)
+    text = pyopenjtalk.normalize_text("そして、畳の表は、すでに幾年前に換えられたのか分らなかった。")
+    output = pyopenjtalk.g2p(text, kana=True)
     assert output == "ソシテ、タタミノオモテハ、スデニイクネンマエニカエラレタノカワカラナカッタ、"
 
 def test_g2p_hungl():
-    output = pyopenjtalk.g2p("이봐, 센파이. 한국으로 여행하자? 현지의 맛있는 요리를 먹으면 좋겠다.", kana=True)
+    text = pyopenjtalk.normalize_text("이봐, 센파이. 한국으로 여행하자? 현지의 맛있는 요리를 먹으면 좋겠다.")
+    output = pyopenjtalk.g2p(text, kana=True)
     assert output == "イブァ、センパイ、ハンググロヨヘンハザ？ホンジウィマジンヌンオリルルモグモンソゲッッタ、"
     print(output)
 
 def test_g2p_kanalizer():
-    output = pyopenjtalk.g2p("you are so cute! mii-chan!", kana=True)
+    text = pyopenjtalk.normalize_text("you are so cute! mii-chan!")
+    output = pyopenjtalk.g2p(text, kana=True)
     assert output == "ユーアーソーキュート、ミイ、チャン、"
 
 def test_njd_features_to_keihan():
