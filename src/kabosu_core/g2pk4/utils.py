@@ -1,4 +1,4 @@
-import re2 as re
+import re
 from jamo import h2j, j2h
 import os
 from pathlib import Path

@@ -4,7 +4,7 @@ Convert English to Hangul
 https://github.com/kyubyong/g2pK
 '''
 
-import re2 as re
+import re
 
 from kabosu_core.g2pk4.utils import adjust, compose, to_choseong, to_jungseong, to_jongseong, reconstruct
 

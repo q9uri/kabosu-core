@@ -4,7 +4,7 @@ Special rule for processing Hangul
 https://github.com/kyubyong/g2pK
 '''
 
-import re2 as re
+import re
 
 from kabosu_core.g2pk4.utils import gloss, get_rule_id2text
 

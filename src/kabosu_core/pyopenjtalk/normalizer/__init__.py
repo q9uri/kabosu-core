@@ -1,6 +1,6 @@
 
 import jaconv
-import re2
+import re
 import kanalizer
 
 from yomikata.dbert import dBert
@@ -13,8 +13,8 @@ _global_dictreader = Dictionary()
 
 from kabosu_core.pyopenjtalk.normalizer.itaiji import normalize_itaiji
 
-_FURIGANA_PATTERN = re2.compile("{.+/.+}")
-_ALPHABET_PATTERN = re2.compile("[a-z]+")
+_FURIGANA_PATTERN = re.compile("{.+/.+}")
+_ALPHABET_PATTERN = re.compile("[a-z]+")
 
 def reader_furigana(text:str):
     # this liblary use fork version yomikata
