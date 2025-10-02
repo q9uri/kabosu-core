@@ -30,14 +30,13 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 from __future__ import unicode_literals
-from nose.tools import assert_equals, assert_true, assert_false, assert_raises
 from kabosu_core.mlask import MLAsk
 
 mla = MLAsk()
 
 def test__read_emodic():
-    assert_true('！' in mla.emodic['emotem']['exclamation'])
-    assert_true('嫌い' in mla.emodic['emotion']['iya'])
+    assert ('！' in mla.emodic['emotem']['exclamation']) == True
+    assert ('嫌い' in mla.emodic['emotion']['iya']) == True
 
 def test_analyze():
     result = mla.analyze('彼は嫌いではない！(;´Д`)')
