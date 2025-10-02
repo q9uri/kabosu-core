@@ -3,7 +3,7 @@ import json
 import os
 from pathlib import Path
 
-import fugashi
+from kabosu_core import mecab as MeCaB
 from bunkai import Bunkai
 
 NEGATION = ('ない', 'ず', 'ぬ')
@@ -20,10 +20,8 @@ class Analyzer(object):
         self.wago_dict = json.load(open(os.path.join(DICT_DIR, 'pn_wago.json')))
         if wago_dict:
             self.wago_dict.update(wago_dict)
-        from ipadic import DICDIR
-        MECABRC = Path(DICDIR) / "mecabrc"
-        MECAB_ARGS = '-r "{}" -d "{}"'.format(MECABRC, DICDIR)
-        self.tagger = fugashi.GenericTagger(MECAB_ARGS + mecab_args)
+ 
+        self.tagger = MeCaB.Tagger(dictionary="ipa-dic")
         self.bunkai = Bunkai()
 
     def _lookup_wago(self, lemma, lemmas):
@@ -44,16 +42,18 @@ class Analyzer(object):
         n_parallel = 0
         substr_count = 0
         tagger_list = self.tagger(sentence)
+
         for i in range(len(tagger_list)):
-            word = tagger_list[i]
+            surface = tagger_list[i][0]
+            feature = tagger_list[i][1:]
+
             if i < len(tagger_list) -1:
-                next_word = str(tagger_list[i+1])
+                next_word = str(tagger_list[i+1][0])
             else:
-                next_word = str(word)
-            if 'BOS/EOS' not in word.feature:
-                surface = str(word)
+                next_word = surface
+            if 'BOS/EOS' not in feature:
                 substr_count += len(surface)
-                feature = word.feature
+                
                 lemma = feature[6] if feature[6] != '*' else word
                 wago = ''
                 if lemma in self.word_dict:

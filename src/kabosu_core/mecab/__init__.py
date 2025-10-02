@@ -14,14 +14,16 @@ def try_import_ko_dic():
 class Tagger():
     def __init__ (
             self,
+            text:str = "",
             dictionary:Literal[
                 "ko-dic",
                 "jumandic",
                 "ipa-dic",
                 "unidic-lite"
-                ], 
+                ] = "ko-dic", 
             rawargs: str = ""
             ):
+        self.text = text
         CUR_DIR = Path(os.path.dirname(__file__))
         DICT_DIR = CUR_DIR / "dict"
         
@@ -59,6 +61,18 @@ class Tagger():
                 with open(UNIDIC_LITE_DIR, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
+                        
+    def __call__ (self):
+        tokens = self.tagger.tokenize(self.text)
+
+        out = []
+        for token in tokens:
+            surface = token.surface()
+            feature_list = token.feature().split(",")
+            cur_word_list = [surface] + feature_list
+            out.append(cur_word_list)
+                
+        return out
 
     def parse(self, text: str) -> list[str]:
         if self.dictionary == "ko-dic":

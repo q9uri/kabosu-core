@@ -5,8 +5,8 @@ import os
 from pathlib import Path
 import re
 import collections
-import pkgutil
-import fugashi
+
+from  kabosu_core import mecab as MeCaB
 
 
 """
@@ -69,7 +69,7 @@ class MLAsk(object):
         <mlask.MLAsk object at 0x...>
         """
   
-        self.mecab = fugashi.Tagger(mecab_arg)
+        self.mecab = MeCaB.Tagger(dictionary="unidic-lite")
         self._read_emodic()
 
         self.mecab.parse('')
@@ -178,12 +178,11 @@ class MLAsk(object):
                 if len(row) < 2:
                     continue
                 surface = row[0]
-                if True:
-                    features = row[1:]
-                else:
-                    features = row[1].split(',')
+
+                features = row[1:]
+
                 if len(features) > 7:
-                    (pos, subpos, lemma) = features[0], features[1], features[6]
+                    (pos, subpos, lemma) = features[0], features[1], features[8]
                 elif len(features) == 1:
                     pos = None
                     subpos = None
