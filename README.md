@@ -31,7 +31,7 @@ yomikata bert model
 
 ```
 # download bert model  
-python -m yomikata download
+python -m kabosu_core.yomikata download
 
 ```
 https://github.com/passaglia/yomikata  

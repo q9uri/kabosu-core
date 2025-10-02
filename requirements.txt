@@ -1,8 +1,13 @@
+#================================================================
 # for oseti
 bunkai
+#================================================================
+# for oseti, mlask, mecab_ko
+fugashi
+#================================================================
 # for pyopenjtalk
 onnxruntime
-numpy==1.26.4
+numpy<2
 marine-plus
 sudachipy
 sudachidict_core
@@ -10,4 +15,27 @@ jaconv
 jpreprocess
 kanalizer
 google-re2
-yomikata @ git+https://github.com/q9uri/yomikata@ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb
+#================================================================
+# for yomikata
+# numpy<2
+# jaconv
+pandas>=1.5.2
+scikit-learn
+speach
+torch
+transformers==4.53.0
+huggingface_hub
+datasets
+nvidia-ml-py
+sentencepiece
+rich
+plac
+streamlit==1.17.0
+spacy
+#fugashi
+ipadic==1.0.0
+jumandic==1.0.0
+fugashi[unidic-lite]
+sudachidict_full
+unidic-lite
+#================================================================

@@ -5,16 +5,34 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "bunkai>=1.5.7",
+    "datasets>=4.1.0",
+    "fugashi[unidic-lite]>=1.5.1",
     "google-re2>=1.1.20250805",
+    "huggingface-hub>=0.35.0",
+    "ipadic==1.0.0",
     "jaconv>=0.4.0",
     "jpreprocess>=0.1.5",
+    "jumandic==1.0.0",
     "kanalizer>=0.1.1",
     "marine-plus>=0.0.6.post3",
-    "numpy==1.26.4",
+    "numpy<2",
+    "nvidia-ml-py>=13.580.82",
     "onnxruntime>=1.22.1",
+    "pandas>=1.5.2",
+    "plac>=1.4.5",
+    "rich>=14.1.0",
+    "scikit-learn>=1.7.2",
+    "sentencepiece>=0.2.1",
+    "spacy>=3.8.7",
+    "speach>=0.1a8",
+    "streamlit==1.17.0",
     "sudachidict-core>=20250825",
+    "sudachidict-full>=20250825",
     "sudachipy>=0.6.10",
-    "yomikata",
+    "torch>=2.8.0",
+    "transformers==4.53.0",
+    "unidic-lite>=1.0.8",
 ]
 
 [dependency-groups]
@@ -41,7 +59,6 @@ only-include = [
 packages = ["src/kabosu_core"]
 
 [tool.uv.sources]
-yomikata = { git = "https://github.com/q9uri/yomikata", rev = "ac5a27a2ed72ea4fab4e3a79e2d4799fb411e6bb" }
 
 [build-system]
 requires = ["hatchling"]
