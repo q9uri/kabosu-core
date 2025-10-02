@@ -1113,13 +1113,14 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "nose" },
     { name = "pytest" },
     { name = "taskipy" },
 ]
 ko = [
     { name = "google-re2" },
     { name = "jamo" },
-    { name = "mecab-ko" },
+    { name = "mecab-ko-dic" },
     { name = "nltk" },
 ]
 
@@ -1139,13 +1140,14 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "nose", specifier = ">=1.3.7" },
     { name = "pytest" },
     { name = "taskipy", specifier = ">=1.14.1" },
 ]
 ko = [
     { name = "google-re2", specifier = ">=1.1.20250805" },
     { name = "jamo", specifier = ">=0.4.1" },
-    { name = "mecab-ko", specifier = ">=1.0.2" },
+    { name = "mecab-ko-dic" },
     { name = "nltk", specifier = ">=3.9.1" },
 ]
 
@@ -1355,41 +1357,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729, upload-time = "2022-08-14T12:40:10.846Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979, upload-time = "2022-08-14T12:40:09.779Z" },
-]
-
-[[package]]
-name = "mecab-ko"
-version = "1.0.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "mecab-ko-dic" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/45/bf/ac19d589a22f3c1372e22403b1e62c821f2c51cb95f4e8e298c73855a294/mecab_ko-1.0.2.tar.gz", hash = "sha256:a0c404e068e913f59aa4a6249e544d497a40ef3176a4aa5728a3f3859be4fce3", size = 75900, upload-time = "2025-09-23T22:49:27.693Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/ab/94/190304f09d1bf5114b59e3b0d5312c93a9a2eb2e35ac7f831cdc32b9a322/mecab_ko-1.0.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d826d0e314bef880d5498b9e5b97736c379a853225add66281eaeb1fc06c3d11", size = 477384, upload-time = "2025-09-23T22:48:31.76Z" },
-    { url = "https://files.pythonhosted.org/packages/dc/f2/4df64c013acd7624857a5e0ef0c1b9464bbc9d66bf96f44661acd74c7044/mecab_ko-1.0.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d240a00977389e3cdb6740df66814a82c7f2094a5466b1170678104db31f262b", size = 440853, upload-time = "2025-09-23T22:48:33.165Z" },
-    { url = "https://files.pythonhosted.org/packages/a6/2c/a42a4f18798aba7a867e0a0d24ab8feab9f1e269ab8d614c13a153e3bf46/mecab_ko-1.0.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:ea704ef15af0eec451ead20a8eb0db7e407977f9a1b0a2467265b488e01c158e", size = 437210, upload-time = "2025-09-23T22:48:34.805Z" },
-    { url = "https://files.pythonhosted.org/packages/a2/fb/591ac5999ac3ad15583367e89488c4b942b4e78286b9c18b18ae5907e5ad/mecab_ko-1.0.2-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:950b22b72f022666fed7d11ea8eec4b4b0cf2b484d3961988dcf098b23f0da32", size = 561754, upload-time = "2025-09-23T22:48:36.521Z" },
-    { url = "https://files.pythonhosted.org/packages/7a/bd/e981bcf938ab22d0c8a50061fab69d83a4a46b04507218ca081daa6f801e/mecab_ko-1.0.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:841f962b9a6f04f677f22ad3f27c3fed5aee83cb0ddfd27bf48135f3f640be2e", size = 583512, upload-time = "2025-09-23T22:48:38.275Z" },
-    { url = "https://files.pythonhosted.org/packages/51/c4/27691753fee0fa200f8a5b0390a2665d7266800c918f956513e48caa5321/mecab_ko-1.0.2-cp310-cp310-win_amd64.whl", hash = "sha256:5e3f0111a702948e41c18b5ea3080bc3105da810937f3be2e0fc426ddbac12cd", size = 500856, upload-time = "2025-09-23T22:48:39.641Z" },
-    { url = "https://files.pythonhosted.org/packages/26/35/5850f7fe67c03a58cbacea69b48279531edebdce134033a65152218a8401/mecab_ko-1.0.2-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:cb805ded9266db4326e300d2bbb20798daa385fa0a2ef290475d9da8e02a8c44", size = 477391, upload-time = "2025-09-23T22:48:40.946Z" },
-    { url = "https://files.pythonhosted.org/packages/cd/3f/7898973d44fc90d9297f3a4069e30e41e2f4a370029be0cf2106e45253ae/mecab_ko-1.0.2-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:b5ebfeaacf4942fbeede5ba1993d40c0fffeb53302ec872406f8f381c99e3ba9", size = 440863, upload-time = "2025-09-23T22:48:42.207Z" },
-    { url = "https://files.pythonhosted.org/packages/0c/09/dff843bf6fd6b9ee02685429cb56ce4435781602ca6fa35af99e172693ea/mecab_ko-1.0.2-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:fbe31456cceac890cecbc100ff981260c1fa1bd971687f32e45f8620c3a0be09", size = 437209, upload-time = "2025-09-23T22:48:43.417Z" },
-    { url = "https://files.pythonhosted.org/packages/98/e6/13207498062d3820a85e766fec31132e2ad39b9d49f18375c09dcfa69af9/mecab_ko-1.0.2-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:8da29798947a8227d16f479ae832a620994986cb0edf3ca6d95e9eb98ffbcdfa", size = 569074, upload-time = "2025-09-23T22:48:45.101Z" },
-    { url = "https://files.pythonhosted.org/packages/4d/64/c01c1b57f310244230927e37610f6017856d47a85ab33929f1efcd0ab96f/mecab_ko-1.0.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:79a86c6bba9cea51f1fcec6c406b005ad748ec74431813ab919db241c8a89887", size = 590677, upload-time = "2025-09-23T22:48:46.739Z" },
-    { url = "https://files.pythonhosted.org/packages/8f/66/e5e8ed29c9bc133dc6669f748c8e4045b12e4113ce0e7ad9e48e3d5cfaee/mecab_ko-1.0.2-cp311-cp311-win_amd64.whl", hash = "sha256:ab39f57e5dc215414fae3ca1e39736c9dd327c03d5b335607c553e0029e6ccd7", size = 500866, upload-time = "2025-09-23T22:48:48.345Z" },
-    { url = "https://files.pythonhosted.org/packages/d8/e6/6ca92019b67720f148704412741e708ba2a0f23e11f42249b99374efb575/mecab_ko-1.0.2-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:fd1f9afb29368744673e6dd64c1037aae15c834c85206d0e7548ec9aed84af36", size = 476984, upload-time = "2025-09-23T22:48:49.598Z" },
-    { url = "https://files.pythonhosted.org/packages/66/e9/3c10fec85904893979c858868dd700e9efab419fcbe5b62b1039b83640f1/mecab_ko-1.0.2-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:22223f84e521385684d0f2e08599a2b9c9e539f274a45dc4c4c8ec4560b5c70f", size = 440663, upload-time = "2025-09-23T22:48:51.34Z" },
-    { url = "https://files.pythonhosted.org/packages/51/ae/e6d8febee3c47d40ccb55b9e77933693f29e2e92e0e1f264a9dadbc018dd/mecab_ko-1.0.2-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:668aa735640047dce7aef3fbd2797c79fb9cc343370cce7dd408403d82df01cb", size = 437609, upload-time = "2025-09-23T22:48:53.106Z" },
-    { url = "https://files.pythonhosted.org/packages/c4/c9/de32c0dd85b5c5ac39b3444b367099546542977fb06e6de9316f6ee01d8b/mecab_ko-1.0.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:de1fa306e2593914fa35d9fce8487201484a935ddcd314c29e890e559b7a499d", size = 570537, upload-time = "2025-09-23T22:48:54.396Z" },
-    { url = "https://files.pythonhosted.org/packages/32/17/de0b4aecb2bce404a0825248948df0791fe5500ad602f502d56bce974526/mecab_ko-1.0.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:7c9b0aa4bda09794fbebca107d936ebaabd1ae1a37f5af66ea4cfb9b93b627ff", size = 592995, upload-time = "2025-09-23T22:48:56.266Z" },
-    { url = "https://files.pythonhosted.org/packages/ef/06/061a8e45e83380ba40359528f37fc02ed26740cb7b5ef1de1905fc5a32d0/mecab_ko-1.0.2-cp312-cp312-win_amd64.whl", hash = "sha256:06942d169aae4a4adca5f4ffcaeeabed2ab1d28cfdca4d73fd599a12018b8027", size = 501781, upload-time = "2025-09-23T22:48:57.96Z" },
-    { url = "https://files.pythonhosted.org/packages/94/e3/69a2b0a66f4f76521957fc617e5e13298b3bd2db065a6fbf92cafbc43808/mecab_ko-1.0.2-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:8c948db05c8c3037959ffc6ee2bd9a1e1c7bfefd6414806e9c8284f47eece3d7", size = 477018, upload-time = "2025-09-23T22:48:59.69Z" },
-    { url = "https://files.pythonhosted.org/packages/bc/6b/1c65964ee3b03a5182f755a690f8db72451b87c9baa46f3f56d5de5873f2/mecab_ko-1.0.2-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:07748db500eb223b0c3d10a2a3adddf2338350da1143781953f242babb3babbe", size = 440665, upload-time = "2025-09-23T22:49:01.434Z" },
-    { url = "https://files.pythonhosted.org/packages/13/9d/c3b59d2ea2dacec3a5b1a5f35f77487158166f141dec9b71e7340671c22c/mecab_ko-1.0.2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:8d4f4118b3c7cbe8d7aa33542723dcf3baeb3b3994946e63a12210615b7d1cc3", size = 437636, upload-time = "2025-09-23T22:49:03.165Z" },
-    { url = "https://files.pythonhosted.org/packages/52/3d/dfd58e811013308fbed3056812f7d09deebbfa2f1bec66d2d81f8f7b79b4/mecab_ko-1.0.2-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:f7f7ba73a8187f59d7269b04803280029f467a5c73286cc4b13dfd3c0c1f644a", size = 570365, upload-time = "2025-09-23T22:49:04.579Z" },
-    { url = "https://files.pythonhosted.org/packages/b7/bd/eac95fae003a4fe3f3f098d31ea1f6d031cb06e497a48424f5685addb3e7/mecab_ko-1.0.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:2c3a29796bd2246b226ba18afcc9fbd05095c003aa4a76d9425e468bc7848b51", size = 592842, upload-time = "2025-09-23T22:49:05.831Z" },
-    { url = "https://files.pythonhosted.org/packages/19/54/3a57b1645177cf3e41cf55bb974cd9a0c3a5749d677b48ed725c862847f0/mecab_ko-1.0.2-cp313-cp313-win_amd64.whl", hash = "sha256:3a50596101d1e52619e09f37cf4bff81452e218e89ce73fa89f65cea286b2a49", size = 501793, upload-time = "2025-09-23T22:49:07.147Z" },
 ]
 
 [[package]]
@@ -1658,6 +1625,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3c/87/db8be88ad32c2d042420b6fd9ffd4a149f9a0d7f0e86b3f543be2eeeedd2/nltk-3.9.1.tar.gz", hash = "sha256:87d127bd3de4bd89a4f81265e5fa59cb1b199b27440175370f7417d2bc7ae868", size = 2904691, upload-time = "2024-08-18T19:48:37.769Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4d/66/7d9e26593edda06e8cb531874633f7c2372279c3b0f46235539fe546df8b/nltk-3.9.1-py3-none-any.whl", hash = "sha256:4fa26829c5b00715afe3061398a8989dc643b92ce7dd93fb4585a70930d168a1", size = 1505442, upload-time = "2024-08-18T19:48:21.909Z" },
+]
+
+[[package]]
+name = "nose"
+version = "1.3.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/a5/0dc93c3ec33f4e281849523a5a913fa1eea9a3068acfa754d44d88107a44/nose-1.3.7.tar.gz", hash = "sha256:f1bffef9cbc82628f6e7d7b40d7e255aefaa1adb6a1b1d26c69a8b79e6208a98", size = 280488, upload-time = "2015-06-02T09:12:32.961Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/15/d8/dd071918c040f50fa1cf80da16423af51ff8ce4a0f2399b7bf8de45ac3d9/nose-1.3.7-py3-none-any.whl", hash = "sha256:9ff7c6cc443f8c51994b34a667bbcf45afd6d945be7477b52e97516fd17c53ac", size = 154731, upload-time = "2015-06-02T09:12:40.57Z" },
 ]
 
 [[package]]

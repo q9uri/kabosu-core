@@ -1,3 +1,6 @@
+# for oseti
+bunkai
+# for pyopenjtalk
 onnxruntime
 numpy==1.26.4
 marine-plus

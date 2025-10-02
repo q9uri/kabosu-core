@@ -1,4 +1,5 @@
+# for g2pk4
 google-re2
 jamo
-mecab-ko
+mecab-ko-dic 
 nltk

@@ -360,9 +360,11 @@ def ko2ja(text:str ) -> str:
                 convert_english = False,
                 )
     
-    out_text = ""
+    out_text_list = []
     for word_list in hcj_list:
+        out_word = ""
         for i in range(len(word_list)):
+            
             if i == 0:
                 first_jamo = True
             else:
@@ -370,6 +372,9 @@ def ko2ja(text:str ) -> str:
 
             hcj = word_list[i]
             kana = convert_k2j(hcj, first_jamo)
-            out_text += kana
-    
+            out_word += kana 
+
+        out_text_list.append(out_word)
+
+    out_text = "、".join(out_text_list)#読点で区切って読みやすく
     return out_text

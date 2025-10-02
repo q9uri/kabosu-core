@@ -7,7 +7,7 @@ from pathlib import Path
 import nltk
 from jamo import h2j, j2hcj
 from nltk.corpus import cmudict
-import mecab_ko as MeCab
+from kabosu_core import mecab_ko as MeCab
 
 # For further info. about cmu dict, consult http://www.speech.cs.cmu.edu/cgi-bin/cmudict.
 try:
