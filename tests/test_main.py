@@ -24,7 +24,7 @@ def test_g2p_yomikata():
 
 def test_g2p_hungl():
     output = pyopenjtalk.g2p("이봐, 센파이. 한국으로 여행하자? 현지의 맛있는 요리를 먹으면 좋겠다.", kana=True)
-    assert output == "ユー、アー、ソー、キュート、、ミイ、チャン、"
+    assert output == "イブァ、センパイ、ハンググロヨヘンハザ？ホンジウィマジンヌンオリルルモグモンソゲッッタ、"
     print(output)
 
 def test_g2p_kanalizer():

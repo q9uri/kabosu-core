@@ -1,5 +1,6 @@
 import jpreprocess 
 
+
 from kabosu_core.pyopenjtalk.normalizer import (
     dictreader_furigana,
     reader_furigana,
@@ -8,7 +9,9 @@ from kabosu_core.pyopenjtalk.normalizer import (
     normalize_text
 )
 
+from typing import Union
 from kabosu_core.pyopenjtalk.types import NjdObject
+from kabosu_core.pyopenjtalk.njd import apply_postprocessing
 
 #----------------------------------------------------
 #
@@ -36,7 +39,7 @@ from kabosu_core.pyopenjtalk.types import NjdObject
 
 from collections.abc import Callable, Generator
 from contextlib import AbstractContextManager, contextmanager
-from typing import TypeVar, Union
+
 from threading import Lock
 from pathlib import Path
 
@@ -89,13 +92,10 @@ def update_global_jtalk_with_user_dict(
             instance=jpreprocess.jpreprocess(user_dictionary=user_dictionary),
         )
 #-----------------------------------------------------------
-from kabosu_core.pyopenjtalk.njd import apply_postprocessing
-from kabosu_core.pyopenjtalk.types import NjdObject
-from kabosu_core.pyopenjtalk.normalizer import normalize_text
 
 
-from typing import Union
-import jpreprocess 
+
+
 
 
 
@@ -103,11 +103,6 @@ import jpreprocess
 
 def extract_fullcontext(
         text: str,
-        hankaku: bool = True,
-        itaiji: bool = True,
-        yomikata: bool = True,
-        kanalizer: bool = True,
-        use_ko2ja: bool = True,
         use_vanilla: bool = False,
         run_marine: bool = False,
         keihan:bool = False,
@@ -125,11 +120,6 @@ def extract_fullcontext(
 
     njd_features = run_frontend(
         text, 
-        hankaku=hankaku,
-        itaiji=itaiji,
-        yomikata=yomikata, 
-        kanalizer=kanalizer,
-        use_ko2ja=use_ko2ja,
         use_vanilla=use_vanilla,
         run_marine=run_marine,
         keihan=keihan,
@@ -144,11 +134,6 @@ def extract_fullcontext(
 
 def g2p(
         text: str,
-        hankaku: bool = True,
-        itaiji: bool = True,
-        yomikata: bool = True,
-        kanalizer: bool = True,
-        use_ko2ja: bool = True,
         use_vanilla: bool = False,
         run_marine: bool = False,
         keihan:bool = False,
@@ -161,11 +146,6 @@ def g2p(
 
     njd_features = run_frontend(
         text, 
-        hankaku=hankaku,
-        itaiji=itaiji,
-        yomikata=yomikata, 
-        kanalizer=kanalizer,
-        use_ko2ja=use_ko2ja,
         run_marine=run_marine,
         keihan=keihan,
         babytalk=babytalk,
@@ -191,12 +171,7 @@ def g2p(
 
 def run_frontend(
             text: str,
-            hankaku: bool = True,
-            itaiji: bool = True,
-            kanalizer: bool = True,
-            yomikata: bool = True,
             use_vanilla: bool = False,
-            use_ko2ja: bool = True,
             run_marine: bool = False,
             keihan: bool = False,
             babytalk: bool = False,
@@ -217,14 +192,7 @@ def run_frontend(
     """
 
 
-    text = normalize_text(
-        text,
-        hankaku=hankaku,
-        itaiji=itaiji,
-        use_ko2ja=use_ko2ja,
-        kanalizer=kanalizer,
-        yomikata=yomikata,
-    )
+
 
     if jpreprocess is not None:
         j = jpreprocess.jpreprocess()
