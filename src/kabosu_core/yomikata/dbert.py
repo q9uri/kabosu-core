@@ -27,12 +27,12 @@ from kabosu_core.yomikata.utils import LabelEncoder
 logging.getLogger("transformers").setLevel(logging.ERROR)
 logging.getLogger("transformers.trainer").setLevel(logging.ERROR)
 logging.getLogger("datasets").setLevel(logging.ERROR)
-
-
+from kabosu_core.asseets import YOMIKATA_PATH
+DBERT_PATH =  YOMIKATA_PATH / "dbert-artifacts"
 class dBert(Reader):
     def __init__(
         self,
-        artifacts_dir: Path = config.DBERT_DIR,
+        artifacts_dir: Path = DBERT_PATH,
         reinitialize: bool = False,
         device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
     ) -> None:
