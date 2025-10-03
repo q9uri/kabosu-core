@@ -33,38 +33,36 @@ class Dictionary(Reader):
         """
 
         if tagger == "unidic":
-            import fugashi
+            from kabosu_core import mecab as MeCab
 
-            self.tagger = fugashi.Tagger()
-            self.token_to_surface = lambda word: word.surface
-            self.token_to_pos = lambda word: word.feature.pos1
+            self.tagger = MeCab.Tagger(dictionary="unidic-lite")
+            self.token_to_surface = lambda word: word[0]
+            self.token_to_pos = lambda word: word[1]
             self.token_to_kana = (
-                lambda word: jaconv.kata2hira(str(word))
-                if (word.feature.kana == "*" or word.feature.kana is None)
-                else jaconv.kata2hira(str(word.feature.kana))
+                lambda word: jaconv.kata2hira(word[10] )
+                if word[10] != "" 
+                else word[0]
             )
         elif tagger == "ipadic":
-            import fugashi
-            import ipadic
+            from kabosu_core import mecab as MeCab
 
-            self.tagger = fugashi.GenericTagger(ipadic.MECAB_ARGS)
-            self.token_to_surface = lambda word: word.surface
-            self.token_to_pos = lambda word: word.feature[0]
+            self.tagger = MeCab.Tagger(dictionary="ipa-dic")
+            self.token_to_surface = lambda word: word[0]
+            self.token_to_pos = lambda word: word[1]
             self.token_to_kana = (
-                lambda word: jaconv.kata2hira(str(word.feature[7]))
-                if len(word.feature) >= 8
-                else jaconv.kata2hira(str(word.surface))
+                lambda word: jaconv.kata2hira(str(word[8]))
+                if len(word) >= 9
+                else jaconv.kata2hira(str(word[0]))
             )
         elif tagger == "juman":
-            import fugashi
-            import jumandic
+            from kabosu_core import mecab as MeCab
 
-            self.tagger = fugashi.GenericTagger(jumandic.MECAB_ARGS)
-            self.token_to_surface = lambda word: word.surface
-            self.token_to_pos = lambda word: word.feature[0]
+            self.tagger = MeCab.Tagger(dictionary="jumandic")
+            self.token_to_surface = lambda word: word[0]
+            self.token_to_pos = lambda word: word[1]
             self.token_to_kana = (
-                lambda word: word.feature[5]
-                if word.feature[5] != "*"
+                lambda word: word[6]
+                if word[6] != "*"
                 else jaconv.kata2hira(str(word))
             )
         elif tagger == "sudachi":
@@ -95,6 +93,10 @@ class Dictionary(Reader):
                     kana = self.token_to_kana(word)
                     surface = self.token_to_surface(word)
                     pos = self.token_to_pos(word)
+
+                    if surface == "は" and kana == "わ":
+                        kana = "は"
+                    
                     if (surface == kana) or pos in ["記号", "補助記号", "特殊"]:
                         output += surface
                     else:
@@ -129,6 +131,7 @@ class Dictionary(Reader):
             return string1[i + 1 :] if i != -1 else ""  # return common substring
 
         def assert_rubytoken_kana_match(ruby: RubyToken, kana: str) -> None:
+
             assert (
                 "".join(
                     [token.furi if isinstance(token, RubyFrag) else token for token in ruby.groups]

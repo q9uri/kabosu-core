@@ -14,7 +14,6 @@ def try_import_ko_dic():
 class Tagger():
     def __init__ (
             self,
-            text:str = "",
             dictionary:Literal[
                 "ko-dic",
                 "jumandic",
@@ -23,13 +22,13 @@ class Tagger():
                 ] = "ko-dic", 
             rawargs: str = ""
             ):
-        self.text = text
+
         CUR_DIR = Path(os.path.dirname(__file__))
         DICT_DIR = CUR_DIR / "dict"
         
         UNIDIC_LITE_DIR = DICT_DIR / "unidic-mecab-2-1-2/system.dic.zst"
-        IPADIC_DIR = DICT_DIR / "unidic-mecab-2-1-2/system.dic.zst"
-        JUMANDIC_DIR = DICT_DIR / "unidic-mecab-2-1-2/system.dic.zst"
+        IPADIC_DIR = DICT_DIR / "ipadic-mecab-2-7-0/system.dic.zst"
+        JUMANDIC_DIR = DICT_DIR / "jumandic-mecab-7-0/system.dic.zst"
 
         self.dictionary = dictionary
         if self.dictionary == "ko-dic":
@@ -62,17 +61,21 @@ class Tagger():
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
                         
-    def __call__ (self):
-        tokens = self.tagger.tokenize(self.text)
-
-        out = []
-        for token in tokens:
-            surface = token.surface()
-            feature_list = token.feature().split(",")
-            cur_word_list = [surface] + feature_list
-            out.append(cur_word_list)
-                
-        return out
+    def __call__ (self, text:str = "", out_list:bool = True):
+        if self.dictionary in ("ipa-dic", "jumandic", "unidic-lite"):
+            tokens = self.tagger.tokenize(text)
+            if out_list:
+                out = []
+                for token in tokens:
+                    surface = token.surface()
+                    feature_list = token.feature().split(",")
+                    cur_word_list = [surface] + feature_list
+                    out.append(cur_word_list)
+                        
+                return out
+            
+            else:
+                return tokens
 
     def parse(self, text: str) -> list[str]:
         if self.dictionary == "ko-dic":
