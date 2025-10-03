@@ -1,4 +1,8 @@
 #================================================================
+#fugashi replacing vibrato
+vibrato
+zstandard
+#================================================================
 # for oseti
 bunkai
 #================================================================
@@ -41,11 +45,10 @@ spacy
 sudachidict_full
 #================================================================
 # for marine-plus
-importlib_resource
 # numpy<2
 # torch 
 hydra-core
-hydra_colorlog >= 1.1.
+hydra_colorlog
 tqdm
 joblib
 pykakasi 

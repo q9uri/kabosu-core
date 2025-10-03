@@ -1,2 +1,17 @@
 taskipy
 pytest
+# for marine-plus
+torchmetrics
+scikit-learn
+docstr-coverage
+tensorboard
+matplotlib
+#pytest
+pytest-cov
+docstr-coverage
+pysen
+black
+flake8<4
+flake8-bugbear
+isort<5.2.0
+click<8.1.0
