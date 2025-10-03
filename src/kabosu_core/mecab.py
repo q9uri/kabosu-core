@@ -1,7 +1,6 @@
 from fugashi import GenericTagger
 from typing import Literal
-from pathlib import Path
-import os
+from kabosu_core.asseets import UNIDIC_LITE_DIR, IPADIC_DIR, JUMANDIC_DIR
 
 def try_import_ko_dic():
     try:
@@ -22,13 +21,7 @@ class Tagger():
                 ] = "ko-dic", 
             rawargs: str = ""
             ):
-
-        CUR_DIR = Path(os.path.dirname(__file__))
-        DICT_DIR = CUR_DIR / "dict"
         
-        UNIDIC_LITE_DIR = DICT_DIR / "unidic-mecab-2-1-2/system.dic.zst"
-        IPADIC_DIR = DICT_DIR / "ipadic-mecab-2-7-0/system.dic.zst"
-        JUMANDIC_DIR = DICT_DIR / "jumandic-mecab-7-0/system.dic.zst"
 
         self.dictionary = dictionary
         if self.dictionary == "ko-dic":
