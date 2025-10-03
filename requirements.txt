@@ -52,3 +52,10 @@ hydra_colorlog
 tqdm
 joblib
 pykakasi 
+#================================================================
+# for marine-plus
+#scikit-learn = "^1.1.1"
+#Janome = "^0.4.2"
+#skl2onnx = "^1.13" #for train
+#packaging = "^21.3"
+#onnxruntime = "^1.12.1"

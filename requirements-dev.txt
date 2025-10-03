@@ -15,3 +15,9 @@ flake8<4
 flake8-bugbear
 isort<5.2.0
 click<8.1.0
+# for asari
+#taskipy = "^1.10.3"
+#black = "^22.10.0"
+#isort = "^5.10.1"
+#mypy = "^0.982"
+#pyproject-flake8 = "^5.0.4"

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
-import os
+
 from pathlib import Path
 
 from kabosu_core import mecab as MeCaB
@@ -8,16 +8,16 @@ from bunkai import Bunkai
 
 NEGATION = ('ない', 'ず', 'ぬ')
 PARELLEL_PARTICLES = ('か', 'と', 'に', 'も', 'や', 'とか', 'だの', 'なり', 'やら')
-DICT_DIR = os.path.join(os.path.dirname(__file__), 'dic')
+DICT_DIR = Path(__file__).parent / 'dic'
 
 
 class Analyzer(object):
 
     def __init__(self, mecab_args='', word_dict={}, wago_dict={}):
-        self.word_dict = json.load(open(os.path.join(DICT_DIR, 'pn_noun.json')))
+        self.word_dict = json.load(open(DICT_DIR / 'pn_noun.json'))
         if word_dict:
             self.word_dict.update(word_dict)
-        self.wago_dict = json.load(open(os.path.join(DICT_DIR, 'pn_wago.json')))
+        self.wago_dict = json.load(open(DICT_DIR / 'pn_wago.json'))
         if wago_dict:
             self.wago_dict.update(wago_dict)
  

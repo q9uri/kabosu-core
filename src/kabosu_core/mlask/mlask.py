@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from __future__ import unicode_literals
-import os
+
 from pathlib import Path
 import re
 import collections
@@ -83,7 +83,7 @@ class MLAsk(object):
         emotemy = ('interjections', 'exclamation', 'vulgar', 'endearments', 'emotikony', 'gitaigo')
         for emotem_class in emotemy:
             file = f"{emotem_class}_uncoded.txt"
-            emotions_dir = Path(os.path.dirname(os.path.abspath(__file__))) / "emotemes"
+            emotions_dir = Path(__file__).parent / "emotemes"
             file_path = emotions_dir / file
 
             data = file_path.read_text(encoding='utf8')
@@ -95,7 +95,7 @@ class MLAsk(object):
         emotions = ('aware', 'haji', 'ikari', 'iya', 'kowa', 'odoroki', 'suki', 'takaburi', 'yasu', 'yorokobi')
         for emotion_class in emotions:
             file = f"{emotion_class}_uncoded.txt"
-            emotions_dir = Path(os.path.dirname(os.path.abspath(__file__))) / "emotions"
+            emotions_dir = Path(__file__).parent / "emotions"
             file_path = emotions_dir / file
 
             data = file_path.read_text(encoding='utf8')
