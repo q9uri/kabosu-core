@@ -47,7 +47,7 @@ def load_marine_model(model_dir: Union[str, None] = None, dict_dir: Union[str, N
     global _global_marine
     if _global_marine is None:
         try:
-            from marine.predict import Predictor
+            from kabosu_core.marine.predict import Predictor
         except ImportError:
             raise ImportError("Please install marine by `pip install pyopenjtalk-plus[marine]`")
         _global_marine = Predictor(model_dir=model_dir, postprocess_vocab_dir=dict_dir)

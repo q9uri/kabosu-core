@@ -28,7 +28,7 @@ import requests
 from tqdm import tqdm
 
 from kabosu_core.yomikata.config import config, logger
-
+from kabosu_core.asseets import YOMIKATA_PATH
 
 # This is used to show progress when downloading.
 # see here: https://github.com/tqdm/tqdm#hooks-and-callbacks
@@ -85,18 +85,18 @@ def download_and_clean(version, url):
     resulting directory, and removes large files not used at runtime.
     """
 
-    cdir = config.YOMIKATA_DIR
-    fname = Path(cdir, "dbert-artifacts.tar.gz")
+    download_dir = str(YOMIKATA_PATH)
+    fname = Path(download_dir, "dbert-artifacts.tar.gz")
     print("Downloading dBert v{}...".format(version), file=sys.stderr)
     download_progress(url, fname)
     print("Finished download.")
 
-    dbertdir = os.path.join(cdir, "dbert-artifacts")
+    dbertdir = os.path.join(download_dir, "dbert-artifacts")
     if os.path.isdir(dbertdir):
         shutil.rmtree(dbertdir)
 
     with tarfile.open(fname, "r") as tf:
-        tf.extractall(cdir)
+        tf.extractall(download_dir)
     os.remove(fname)
 
     print("Downloaded dbert v{} to {}".format(version, dbertdir), file=sys.stderr)

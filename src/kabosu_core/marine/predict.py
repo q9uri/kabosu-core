@@ -37,8 +37,8 @@ from kabosu_core.marine.utils.util import (
 )
 
 
-BASE_DIR = Path(str(importlib_resources.files("marine")))
-DEFAULT_POSTPROCESS_VOCAB_DIR = BASE_DIR / "dict"
+BASE_DIR = Path(str(importlib_resources.files("kabosu_core")))
+DEFAULT_POSTPROCESS_VOCAB_DIR = BASE_DIR / "marine/dict"
 
 
 class Predictor:

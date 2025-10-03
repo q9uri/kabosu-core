@@ -9,10 +9,7 @@ from pathlib import Path
 from urllib.request import urlretrieve
 
 from tqdm.auto import tqdm
-
-
-DEFAULT_CACHE_DIR = join(os.path.expanduser("~"), ".cache", "marine")
-CACHE_DIR = os.environ.get("MARINE_CACHE_DIR", DEFAULT_CACHE_DIR)
+from kabosu_core.asseets import MARINE_PATH
 
 DEFAULT_VERSION = "v0.0.6-post1"
 MODEL_BASE_URL = "https://github.com/tsukumijima/marine-plus/releases/download/"
@@ -49,8 +46,8 @@ def retrieve_pretrained_model(version: str | None = None) -> Path:
     url = MODEL_BASE_URL + f"{version}/model.tar.gz"
 
     # NOTE: assuming that filename and extracted is the same
-    out_dir = Path(CACHE_DIR) / version
-    filename = Path(CACHE_DIR) / f"{version}/model.tar.gz"
+    out_dir = MARINE_PATH / version
+    filename = MARINE_PATH / f"{version}/model.tar.gz"
 
     # re-download models
     if out_dir.exists() and len(list(out_dir.glob("*.pth"))) == 0:
