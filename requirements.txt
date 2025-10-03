@@ -32,10 +32,20 @@ rich
 plac
 streamlit==1.17.0
 spacy
+# fugashi only use ko-dic
+# ipadic jumandic unidiclite use vibrato version
 #fugashi
-ipadic==1.0.0
-jumandic==1.0.0
-fugashi[unidic-lite]
+#ipadic==1.0.0
+#jumandic==1.0.0
+#unidic-lite
 sudachidict_full
-unidic-lite
 #================================================================
+# for marine-plus
+importlib_resource
+# numpy<2
+# torch 
+hydra-core
+hydra_colorlog >= 1.1.
+tqdm
+joblib
+pykakasi 

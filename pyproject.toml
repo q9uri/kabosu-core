@@ -10,12 +10,9 @@ dependencies = [
     "fugashi[unidic-lite]>=1.5.1",
     "google-re2>=1.1.20250805",
     "huggingface-hub>=0.35.0",
-    "ipadic==1.0.0",
     "jaconv>=0.4.0",
     "jpreprocess>=0.1.5",
-    "jumandic==1.0.0",
     "kanalizer>=0.1.1",
-    "marine-plus>=0.0.6.post3",
     "numpy<2",
     "nvidia-ml-py>=13.580.82",
     "onnxruntime>=1.22.1",
@@ -32,7 +29,6 @@ dependencies = [
     "sudachipy>=0.6.10",
     "torch>=2.8.0",
     "transformers==4.53.0",
-    "unidic-lite>=1.0.8",
 ]
 
 [dependency-groups]
