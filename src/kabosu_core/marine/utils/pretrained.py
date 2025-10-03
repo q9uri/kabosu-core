@@ -11,8 +11,8 @@ from urllib.request import urlretrieve
 from tqdm.auto import tqdm
 from kabosu_core.asseets import MARINE_PATH
 
-DEFAULT_VERSION = "v0.0.6-post1"
-MODEL_BASE_URL = "https://github.com/tsukumijima/marine-plus/releases/download/"
+DEFAULT_VERSION = "v0.4.0"
+MODEL_BASE_URL = "https://github.com/q9uri/kabosu-core/releases/download/"
 
 
 # https://github.com/tqdm/tqdm#hooks-and-callbacks
