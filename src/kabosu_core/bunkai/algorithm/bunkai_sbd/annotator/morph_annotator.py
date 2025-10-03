@@ -2,6 +2,7 @@
 from typing import List
 
 from janome.tokenizer import Token, Tokenizer
+from kabosu_core import mecab
 
 from kabosu_core.bunkai.base.annotation import Annotations, SpanAnnotation, TokenResult
 from kabosu_core.bunkai.base.annotator import Annotator
@@ -10,21 +11,21 @@ from kabosu_core.bunkai.base.annotator import Annotator
 class MorphAnnotatorJanome(Annotator):
     def __init__(self):
         super().__init__(rule_name=self.__class__.__name__)
-        self.tokenizer = Tokenizer()
+        self.tokenizer = mecab.Tagger(dictionary="ipa-dic")
 
     def __generate(self, text: str) -> List[SpanAnnotation]:
-        tokenizer_result = self.tokenizer.tokenize(text)
+        tokenizer_result = self.tokenizer(text)
         span_ann = []
         __start_index = 0
         for t_obj in tokenizer_result:
-            assert isinstance(t_obj, Token)
-            __pos = t_obj.part_of_speech.split(",")
-            __length = len(t_obj.surface)
+            assert isinstance( t_obj , list )
+            __pos = t_obj[1:4]
+            __length = len(t_obj[0])
             token = TokenResult(
                 node_obj=t_obj,
                 tuple_pos=__pos,
-                word_stem=t_obj.base_form,
-                word_surface=t_obj.surface,
+                word_stem=t_obj[7],
+                word_surface=t_obj[0],
             )
             span_ann.append(
                 SpanAnnotation(

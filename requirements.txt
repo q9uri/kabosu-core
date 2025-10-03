@@ -59,3 +59,20 @@ pykakasi
 #skl2onnx = "^1.13" #for train
 #packaging = "^21.3"
 #onnxruntime = "^1.12.1"
+#================================================================
+# for bunkai
+dataclasses-json 
+#janome 
+seqeval 
+spans 
+#tqdm 
+#numpy 
+#torch 
+#transformers 
+more_itertools
+emoji
+emojis
+toml 
+requests 
+regex
+#seqeval #for train

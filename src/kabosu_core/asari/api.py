@@ -3,11 +3,11 @@ import pathlib
 import onnxruntime as rt
 
 from kabosu_core.asari.preprocess import tokenize
-
+from kabosu_core.asseets import ASARI_MODEL_PATH
 
 class Sonar:
     def __init__(self):
-        pipeline_file = pathlib.Path(__file__).parent / "data" / "pipeline.onnx"
+        pipeline_file = ASARI_MODEL_PATH
         self.sess = rt.InferenceSession(str(pipeline_file))
         self.input_name = self.sess.get_inputs()[0].name
         self.prob_name = self.sess.get_outputs()[1].name

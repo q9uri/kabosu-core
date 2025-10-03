@@ -66,8 +66,8 @@ def main(args):
 
 
 if __name__ == "__main__":
-    DATA_DIR = pathlib.Path(__file__).parent.parent / "data"
-    SAVE_DIR = pathlib.Path(__file__).parent / "data"
+    DATA_DIR = pathlib.Path("./data")
+    SAVE_DIR = pathlib.Path("/train_out/asari")
     parser = argparse.ArgumentParser(description="Training a classifier")
     parser.add_argument("--dataset", default=DATA_DIR / "dataset.jsonl", help="dataset")
     parser.add_argument("--pipeline", default=SAVE_DIR / "pipeline.onnx", help="pipeline file")

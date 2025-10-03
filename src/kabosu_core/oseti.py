@@ -1,23 +1,48 @@
 # -*- coding: utf-8 -*-
+
+# MIT License
+
+# Copyright (c) 2019 IKEGAMI Yukino
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+#ver 0.4.3.1
 import json
 
 from pathlib import Path
 
 from kabosu_core import mecab as MeCaB
 from kabosu_core.bunkai import Bunkai
+from kabosu_core.asseets import OSETI_DIR
 
 NEGATION = ('ない', 'ず', 'ぬ')
 PARELLEL_PARTICLES = ('か', 'と', 'に', 'も', 'や', 'とか', 'だの', 'なり', 'やら')
-DICT_DIR = Path(__file__).parent / 'dic'
+
 
 
 class Analyzer(object):
 
     def __init__(self, mecab_args='', word_dict={}, wago_dict={}):
-        self.word_dict = json.load(open(DICT_DIR / 'pn_noun.json'))
+        self.word_dict = json.load(open(OSETI_DIR / 'pn_noun.json'))
         if word_dict:
             self.word_dict.update(word_dict)
-        self.wago_dict = json.load(open(DICT_DIR / 'pn_wago.json'))
+        self.wago_dict = json.load(open(OSETI_DIR / 'pn_wago.json'))
         if wago_dict:
             self.wago_dict.update(wago_dict)
  
