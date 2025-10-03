@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from kabosu_core import mecab as MeCaB
-from bunkai import Bunkai
+from kabosu_core.bunkai import Bunkai
 
 NEGATION = ('ない', 'ず', 'ぬ')
 PARELLEL_PARTICLES = ('か', 'と', 'に', 'も', 'や', 'とか', 'だの', 'なり', 'やら')

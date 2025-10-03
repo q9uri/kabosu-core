@@ -8,7 +8,7 @@ from unittest.mock import MagicMock, Mock, patch
 import numpy
 import torch
 
-import kabosu_core import bunkai
+from kabosu_core import bunkai
 import kabosu_core.bunkai.algorithm.lbd.predict
 from kabosu_core.bunkai.algorithm.bunkai_sbd.annotator import MorphAnnotatorJanome
 from kabosu_core.bunkai.base.annotation import Annotations, SpanAnnotation
