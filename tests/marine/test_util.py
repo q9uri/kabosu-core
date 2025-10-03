@@ -32,12 +32,12 @@ from kabosu_core.marine.utils.util import (
 )
 
 
-BASE_DIR = Path(importlib_resources.files("marine"))
+BASE_DIR = Path(importlib_resources.files("kabosu_core"))
 
 
 @pytest.fixture
 def default_config() -> DictConfig:
-    config_path = BASE_DIR / "bin" / "conf" / "train" / "config.yaml"
+    config_path = BASE_DIR / "marine" / "bin" / "conf" / "train" / "config.yaml"
 
     # initialize config
     with initialize_config_dir(config_dir=str(config_path.parent), version_base="1.1"):
@@ -49,20 +49,13 @@ def default_config() -> DictConfig:
 
 @pytest.fixture
 def default_vocab_path() -> Path:
-    return (
-        BASE_DIR.parent
-        / "recipe"
-        / "common"
-        / "database"
-        / "20220912_jsut_vocab_min_2"
-        / "vocab.pkl"
-    )
+    return Path("./recipe/common/database/20220912_jsut_vocab_min_2/vocab.pkl")
 
 
 @pytest.fixture
 def test_log_sample() -> dict:
     logs = None
-    sample_path = BASE_DIR.parent / "tests" / "samples" / "test_log_sample.json"
+    sample_path = "./tests/marine/samples/test_log_sample.json"
     with open(sample_path, encoding="utf-8") as file:
         logs = json.load(file)
     return logs

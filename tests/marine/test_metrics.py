@@ -12,7 +12,6 @@ from kabosu_core.marine.utils.metrics import MultiTaskMetrics, SentenceLevelAccu
 
 
 logger = getLogger("test")
-BASE_DIR = Path(str(importlib_resources.files("marine")))
 
 
 @pytest.fixture
@@ -64,7 +63,7 @@ def full_multi_task_metrics() -> MultiTaskMetrics:
 @pytest.fixture
 def test_log_sample() -> dict[str, Any]:
     logs = None
-    sample_path = BASE_DIR.parent / "tests" / "samples" / "test_log_sample.json"
+    sample_path = "./tests/marine/samples/test_log_sample.json"
     with open(sample_path, encoding="utf-8") as file:
         logs = json.load(file)
     return logs
