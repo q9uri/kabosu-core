@@ -6,7 +6,9 @@ import os
 import typing
 import unicodedata
 
-from janome.tokenizer import Token, Tokenizer
+#from janome.tokenizer import Token, Tokenizer
+from kabosu_core import mecab
+
 from transformers.models.bert.tokenization_bert import BertTokenizer, WordpieceTokenizer, load_vocab
 from transformers.utils.hub import cached_file
 
@@ -40,7 +42,7 @@ class JanomeTokenizer(object):
         self.do_lower_case = do_lower_case
         self.never_split = never_split if never_split is not None else []
         self.normalize_text = normalize_text
-        self.janome_tokenizer = Tokenizer()
+        self.janome_tokenizer = mecab.Tagger(dictionary="ipa-dic")
 
     def tokenize(self, text: str, *, never_split=None, **kwargs):
         """Tokenizes a piece of text."""
@@ -48,12 +50,12 @@ class JanomeTokenizer(object):
             text = unicodedata.normalize("NFKC", text)
 
         never_split = self.never_split + (never_split if never_split is not None else [])
-        tokens = self.janome_tokenizer.tokenize(text)
+        tokens = self.janome_tokenizer(text)
         __tokens = []
         last_index = 0
         for t in tokens:
-            assert isinstance(t, Token)
-            token = t.surface
+            assert isinstance(t, list)
+            token = t[0]
             token_start = text.index(token, last_index)
             if last_index != token_start:
                 __tokens.append(text[last_index:token_start])
@@ -149,7 +151,7 @@ class JanomeSubwordsTokenizer(BertTokenizer):
             self.vocab = load_vocab(cached_file(vocab_file, "vocab.txt"))
 
         # add new vocab
-        self.add_tokens([" ", bunkai.constant.METACHAR_LINE_BREAK])
+        self.add_tokens([" ", kabosu_core.bunkai.constant.METACHAR_LINE_BREAK])
 
         self.ids_to_tokens = collections.OrderedDict([(ids, tok) for tok, ids in self.vocab.items()])
 

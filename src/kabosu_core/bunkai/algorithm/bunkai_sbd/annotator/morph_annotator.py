@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from typing import List
 
-from janome.tokenizer import Token, Tokenizer
+#from janome.tokenizer import Token, Tokenizer
 from kabosu_core import mecab
 
 from kabosu_core.bunkai.base.annotation import Annotations, SpanAnnotation, TokenResult

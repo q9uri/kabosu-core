@@ -76,3 +76,7 @@ toml
 requests 
 regex
 #seqeval #for train
+#================================================================
+# for asapy
+ginza
+ja_ginza
