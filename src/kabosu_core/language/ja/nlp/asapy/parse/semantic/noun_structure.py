@@ -1,5 +1,5 @@
-from kabosu_core.asapy.result import Chunk
-from kabosu_core.asapy.load import LoadJson
+from kabosu_core.language.ja.nlp.asapy.result import Chunk
+from kabosu_core.language.ja.nlp.asapy.load import LoadJson
 
 
 class NounStructure():

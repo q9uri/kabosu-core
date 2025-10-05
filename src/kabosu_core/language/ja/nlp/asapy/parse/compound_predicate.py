@@ -1,5 +1,5 @@
-from kabosu_core.asapy.result import Result
-from kabosu_core.asapy.result import Morph
+from kabosu_core.language.ja.nlp.asapy.result import Result
+from kabosu_core.language.ja.nlp.asapy.result import Morph
 
 # 名詞複合述語を見つけ、その類語と同じ語義、意味役割を付与する
 #

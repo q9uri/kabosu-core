@@ -1,5 +1,5 @@
-from kabosu_core.asapy.result import Result
-from kabosu_core.asapy.result import Morph
+from kabosu_core.language.ja.nlp.asapy.result import Result
+from kabosu_core.language.ja.nlp.asapy.result import Morph
 from functools import reduce
 
 # 慣用句同定のためのクラス

@@ -1,6 +1,6 @@
-from kabosu_core.asapy.load import LoadJson
-from kabosu_core.asapy.parse import Parse
-from kabosu_core.asapy.output import Output
+from kabosu_core.language.ja.nlp.asapy.load import LoadJson
+from kabosu_core.language.ja.nlp.asapy.parse import Parse
+from kabosu_core.language.ja.nlp.asapy.output import Output
 
 class ASA():
 

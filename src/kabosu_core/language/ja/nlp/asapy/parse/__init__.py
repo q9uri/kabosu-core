@@ -1,11 +1,11 @@
-from kabosu_core.asapy.parse.analyzer import Analyzer
-from kabosu_core.asapy.parse.analyzer.Basic import Basic
-from kabosu_core.asapy.parse.feature import Tagger
-from kabosu_core.asapy.parse.idiom import Hiuchi
-from kabosu_core.asapy.parse.semantic.sematter import Sematter
-from kabosu_core.asapy.parse.compound_predicate import Synonym
-from kabosu_core.asapy.result import Result
-from kabosu_core.asapy.load import LoadJson
+from kabosu_core.language.ja.nlp.asapy.parse.analyzer import Analyzer
+from kabosu_core.language.ja.nlp.asapy.parse.analyzer.Basic import Basic
+from kabosu_core.language.ja.nlp.asapy.parse.feature import Tagger
+from kabosu_core.language.ja.nlp.asapy.parse.idiom import Hiuchi
+from kabosu_core.language.ja.nlp.asapy.parse.semantic.sematter import Sematter
+from kabosu_core.language.ja.nlp.asapy.parse.compound_predicate import Synonym
+from kabosu_core.language.ja.nlp.asapy.result import Result
+from kabosu_core.language.ja.nlp.asapy.load import LoadJson
 
 
 class Parse():

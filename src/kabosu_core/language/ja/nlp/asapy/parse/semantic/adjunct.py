@@ -1,7 +1,7 @@
 #
 # 追加詞を付与するためのクラス
 #
-from kabosu_core.asapy.result import Chunk
+from kabosu_core.language.ja.nlp.asapy.result import Chunk
 
 
 class Adjunct():

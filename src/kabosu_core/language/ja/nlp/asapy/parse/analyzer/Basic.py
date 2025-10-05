@@ -1,7 +1,7 @@
 # cabochaの解析結果より文節間の関係や，語義付与に必要な動詞や格助詞などの情報の付与するクラス
 import re
-from kabosu_core.asapy.result import Chunk
-from kabosu_core.asapy.result import Result
+from kabosu_core.language.ja.nlp.asapy.result import Chunk
+from kabosu_core.language.ja.nlp.asapy.result import Result
 
 
 class Basic():

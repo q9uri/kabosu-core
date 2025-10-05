@@ -1,6 +1,6 @@
-from kabosu_core.asapy.result import Result
-from kabosu_core.asapy.result import Chunk
-from kabosu_core.asapy.result import Morph
+from kabosu_core.language.ja.nlp.asapy.result import Result
+from kabosu_core.language.ja.nlp.asapy.result import Chunk
+from kabosu_core.language.ja.nlp.asapy.result import Morph
 
 
 # 解析結果を出力するためのクラス
