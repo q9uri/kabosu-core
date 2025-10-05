@@ -6,9 +6,11 @@ import kanalizer
 from kabosu_core.yomikata.dbert import dBert
 from kabosu_core.yomikata.dictionary import Dictionary
 
-_global_reader = dBert()
-_global_dictreader = Dictionary()
-
+try:
+    _global_reader = dBert()
+    _global_dictreader = Dictionary()
+except:
+    print("please download yomikata model")
 
 
 from kabosu_core.pyopenjtalk.normalizer.itaiji import normalize_itaiji
