@@ -30,7 +30,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 from __future__ import unicode_literals
-from kabosu_core.mlask import MLAsk
+from kabosu_core.language.ja.nlp.mlask import MLAsk
 
 mla = MLAsk()
 

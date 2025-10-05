@@ -23,7 +23,7 @@
 import unittest
 from pprint import pprint
 
-from kabosu_core.asari.api import Sonar
+from kabosu_core.language.ja.nlp.asari.api import Sonar
 
 
 class TestAPI(unittest.TestCase):
