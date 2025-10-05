@@ -22,11 +22,11 @@
 #> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #/bAmFru).
 
-from kabosu_core.pyopenjtalk.njd.hougen import convert_to_keihan_acc
-from kabosu_core.pyopenjtalk.njd.talk_styles import convert_to_babytalk, convert_to_dakuten
+from kabosu_core.language.ja.g2p.pyopenjtalk.njd.hougen import convert_to_keihan_acc
+from kabosu_core.language.ja.g2p.pyopenjtalk.njd.talk_styles import convert_to_babytalk, convert_to_dakuten
 from typing import Union
 from kabosu_core.types import NjdObject
-from kabosu_core.pyopenjtalk.njd.utils import (
+from kabosu_core.language.ja.g2p.pyopenjtalk.njd.utils import (
     merge_njd_marine_features,
     modify_acc_after_chaining,
     modify_kanji_yomi,

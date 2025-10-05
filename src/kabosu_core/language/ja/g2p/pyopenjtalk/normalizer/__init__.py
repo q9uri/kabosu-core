@@ -13,7 +13,7 @@ except:
     print("please download yomikata model")
 
 
-from kabosu_core.pyopenjtalk.normalizer.itaiji import normalize_itaiji
+from kabosu_core.language.ja.g2p.pyopenjtalk.normalizer.itaiji import normalize_itaiji
 
 _FURIGANA_PATTERN = re.compile("{.+/.+}")
 _ALPHABET_PATTERN = re.compile("[a-z]+")
@@ -78,7 +78,7 @@ def normalize_text(
             text = text.replace(word, yomi)
     
     if use_ko2ja:
-        from kabosu_core.pyopenjtalk.normalizer.korean import ko2ja
+        from kabosu_core.language.ja.g2p.pyopenjtalk.normalizer.korean import ko2ja
         text = ko2ja(text)
         
     return text

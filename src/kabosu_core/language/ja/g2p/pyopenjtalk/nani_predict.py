@@ -3,7 +3,7 @@ from typing import Union
 
 import numpy as np
 
-from kabosu_core.pyopenjtalk import NjdObject
+from kabosu_core.language.ja.g2p.pyopenjtalk import NjdObject
 from kabosu_core.asseets import YOMI_MODEL_DIR
 
 X_COLS = ["pos", "pos_group1", "pos_group2", "pron", "ctype", "cform"]

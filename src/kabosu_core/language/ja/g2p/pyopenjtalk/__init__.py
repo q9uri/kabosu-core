@@ -1,7 +1,7 @@
 import jpreprocess 
 import re
 
-from kabosu_core.pyopenjtalk.normalizer import (
+from kabosu_core.language.ja.g2p.pyopenjtalk.normalizer import (
     dictreader_furigana,
     reader_furigana,
     kanalizer_convert,
@@ -9,10 +9,10 @@ from kabosu_core.pyopenjtalk.normalizer import (
     normalize_text
 )
 #load model
-from kabosu_core.pyopenjtalk import normalizer
+from kabosu_core.language.ja.g2p.pyopenjtalk import normalizer
 from typing import Union, TypeVar
 from kabosu_core.types import NjdObject
-from kabosu_core.pyopenjtalk.njd import apply_postprocessing
+from kabosu_core.language.ja.g2p.pyopenjtalk.njd import apply_postprocessing
 
 #----------------------------------------------------
 #

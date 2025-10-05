@@ -23,7 +23,7 @@
 # code from kdrkdrkdr/g2pk3
 
 
-from kabosu_core.g2pk4.g2pk4 import G2p
+from kabosu_core.language.ko.g2p import G2p
 
 JP2KO_LIST = [
     # gemini君（ちゃん？）にコメントを書いてもらったもの
