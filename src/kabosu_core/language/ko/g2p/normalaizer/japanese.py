@@ -22,7 +22,7 @@
 
 # code from kdrkdrkdr/g2pk3
 
-from kabosu_core.g2pk4.korean import join_jamos
+from kabosu_core.language.ko.g2p.korean import join_jamos
 import re
 import re2
 import kabosu_core

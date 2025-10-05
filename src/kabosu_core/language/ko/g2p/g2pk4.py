@@ -9,7 +9,7 @@ from nltk.corpus.reader.cmudict import CMUDictCorpusReader
 
 from jamo import h2j, j2hcj
 #from nltk.corpus import cmudict
-from kabosu_core import mecab as MeCab
+from kabosu_core import vibrato as MeCab
 
 # For further info. about cmu dict, consult http://www.speech.cs.cmu.edu/cgi-bin/cmudict.
 # try:
@@ -18,16 +18,16 @@ from kabosu_core import mecab as MeCab
 #    nltk.download('cmudict')
 # included cmudict
 
-from kabosu_core.g2pk4.special import jyeo, ye, consonant_ui, josa_ui, vowel_ui, jamo, rieulgiyeok, rieulbieub, verb_nieun, balb, palatalize, modifying_rieul
-from kabosu_core.g2pk4.regular import link1, link2, link3, link4
-from kabosu_core.g2pk4.utils import annotate, compose, group, gloss, parse_table, get_rule_id2text
-from kabosu_core.g2pk4.normalaizer.english import convert_eng
-from kabosu_core.g2pk4.normalaizer.numerals import convert_num
+from kabosu_core.language.ko.g2p.special import jyeo, ye, consonant_ui, josa_ui, vowel_ui, jamo, rieulgiyeok, rieulbieub, verb_nieun, balb, palatalize, modifying_rieul
+from kabosu_core.language.ko.g2p.regular import link1, link2, link3, link4
+from kabosu_core.language.ko.g2p.utils import annotate, compose, group, gloss, parse_table, get_rule_id2text
+from kabosu_core.language.ko.g2p.normalaizer.english import convert_eng
+from kabosu_core.language.ko.g2p.normalaizer.numerals import convert_num
 
 #==============================================================
 #added from kdrkdrkdr/g2pk3
-from kabosu_core.g2pk4.normalaizer.japanese import convert_jpn
-from kabosu_core.g2pk4.korean import join_jamos, split_syllables
+from kabosu_core.language.ko.g2p.normalaizer.japanese import convert_jpn
+from kabosu_core.language.ko.g2p.korean import join_jamos, split_syllables
 #=============================================================
 
 from kabosu_core.asseets import G2PK4_DICT_DIR, NLTK_DIR

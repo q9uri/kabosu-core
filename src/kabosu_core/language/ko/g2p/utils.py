@@ -1,7 +1,6 @@
 import re
 from jamo import h2j, j2h
-import os
-from pathlib import Path
+
 from kabosu_core.asseets import G2PK4_DICT_DIR
 ############## English ##############
 def adjust(arpabets):
