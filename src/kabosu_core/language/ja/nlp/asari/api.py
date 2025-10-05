@@ -1,8 +1,7 @@
-import pathlib
 
 import onnxruntime as rt
 
-from kabosu_core.asari.preprocess import tokenize
+from kabosu_core.language.ja.nlp.asari.preprocess import tokenize
 from kabosu_core.asseets import ASARI_MODEL_PATH
 
 class Sonar:

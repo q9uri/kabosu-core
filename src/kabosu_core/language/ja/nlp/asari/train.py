@@ -14,8 +14,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 
-from kabosu_core.asari.api import Sonar
-from kabosu_core.asari.preprocess import tokenize
+from kabosu_core.language.ja.nlp.asari.api import Sonar
+from kabosu_core.language.ja.nlp.asari.preprocess import tokenize
 
 
 def load_jsonl(filename):

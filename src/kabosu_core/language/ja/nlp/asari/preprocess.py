@@ -1,6 +1,6 @@
-from kabosu_core import mecab
+from kabosu_core import vibrato
 
-t = mecab.Tagger(dictionary="ipa-dic")
+t = vibrato.Tagger(dictionary="ipa-dic")
 
 
 def tokenize(text: str) -> str:
