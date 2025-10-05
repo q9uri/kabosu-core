@@ -18,12 +18,12 @@ from transformers import (
     Trainer,
     TrainingArguments,
 )
-from kabosu_core.yomikata.tokenization_bert_japanese import BertJapaneseTokenizer
+from kabosu_core.language.ja.g2p.yomikata.tokenization_bert_japanese import BertJapaneseTokenizer
 
-from kabosu_core.yomikata import utils
-from kabosu_core.yomikata.config import config, logger
-from kabosu_core.yomikata.reader import Reader
-from kabosu_core.yomikata.utils import LabelEncoder
+from kabosu_core.language.ja.g2p.yomikata import utils
+from kabosu_core.language.ja.g2p.yomikata.config import config, logger
+from kabosu_core.language.ja.g2p.yomikata.reader import Reader
+from kabosu_core.language.ja.g2p.yomikata.utils import LabelEncoder
 
 
 

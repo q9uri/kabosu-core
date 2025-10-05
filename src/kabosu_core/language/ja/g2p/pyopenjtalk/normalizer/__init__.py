@@ -3,8 +3,8 @@ import jaconv
 import re
 import kanalizer
 
-from kabosu_core.yomikata.dbert import dBert
-from kabosu_core.yomikata.dictionary import Dictionary
+from kabosu_core.language.ja.g2p.yomikata.dbert import dBert
+from kabosu_core.language.ja.g2p.yomikata.dictionary import Dictionary
 
 try:
     _global_reader = dBert()

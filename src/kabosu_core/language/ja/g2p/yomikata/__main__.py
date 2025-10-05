@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     import plac
 
-    from kabosu_core.yomikata.download.download import download_version
+    from kabosu_core.language.ja.g2p.yomikata.download.download import download_version
 
     commands = {
         "download": download_version,

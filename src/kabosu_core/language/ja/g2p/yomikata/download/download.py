@@ -27,7 +27,7 @@ from urllib.request import urlretrieve
 import requests
 from tqdm import tqdm
 
-from kabosu_core.yomikata.config import config, logger
+from kabosu_core.language.ja.g2p.yomikata.config import config, logger
 from kabosu_core.asseets import YOMIKATA_PATH
 
 # This is used to show progress when downloading.

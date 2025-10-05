@@ -11,9 +11,9 @@ from pathlib import Path
 import mlflow
 from datasets import load_dataset
 
-from kabosu_core.yomikata import utils
-from kabosu_core.yomikata.config import config, logger
-from kabosu_core.yomikata.dbert import dBert
+from kabosu_core.language.ja.g2p.yomikata import utils
+from kabosu_core.language.ja.g2p.yomikata.config import config, logger
+from kabosu_core.language.ja.g2p.yomikata.dbert import dBert
 
 # MLFlow model registry
 mlflow.set_tracking_uri("file://" + str(config.RUN_REGISTRY.absolute()))

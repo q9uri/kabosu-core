@@ -22,7 +22,7 @@ from typing import Any, Optional
 
 from transformers.tokenization_utils import PreTrainedTokenizer, _is_control, _is_punctuation, _is_whitespace
 from transformers.utils import is_sentencepiece_available, is_sudachi_projection_available, logging
-from kabosu_core import mecab
+from kabosu_core import vibrato
 
 if is_sentencepiece_available():
     import sentencepiece as spm
@@ -376,7 +376,7 @@ class MecabTokenizer:
 
         mecab_option = mecab_option or ""
 
-        self.mecab = mecab.Tagger(dictionary="unidic-lite")
+        self.mecab = vibrato.Tagger(dictionary="unidic-lite")
 
     def tokenize(self, text, never_split=None, **kwargs):
         """Tokenizes a piece of text."""

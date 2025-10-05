@@ -10,9 +10,9 @@ from chirptext import deko
 from speach import ttlig
 from speach.ttlig import RubyFrag, RubyToken
 
-from kabosu_core.yomikata import utils
-from kabosu_core.yomikata.config.config import ASCII_SPACE_TOKEN
-from kabosu_core.yomikata.reader import Reader
+from kabosu_core.language.ja.g2p.yomikata import utils
+from kabosu_core.language.ja.g2p.yomikata.config.config import ASCII_SPACE_TOKEN
+from kabosu_core.language.ja.g2p.yomikata.reader import Reader
 
 
 class Dictionary(Reader):
@@ -33,7 +33,7 @@ class Dictionary(Reader):
         """
 
         if tagger == "unidic":
-            from kabosu_core import mecab as MeCab
+            from kabosu_core import vibrato as MeCab
 
             self.tagger = MeCab.Tagger(dictionary="unidic-lite")
             self.token_to_surface = lambda word: word[0]
@@ -44,7 +44,7 @@ class Dictionary(Reader):
                 else word[0]
             )
         elif tagger == "ipadic":
-            from kabosu_core import mecab as MeCab
+            from kabosu_core import vibrato as MeCab
 
             self.tagger = MeCab.Tagger(dictionary="ipa-dic")
             self.token_to_surface = lambda word: word[0]
@@ -55,7 +55,7 @@ class Dictionary(Reader):
                 else jaconv.kata2hira(str(word[0]))
             )
         elif tagger == "juman":
-            from kabosu_core import mecab as MeCab
+            from kabosu_core import vibrato as MeCab
 
             self.tagger = MeCab.Tagger(dictionary="jumandic")
             self.token_to_surface = lambda word: word[0]
