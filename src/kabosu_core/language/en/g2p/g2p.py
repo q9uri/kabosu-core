@@ -14,7 +14,7 @@ import re
 
 import unicodedata
 from builtins import str as unicode
-from kabosu_core.g2p_en.expand import normalize_numbers
+from kabosu_core.language.en.g2p.expand import normalize_numbers
 
 try:
     nltk.data.find('taggers/averaged_perceptron_tagger_eng.zip')
