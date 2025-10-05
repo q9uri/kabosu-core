@@ -1,0 +1,41 @@
+convert.py licence
+MIT License
+
+Copyright (c) 2025 q9uri
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------------------
+
+source ime dictionary from
+https://9lab.jp/works/dic/th-dic/
+著作権、免責事項、再配布について
+
+本辞書は、上海アリス幻樂団創作物の二次創作に関するガイドラインの範囲内で自由に利用・複製・再配布することができます。
+作成者であるきゅー（Cue）は、本辞書に対して著作権の主張はしませんので、どうぞご自由にお使いください。
+
+本辞書を作成するにあたっては、所有作品の資料を参照するほか、後述のインターネット上の情報サイトや解説・評論系同人誌、他の方が作成されたIME辞書等も参考にさせていただいています。
+内容に関しては一通りの確認はしていますが、私が所有していない作品もあったり、公式に読み方が示されていないものもあるため、誤りや抜け、編集時のミス等があるかもしれません。
+
+そのため、本辞書の正確性を保証することはできません。
+使用に際しては自己責任でお願いいたします。
+本辞書を使用したことによって生じた如何なる事態に対しても、その一切の責任を負いかねますのでご了承ください。
+
+また、本辞書を元に改変し再配布する際は、引用元として本辞書を明示する必要はありませんが、タイトルやファイル名を変更する等して、利用者が混同をしないようご配慮いただけると幸いです。
+特に、オープン拡張辞書についてはGUID値を変更していただくようお願いいたします。詳細は、Microsoft社のオープン拡張辞書に関する資料をご参照願います。
