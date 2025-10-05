@@ -8,7 +8,7 @@ from typing import Any
 import torch
 from numpy.testing import assert_almost_equal, assert_equal
 
-from kabosu_core.marine.modules.crf_tagger import logsumexp, viterbi_decode
+from kabosu_core.language.ja.g2p.marine.modules.crf_tagger import logsumexp, viterbi_decode
 
 
 logger = getLogger("test")

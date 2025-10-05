@@ -10,19 +10,19 @@ from hydra.core.global_hydra import GlobalHydra
 from numpy.testing import assert_almost_equal
 from omegaconf import DictConfig
 
-from kabosu_core.marine.data.feature.feature_set import FeatureSet
-from kabosu_core.marine.data.feature.feature_table import (
+from kabosu_core.language.ja.g2p.marine.data.feature.feature_set import FeatureSet
+from kabosu_core.language.ja.g2p.marine.data.feature.feature_table import (
     is_adjective,
     is_noun,
     is_verb,
     parse_accent_con_type,
 )
-from kabosu_core.marine.models.util import init_model
-from kabosu_core.marine.utils.openjtalk_util import (
+from kabosu_core.language.ja.g2p.marine.models.util import init_model
+from kabosu_core.language.ja.g2p.marine.utils.openjtalk_util import (
     convert_njd_feature_to_marine_feature,
     convert_open_jtalk_format_label,
 )
-from kabosu_core.marine.utils.util import (
+from kabosu_core.language.ja.g2p.marine.utils.util import (
     _calculate_multiple_task_scores,
     _convert_ap_based_accent_to_mora_based_accent,
     convert_label_by_accent_representation_model,
