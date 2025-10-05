@@ -22,3 +22,5 @@ KO_DIC_DIR = VIBRATO_DIR / "ko-dic-mecab-2.1.1/system.dic.zst"
 ITAIJI_DIR = ASSETS_PATH / "pyopenjtalk/itaiji"
 YOMI_MODEL_DIR = ASSETS_PATH / "pyopenjtalk/yomi_model"
 G2PK4_DICT_DIR = ASSETS_PATH / "g2pk4"
+
+NLTK_DIR = ASSETS_PATH / "nltk"

@@ -146,6 +146,14 @@ def convert_eng(string, cmu):
     return string
 
 if __name__ == "__main__":
-    from nltk.corpus import cmudict
+    from nltk.corpus.util import LazyCorpusLoader
+    from nltk.corpus.reader.cmudict import CMUDictCorpusReader
+    from kabosu_core.asseets import NLTK_DIR
+
+    cmudict = LazyCorpusLoader(name="cmudict",
+                                reader_cls=CMUDictCorpusReader,
+                                nltk_data_subdir=NLTK_DIR,
+                                fileids=["cmudict"]
+                                )
     cmu = cmudict.dict()
     print(convert_eng("오늘 학교에서 밥을 먹고 집에 와서 game을 했다", cmu))

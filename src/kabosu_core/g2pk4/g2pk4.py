@@ -1,19 +1,22 @@
 # -*- coding: utf-8 -*-
 
 
-import os, re
-from pathlib import Path
+import re
 
-import nltk
+
+from nltk.corpus.util import LazyCorpusLoader
+from nltk.corpus.reader.cmudict import CMUDictCorpusReader
+
 from jamo import h2j, j2hcj
-from nltk.corpus import cmudict
+#from nltk.corpus import cmudict
 from kabosu_core import mecab as MeCab
 
 # For further info. about cmu dict, consult http://www.speech.cs.cmu.edu/cgi-bin/cmudict.
-try:
-    nltk.data.find('corpora/cmudict.zip')
-except LookupError:
-    nltk.download('cmudict')
+# try:
+#    nltk.data.find('corpora/cmudict.zip')
+# except LookupError:
+#    nltk.download('cmudict')
+# included cmudict
 
 from kabosu_core.g2pk4.special import jyeo, ye, consonant_ui, josa_ui, vowel_ui, jamo, rieulgiyeok, rieulbieub, verb_nieun, balb, palatalize, modifying_rieul
 from kabosu_core.g2pk4.regular import link1, link2, link3, link4
@@ -27,7 +30,7 @@ from kabosu_core.g2pk4.normalaizer.japanese import convert_jpn
 from kabosu_core.g2pk4.korean import join_jamos, split_syllables
 #=============================================================
 
-from kabosu_core.asseets import G2PK4_DICT_DIR
+from kabosu_core.asseets import G2PK4_DICT_DIR, NLTK_DIR
 
 
 class G2p(object):
@@ -36,6 +39,13 @@ class G2p(object):
         self.vibrato = MeCab.Tagger()
         self.table = parse_table()
 
+
+
+        cmudict = LazyCorpusLoader(name="cmudict",
+                                    reader_cls=CMUDictCorpusReader,
+                                    nltk_data_subdir=NLTK_DIR,
+                                    fileids=["cmudict"]
+                                    )
         self.cmu = cmudict.dict() # for English
 
         self.rule2text = get_rule_id2text() # for comments of main rules
