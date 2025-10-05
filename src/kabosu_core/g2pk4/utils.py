@@ -2,6 +2,7 @@ import re
 from jamo import h2j, j2h
 import os
 from pathlib import Path
+from kabosu_core.asseets import G2PK4_DICT_DIR
 ############## English ##############
 def adjust(arpabets):
     '''Modify arpabets so that it fits our processes'''
@@ -135,7 +136,7 @@ def reconstruct(string):
 ############## Hangul ##############
 def parse_table():
     '''Parse the main rule table'''
-    data = Path(os.path.dirname(os.path.abspath(__file__)) + '/dict/table.csv').read_text(encoding='utf8')
+    data = (G2PK4_DICT_DIR / 'table.csv').read_text(encoding='utf8')
 
     lines = data.splitlines()
     onsets = lines[0].split(",")
@@ -242,7 +243,7 @@ def group(inp):
 
 def _get_examples():
     '''For internal use'''
-    text = open('rules.txt', 'r', encoding='utf8').read().splitlines()
+    text = (G2PK4_DICT_DIR / 'rules.txt').read_text(encoding="utf8").splitlines()
     examples = []
     for line in text:
         if line.startswith("->"):
@@ -258,7 +259,7 @@ def _get_examples():
 ############## Utilities ##############
 def get_rule_id2text():
     '''for verbose=True'''
-    rules = Path(os.path.dirname(os.path.abspath(__file__)) + '/dict/rules.txt').read_text(encoding='utf8')
+    rules = (G2PK4_DICT_DIR / 'rules.txt').read_text(encoding='utf8')
     rules = rules.strip().split("\n\n")
     rule_id2text = dict()
     for rule in rules:

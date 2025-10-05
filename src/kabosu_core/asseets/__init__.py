@@ -19,3 +19,4 @@ JUMANDIC_DIR = VIBRATO_DIR / "jumandic-mecab-7-0/system.dic.zst"
 
 ITAIJI_DIR = ASSETS_PATH / "pyopenjtalk/itaiji"
 YOMI_MODEL_DIR = ASSETS_PATH / "pyopenjtalk/yomi_model"
+G2PK4_DICT_DIR = ASSETS_PATH / "g2pk4"

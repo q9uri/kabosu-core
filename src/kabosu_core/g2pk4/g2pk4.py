@@ -27,7 +27,7 @@ from kabosu_core.g2pk4.normalaizer.japanese import convert_jpn
 from kabosu_core.g2pk4.korean import join_jamos, split_syllables
 #=============================================================
 
-
+from kabosu_core.asseets import G2PK4_DICT_DIR
 
 
 class G2p(object):
@@ -39,7 +39,7 @@ class G2p(object):
         self.cmu = cmudict.dict() # for English
 
         self.rule2text = get_rule_id2text() # for comments of main rules
-        self.idioms_path = Path(os.path.dirname(os.path.abspath(__file__)), "dict/idioms.txt")
+        self.idioms_path = (G2PK4_DICT_DIR / "idioms.txt")
 
     def load_module_func(self, module_name):
         tmp = __import__(module_name, fromlist=[module_name])
