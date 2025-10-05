@@ -81,10 +81,9 @@ ja_ginza
 
 # for g2pk4
 google-re2
-jamo
 nltk
 # for g2p_en
-numpy<2
-nltk
+#numpy<2
+#nltk
 inflect
 distance
