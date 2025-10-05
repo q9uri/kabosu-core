@@ -8,7 +8,8 @@ from kabosu_core.pyopenjtalk.normalizer import (
     normalize_itaiji,
     normalize_text
 )
-
+#load model
+from kabosu_core.pyopenjtalk import normalizer
 from typing import Union, TypeVar
 from kabosu_core.types import NjdObject
 from kabosu_core.pyopenjtalk.njd import apply_postprocessing
