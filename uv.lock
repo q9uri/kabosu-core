@@ -815,6 +815,12 @@ wheels = [
 ]
 
 [[package]]
+name = "distance"
+version = "0.1.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5c/1a/883e47df323437aefa0d0a92ccfb38895d9416bd0b56262c2e46a47767b8/Distance-0.1.3.tar.gz", hash = "sha256:60807584f5b6003f5c521aa73f39f51f631de3be5cccc5a1d67166fcbf0d4551", size = 180271, upload-time = "2013-11-21T00:14:34.152Z" }
+
+[[package]]
 name = "docstr-coverage"
 version = "2.3.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1314,6 +1320,19 @@ wheels = [
 ]
 
 [[package]]
+name = "inflect"
+version = "7.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "more-itertools" },
+    { name = "typeguard" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/78/c6/943357d44a21fd995723d07ccaddd78023eace03c1846049a2645d4324a3/inflect-7.5.0.tar.gz", hash = "sha256:faf19801c3742ed5a05a8ce388e0d8fe1a07f8d095c82201eb904f5d27ad571f", size = 73751, upload-time = "2024-12-28T17:11:18.897Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8a/eb/427ed2b20a38a4ee29f24dbe4ae2dafab198674fe9a85e3d6adf9e5f5f41/inflect-7.5.0-py3-none-any.whl", hash = "sha256:2aea70e5e70c35d8350b8097396ec155ffd68def678c7ff97f51aa69c1d92344", size = 35197, upload-time = "2024-12-28T17:11:15.931Z" },
+]
+
+[[package]]
 name = "iniconfig"
 version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1470,6 +1489,7 @@ dependencies = [
     { name = "bunkai" },
     { name = "dataclasses-json" },
     { name = "datasets" },
+    { name = "distance" },
     { name = "emoji" },
     { name = "emojis" },
     { name = "ginza" },
@@ -1477,13 +1497,16 @@ dependencies = [
     { name = "huggingface-hub" },
     { name = "hydra-colorlog" },
     { name = "hydra-core" },
+    { name = "inflect" },
     { name = "ja-ginza" },
     { name = "jaconv" },
+    { name = "jamo" },
     { name = "joblib" },
     { name = "jpreprocess" },
     { name = "kanalizer" },
     { name = "marine-plus" },
     { name = "more-itertools" },
+    { name = "nltk" },
     { name = "numpy" },
     { name = "nvidia-ml-py" },
     { name = "onnxruntime" },
@@ -1528,17 +1551,13 @@ dev = [
     { name = "tensorboard" },
     { name = "torchmetrics" },
 ]
-ko = [
-    { name = "google-re2" },
-    { name = "jamo" },
-    { name = "nltk" },
-]
 
 [package.metadata]
 requires-dist = [
     { name = "bunkai", specifier = ">=1.5.7" },
     { name = "dataclasses-json", specifier = ">=0.6.7" },
     { name = "datasets", specifier = ">=4.1.0" },
+    { name = "distance", specifier = ">=0.1.3" },
     { name = "emoji", specifier = ">=2.15.0" },
     { name = "emojis", specifier = ">=0.7.0" },
     { name = "ginza", specifier = ">=5.2.0" },
@@ -1546,13 +1565,16 @@ requires-dist = [
     { name = "huggingface-hub", specifier = ">=0.35.0" },
     { name = "hydra-colorlog", specifier = ">=1.2.0" },
     { name = "hydra-core", specifier = ">=1.3.2" },
+    { name = "inflect", specifier = ">=7.5.0" },
     { name = "ja-ginza", specifier = ">=5.2.0" },
     { name = "jaconv", specifier = ">=0.4.0" },
+    { name = "jamo", specifier = ">=0.4.1" },
     { name = "joblib", specifier = ">=1.5.2" },
     { name = "jpreprocess", specifier = ">=0.1.5" },
     { name = "kanalizer", specifier = ">=0.1.1" },
     { name = "marine-plus", specifier = ">=0.0.6.post3" },
     { name = "more-itertools", specifier = ">=10.8.0" },
+    { name = "nltk", specifier = ">=3.9.2" },
     { name = "numpy", specifier = "<2" },
     { name = "nvidia-ml-py", specifier = ">=13.580.82" },
     { name = "onnxruntime", specifier = ">=1.22.1" },
@@ -1596,11 +1618,6 @@ dev = [
     { name = "taskipy", specifier = ">=1.14.1" },
     { name = "tensorboard", specifier = ">=2.20.0" },
     { name = "torchmetrics", specifier = ">=1.8.2" },
-]
-ko = [
-    { name = "google-re2", specifier = ">=1.1.20250805" },
-    { name = "jamo", specifier = ">=0.4.1" },
-    { name = "nltk", specifier = ">=3.9.1" },
 ]
 
 [[package]]
@@ -4420,6 +4437,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d0/66/b1eb52839f563623d185f0927eb3530ee4d5ffe9d377cdaf5346b306689e/triton-3.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:31c1d84a5c0ec2c0f8e8a072d7fd150cab84a9c239eaddc6706c081bfae4eb04", size = 155560068, upload-time = "2025-07-30T19:58:37.081Z" },
     { url = "https://files.pythonhosted.org/packages/30/7b/0a685684ed5322d2af0bddefed7906674f67974aa88b0fae6e82e3b766f6/triton-3.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:00be2964616f4c619193cb0d1b29a99bd4b001d7dc333816073f92cf2a8ccdeb", size = 155569223, upload-time = "2025-07-30T19:58:44.017Z" },
     { url = "https://files.pythonhosted.org/packages/20/63/8cb444ad5cdb25d999b7d647abac25af0ee37d292afc009940c05b82dda0/triton-3.4.0-cp313-cp313t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:7936b18a3499ed62059414d7df563e6c163c5e16c3773678a3ee3d417865035d", size = 155659780, upload-time = "2025-07-30T19:58:51.171Z" },
+]
+
+[[package]]
+name = "typeguard"
+version = "4.4.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c7/68/71c1a15b5f65f40e91b65da23b8224dad41349894535a97f63a52e462196/typeguard-4.4.4.tar.gz", hash = "sha256:3a7fd2dffb705d4d0efaed4306a704c89b9dee850b688f060a8b1615a79e5f74", size = 75203, upload-time = "2025-06-18T09:56:07.624Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1b/a9/e3aee762739c1d7528da1c3e06d518503f8b6c439c35549b53735ba52ead/typeguard-4.4.4-py3-none-any.whl", hash = "sha256:b5f562281b6bfa1f5492470464730ef001646128b180769880468bd84b68b09e", size = 34874, upload-time = "2025-06-18T09:56:05.999Z" },
 ]
 
 [[package]]
