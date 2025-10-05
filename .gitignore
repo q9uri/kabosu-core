@@ -9,5 +9,5 @@ wheels/
 # Virtual environments
 .venv
 
-src/kabosu_core/logs
+src/kabosu_core/language/ja/g2p/logs
 unuse

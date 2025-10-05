@@ -27,7 +27,7 @@ import json
 
 
 from kabosu_core import vibrato as MeCaB
-from kabosu_core.bunkai import Bunkai
+from kabosu_core.language.ja.nlp.bunkai import Bunkai
 from kabosu_core.asseets import OSETI_DIR
 
 NEGATION = ('ない', 'ず', 'ぬ')
