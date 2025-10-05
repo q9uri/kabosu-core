@@ -33,11 +33,11 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from pathlib import Path
+
 import re
 import collections
 
-from  kabosu_core import mecab as MeCaB
+from  kabosu_core import vibrato as MeCaB
 from kabosu_core.asseets import MLASK_DIR
 
 # ver 0.3.3

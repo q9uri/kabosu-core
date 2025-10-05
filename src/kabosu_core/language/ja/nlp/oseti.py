@@ -25,9 +25,8 @@
 #ver 0.4.3.1
 import json
 
-from pathlib import Path
 
-from kabosu_core import mecab as MeCaB
+from kabosu_core import vibrato as MeCaB
 from kabosu_core.bunkai import Bunkai
 from kabosu_core.asseets import OSETI_DIR
 

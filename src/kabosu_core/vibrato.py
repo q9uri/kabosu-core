@@ -48,7 +48,7 @@ class Tagger():
 
             elif self.dictionary == "ko-dic":
                
-                with open(UNIDIC_LITE_DIR, 'rb') as fp:
+                with open(KO_DIC_DIR, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
 
