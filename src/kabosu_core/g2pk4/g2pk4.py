@@ -33,7 +33,7 @@ from kabosu_core.asseets import G2PK4_DICT_DIR
 class G2p(object):
     def __init__(self,):
         
-        self.mecab = MeCab.Tagger()
+        self.vibrato = MeCab.Tagger()
         self.table = parse_table()
 
         self.cmu = cmudict.dict() # for English
@@ -116,7 +116,7 @@ class G2p(object):
             string = convert_jpn(string)
 
         # 3. annotate
-        string = annotate(string, self.mecab)
+        string = annotate(string, self.vibrato)
 
 
         # 4. Spell out arabic numbers

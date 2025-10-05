@@ -10,7 +10,6 @@ dependencies = [
     "datasets>=4.1.0",
     "emoji>=2.15.0",
     "emojis>=0.7.0",
-    "fugashi",
     "ginza>=5.2.0",
     "google-re2>=1.1.20250805",
     "huggingface-hub>=0.35.0",
@@ -70,7 +69,6 @@ dev = [
 ko = [
     "google-re2>=1.1.20250805",
     "jamo>=0.4.1",
-    "mecab-ko-dic",
     "nltk>=3.9.1",
 ]
 

@@ -1,14 +1,10 @@
-from fugashi import GenericTagger
 from typing import Literal
-from kabosu_core.asseets import UNIDIC_LITE_DIR, IPADIC_DIR, JUMANDIC_DIR
-
-def try_import_ko_dic():
-    try:
-        import mecab_ko_dic 
-        return mecab_ko_dic.MECAB_ARGS
-    
-    except ImportError:
-        return
+from kabosu_core.asseets import (
+    UNIDIC_LITE_DIR,
+    IPADIC_DIR,
+    JUMANDIC_DIR,
+    KO_DIC_DIR
+)
 
 class Tagger():
     def __init__ (
@@ -24,12 +20,8 @@ class Tagger():
         
 
         self.dictionary = dictionary
-        if self.dictionary == "ko-dic":
-            args = rawargs
-            args = try_import_ko_dic() + args
-            self.tagger = GenericTagger(args)
         
-        elif self.dictionary in ("ipa-dic", "jumandic", "unidic-lite"):
+        if self.dictionary in ("ipa-dic", "jumandic", "unidic-lite", "ko-dic"):
             import vibrato
             import zstandard
             dctx = zstandard.ZstdDecompressor()
@@ -53,9 +45,17 @@ class Tagger():
                 with open(UNIDIC_LITE_DIR, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
-                        
+
+            elif self.dictionary == "ko-dic":
+               
+                with open(UNIDIC_LITE_DIR, 'rb') as fp:
+                    with dctx.stream_reader(fp) as dict_reader:
+                        self.tagger = vibrato.Vibrato(dict_reader.read())
+
+
+
     def __call__ (self, text:str = "", out_list:bool = True):
-        if self.dictionary in ("ipa-dic", "jumandic", "unidic-lite"):
+        if self.dictionary in ("ipa-dic", "jumandic", "unidic-lite", "ko-dic"):
             tokens = self.tagger.tokenize(text)
             if out_list:
                 out = []
@@ -71,11 +71,8 @@ class Tagger():
                 return tokens
 
     def parse(self, text: str) -> list[str]:
-        if self.dictionary == "ko-dic":
 
-            return self.tagger.parse(text)
-        
-        elif self.dictionary in ("ipa-dic", "jumandic", "unidic-lite"):
+        if self.dictionary in ("ipa-dic", "jumandic", "unidic-lite", "ko-dic"):
             tokens = self.tagger.tokenize(text)
             out = []
             for token in tokens:
