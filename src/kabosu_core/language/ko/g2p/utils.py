@@ -1,5 +1,5 @@
 import re
-from jamo import h2j, j2h
+from kabosu_core.language.ko.g2p.jamo import h2j, j2h
 
 from kabosu_core.asseets import G2PK4_DICT_DIR
 ############## English ##############

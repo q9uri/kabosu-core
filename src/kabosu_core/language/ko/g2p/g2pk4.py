@@ -7,7 +7,7 @@ import re
 from nltk.corpus.util import LazyCorpusLoader
 from nltk.corpus.reader.cmudict import CMUDictCorpusReader
 
-from jamo import h2j, j2hcj
+from kabosu_core.language.ko.g2p.jamo import h2j, j2hcj
 #from nltk.corpus import cmudict
 from kabosu_core import vibrato as MeCab
 

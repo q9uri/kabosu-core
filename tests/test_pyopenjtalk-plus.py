@@ -1,5 +1,5 @@
 import pytest
-from kabosu_core.pyopenjtalk import NjdObject
+from kabosu_core import NjdObject
 from kabosu_core import pyopenjtalk
 
 

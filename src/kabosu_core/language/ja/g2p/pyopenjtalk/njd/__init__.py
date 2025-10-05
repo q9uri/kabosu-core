@@ -36,6 +36,7 @@ from kabosu_core.language.ja.g2p.pyopenjtalk.njd.utils import (
     preserve_noun_accent,
     MULTI_READ_KANJI_LIST
 )
+from kabosu_core.asseets import MARINE_PATH
 
 from jpreprocess import JPreprocess
 
@@ -47,7 +48,7 @@ def load_marine_model(model_dir: Union[str, None] = None, dict_dir: Union[str, N
     global _global_marine
     if _global_marine is None:
         try:
-            from kabosu_core.marine.predict import Predictor
+            from kabosu_core.language.ja.g2p.marine.predict import Predictor
         except ImportError:
             raise ImportError("Please install marine by `pip install pyopenjtalk-plus[marine]`")
         _global_marine = Predictor(model_dir=model_dir, postprocess_vocab_dir=dict_dir)
@@ -65,7 +66,7 @@ def estimate_accent(njd_features: list[NjdObject]) -> list[NjdObject]:
     """
     global _global_marine
     if _global_marine is None:
-        load_marine_model()
+        load_marine_model(MARINE_PATH, MARINE_PATH)
         assert _global_marine is not None
     from marine.utils.openjtalk_util import convert_njd_feature_to_marine_feature
 

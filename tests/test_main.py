@@ -1,5 +1,4 @@
-import pytest
-from kabosu_core import pyopenjtalk
+from kabosu_core.language.ja.g2p import pyopenjtalk
 
 
 
