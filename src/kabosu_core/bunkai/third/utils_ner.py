@@ -26,7 +26,7 @@ from typing import List, Optional, Union
 from filelock import FileLock
 from transformers import PreTrainedTokenizer, is_tf_available, is_torch_available
 
-from kabosu_core.bunkai.algorithm.lbd.custom_tokenizers import JanomeSubwordsTokenizer
+from kabosu_core.bunkai.algorithm.lbd.custom_tokenizers import VibratoSubwordsTokenizer
 
 logger = logging.getLogger(__name__)
 
@@ -84,7 +84,7 @@ if is_torch_available():
         def __init__(
             self,
             data_dir: str,
-            tokenizer: JanomeSubwordsTokenizer,
+            tokenizer: VibratoSubwordsTokenizer,
             labels: List[str],
             model_type: str,
             max_seq_length: Optional[int] = None,
@@ -290,7 +290,7 @@ def convert_examples_to_features(
     examples: List[InputExample],
     label_list: List[str],
     max_seq_length: int,
-    tokenizer: JanomeSubwordsTokenizer,
+    tokenizer: VibratoSubwordsTokenizer,
     cls_token_at_end=False,
     cls_token="[CLS]",
     cls_token_segment_id=1,

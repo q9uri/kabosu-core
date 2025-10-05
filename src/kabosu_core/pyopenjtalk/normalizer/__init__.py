@@ -19,9 +19,7 @@ _FURIGANA_PATTERN = re.compile("{.+/.+}")
 _ALPHABET_PATTERN = re.compile("[a-z]+")
 
 def reader_furigana(text:str):
-    # this liblary use fork version yomikata
-    # https://github.com/q9uri/yomikata
-
+    # this liblary use include version yomikata
     return _global_reader.furigana(text) #type: ignore
 
 def dictreader_furigana(text:str):

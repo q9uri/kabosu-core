@@ -2126,7 +2126,7 @@ class TestPredictor(unittest.TestCase):
 
             from typing import List
 
-            from bunkai.algorithm.lbd.custom_tokenizers import JanomeSubwordsTokenizer
+            from bunkai.algorithm.lbd.custom_tokenizers import VibratoSubwordsTokenizer
             from bunkai.third.utils_ner import InputExample
 
             # note: this function must be here because this function refers test_case objects.
@@ -2134,7 +2134,7 @@ class TestPredictor(unittest.TestCase):
                 examples: List[InputExample],
                 label_list: List[str],
                 max_seq_length: int,
-                tokenizer: JanomeSubwordsTokenizer,
+                tokenizer: VibratoSubwordsTokenizer,
                 cls_token_at_end=False,
                 cls_token="[CLS]",
                 cls_token_segment_id=1,

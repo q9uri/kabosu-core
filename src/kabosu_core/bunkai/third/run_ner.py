@@ -38,7 +38,7 @@ from transformers import (
     set_seed,
 )
 
-from bunkai.algorithm.lbd.custom_tokenizers import JanomeSubwordsTokenizer
+from bunkai.algorithm.lbd.custom_tokenizers import VibratoSubwordsTokenizer
 from bunkai.third.utils_ner import NerDataset, Split, get_labels
 
 logger = logging.getLogger(__name__)
@@ -161,7 +161,7 @@ def main():
             use_fast=model_args.use_fast,
         )
     else:
-        logger.info("Use JanomeSubwordsTokenizer in Bunkai Project.")
+        logger.info("Use VibratoSubwordsTokenizer in Bunkai Project.")
         if "distilbert-base-japanese" in model_args.model_name_or_path:
             # if model is distilbert-base-japanese, download the model and save vocab file into your local.
             logger.info(f"Downloading {model_args.model_name_or_path} for vocab configuration.")
@@ -173,9 +173,9 @@ def main():
             tmp_model_path: str = tempfile.mkdtemp()
             logger.info(f"Saving vocab file into local {tmp_model_path}...")
             __tokenizer.save_pretrained(tmp_model_path)
-            tokenizer = JanomeSubwordsTokenizer(vocab_file=os.path.join(tmp_model_path, "vocab.txt"))
+            tokenizer = VibratoSubwordsTokenizer(vocab_file=os.path.join(tmp_model_path, "vocab.txt"))
         else:
-            tokenizer = JanomeSubwordsTokenizer(
+            tokenizer = VibratoSubwordsTokenizer(
                 vocab_file=model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path
             )
 

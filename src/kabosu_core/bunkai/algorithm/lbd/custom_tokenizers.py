@@ -23,12 +23,12 @@ The original source code is under Apache-2.0 License.
 logger = logging.getLogger(__name__)
 
 
-class JanomeTokenizer(object):
+class VibratoTokenizer(object):
     """Runs basic tokenization with Janome morphological parser."""
 
     def __init__(self, *, do_lower_case=False, never_split=None, normalize_text=True):
         """
-        Construct a JanomeTokenizer.
+        Construct a VibratoTokenizer.
 
         :arg do_lower_case: (`optional`) boolean (default True)
                 Whether to lower case the input.
@@ -107,7 +107,7 @@ class CharacterTokenizer(object):
         return output_tokens
 
 
-class JanomeSubwordsTokenizer(BertTokenizer):
+class VibratoSubwordsTokenizer(BertTokenizer):
     def __init__(
         self,
         vocab_file,
@@ -123,7 +123,7 @@ class JanomeSubwordsTokenizer(BertTokenizer):
         **kwargs,
     ):
         """
-        Construct a JanomeSubwordsTokenizer.
+        Construct a VibratoSubwordsTokenizer.
 
         :arg vocab_file: Path to a one-wordpiece-per-line vocabulary file.
         :arg do_lower_case: (`optional`) boolean (default True)
@@ -165,7 +165,7 @@ class JanomeSubwordsTokenizer(BertTokenizer):
             else:
                 raise ValueError("Invalid subword_tokenizer_type '{}' is specified.".format(subword_tokenizer_type))
 
-        self.janome_tokenizer = JanomeTokenizer()
+        self.janome_tokenizer = VibratoTokenizer()
 
     def tokenize(self, text: typing.Union[str, typing.List[str]]) -> typing.List[str]:
         if isinstance(text, str):

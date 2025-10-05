@@ -12,7 +12,7 @@ from transformers.models.auto.modeling_auto import AutoModelForTokenClassificati
 
 import kabosu_core.bunkai.constant
 from kabosu_core.bunkai.algorithm.lbd.corpus import LABEL_OTHER, LABEL_SEP, annotation2spans
-from kabosu_core.bunkai.algorithm.lbd.custom_tokenizers import JanomeSubwordsTokenizer, JanomeTokenizer
+from kabosu_core.bunkai.algorithm.lbd.custom_tokenizers import VibratoSubwordsTokenizer, VibratoTokenizer
 from kabosu_core.bunkai.algorithm.lbd.train import BunkaiConfig, MyDataset
 from kabosu_core.bunkai.base.annotation import Tokens
 from kabosu_core.bunkai.third.utils_ner import InputExample, get_labels
@@ -23,7 +23,7 @@ StringMorphemeInputType = typing.List[typing.List[str]]  # (batch-size * variabl
 class Predictor(object):
     def __init__(self, modelpath: Path) -> None:
         """
-        Use JanomeTokenizer by default if the input is Document(String).
+        Use VibratoTokenizer by default if the input is Document(String).
 
         If the input is Morpheme(String), Tokenizers are not called.
 
@@ -40,7 +40,7 @@ class Predictor(object):
             self.bc = BunkaiConfig.from_json(bcf.read())
         # use janome tokenizer or tokenizer based on a vocab-file.
         self.path_tokenizer_model: str = str(Path(modelpath).joinpath("vocab.txt"))
-        self.tokenizer = JanomeSubwordsTokenizer(self.path_tokenizer_model)
+        self.tokenizer = VibratoSubwordsTokenizer(self.path_tokenizer_model)
 
         # hotfix
         if self.model.base_model_prefix == "distilbert" and "token_type_ids" in self.tokenizer.model_input_names:
@@ -59,10 +59,10 @@ class Predictor(object):
         tokenized_spans_list: typing.List[typing.List[str]] = []
         tmp_stack: typing.List[str] = []
         for __t in tokens:
-            if __t == bunkai.constant.METACHAR_LINE_BREAK:
+            if __t == kabosu_core.bunkai.constant.METACHAR_LINE_BREAK:
                 if len(tmp_stack) > 0:
                     tokenized_spans_list.append(tmp_stack)
-                tokenized_spans_list.append([bunkai.constant.METACHAR_LINE_BREAK])
+                tokenized_spans_list.append([kabosu_core.bunkai.constant.METACHAR_LINE_BREAK])
                 tmp_stack = []
             else:
                 # sub-word tokenize
@@ -171,14 +171,14 @@ def get_opts() -> argparse.Namespace:
 def generate_initial_annotation_obj(
     input_stream: typing.Iterator[str],
 ) -> typing.Iterator[typing.List[str]]:
-    tokenizer = JanomeTokenizer()
+    tokenizer = VibratoTokenizer()
     for document in input_stream:
         # document: a text = document
-        assert bunkai.constant.METACHAR_SENTENCE_BOUNDARY not in document
+        assert kabosu_core.bunkai.constant.METACHAR_SENTENCE_BOUNDARY not in document
         document_spans: Tokens = annotation2spans(document[:-1])
         document_tokens: typing.List[str] = []
         for fragment in document_spans.spans:
-            if bunkai.constant.METACHAR_LINE_BREAK in fragment:
+            if kabosu_core.bunkai.constant.METACHAR_LINE_BREAK in fragment:
                 document_tokens.append(fragment)
             else:
                 tokens = tokenizer.tokenize(fragment)
@@ -198,7 +198,7 @@ def main() -> None:
                 for tid, token in enumerate(one_batch[did]):
                     outf.write(token)
                     if tid in token_ids_seps:
-                        outf.write(bunkai.constant.METACHAR_SENTENCE_BOUNDARY)
+                        outf.write(kabosu_core.bunkai.constant.METACHAR_SENTENCE_BOUNDARY)
                 else:
                     outf.write("\n")
 

@@ -12,17 +12,20 @@ import torch
 from speach.ttlig import RubyFrag, RubyToken
 from transformers import (
     AutoModelForTokenClassification,
-    BertJapaneseTokenizer,
+    #BertJapaneseTokenizer,
     DataCollatorForTokenClassification,
     EarlyStoppingCallback,
     Trainer,
     TrainingArguments,
 )
+from kabosu_core.yomikata.tokenization_bert_japanese import BertJapaneseTokenizer
 
 from kabosu_core.yomikata import utils
 from kabosu_core.yomikata.config import config, logger
 from kabosu_core.yomikata.reader import Reader
 from kabosu_core.yomikata.utils import LabelEncoder
+
+
 
 logging.getLogger("transformers").setLevel(logging.ERROR)
 logging.getLogger("transformers.trainer").setLevel(logging.ERROR)
@@ -50,7 +53,7 @@ class dBert(Reader):
         if reinitialize:
             # load tokenizer from upstream huggingface repository
             default_model = "cl-tohoku/bert-base-japanese-v2"
-            self.tokenizer = BertJapaneseTokenizer.from_pretrained(default_model)
+            self.tokenizer = BertJapaneseTokenizer(default_model)#BertJapaneseTokenizer.from_pretrained(default_model)
             logger.info(f"Using {default_model} tokenizer")
 
             # load the heteronyms list
@@ -112,7 +115,7 @@ class dBert(Reader):
             self.load(artifacts_dir)
 
     def load(self, directory):
-        self.tokenizer = BertJapaneseTokenizer.from_pretrained(directory)
+        self.tokenizer = BertJapaneseTokenizer.from_pretrained(directory) #BertJapaneseTokenizer.from_pretrained(directory)
         self.model = AutoModelForTokenClassification.from_pretrained(directory).to(self.device)
         self.label_encoder = LabelEncoder.load(Path(directory, "label_encoder.json"))
         self.heteronyms = utils.load_dict(Path(directory, "heteronyms.json"))

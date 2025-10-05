@@ -7,7 +7,7 @@ import sys
 import typing
 from pathlib import Path
 
-from kabosu_core.bunkai.algorithm.lbd.custom_tokenizers import JanomeTokenizer
+from kabosu_core.bunkai.algorithm.lbd.custom_tokenizers import VibratoTokenizer
 from kabosu_core.bunkai.base.annotation import Tokens
 from kabosu_core.bunkai.constant import METACHAR_LINE_BREAK, METACHAR_SENTENCE_BOUNDARY
 
@@ -72,7 +72,7 @@ def _fix_tokens(mytxt: str, ts: typing.List[str]) -> typing.List[str]:
     return ret
 
 
-def spans2tokens(tokenizer: JanomeTokenizer, tokens: Tokens) -> Tokens:
+def spans2tokens(tokenizer: VibratoTokenizer, tokens: Tokens) -> Tokens:
     assert len(tokens.spans) == len(tokens.labels)
     new_tokens = Tokens()
     for mytxt, label in zip(tokens.spans, tokens.labels):
@@ -90,7 +90,7 @@ def spans2tokens(tokenizer: JanomeTokenizer, tokens: Tokens) -> Tokens:
 
 def convert(
     inpath: typing.IO,
-    tokenizer: JanomeTokenizer,
+    tokenizer: VibratoTokenizer,
     remove_trailing_lb: bool = True,
 ) -> typing.Iterator[Tokens]:
     with inpath as inf:
@@ -180,7 +180,7 @@ def main() -> None:
                 outf.write(f"{line2}\n")
     else:
         opts.output.parent.mkdir(exist_ok=True, parents=True)
-        tokenizer = JanomeTokenizer(normalize_text=False)
+        tokenizer = VibratoTokenizer(normalize_text=False)
         with opts.output.open("w") as f:
             for tokens in convert(inpath=opts.input, tokenizer=tokenizer):
                 f.write(f"{tokens.to_json(ensure_ascii=False, sort_keys=True)}\n")
