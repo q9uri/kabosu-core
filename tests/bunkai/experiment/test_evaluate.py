@@ -1,5 +1,5 @@
-from kabosu_core.bunkai.constant import METACHAR_LINE_BREAK, METACHAR_SENTENCE_BOUNDARY
-from kabosu_core.bunkai.experiment.evaluate import trim
+from kabosu_core.language.ja.nlp.bunkai.constant import METACHAR_LINE_BREAK, METACHAR_SENTENCE_BOUNDARY
+from kabosu_core.language.ja.nlp.bunkai.experiment.evaluate import trim
 
 
 

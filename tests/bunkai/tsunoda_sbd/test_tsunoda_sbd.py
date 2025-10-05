@@ -1,6 +1,6 @@
 
-from kabosu_core.bunkai.algorithm.tsunoda_sbd.tsunoda_sbd import TsunodaSentenceBoundaryDisambiguation
-from kabosu_core.bunkai.base.annotation import Annotations
+from kabosu_core.language.ja.nlp.bunkai.algorithm.tsunoda_sbd.tsunoda_sbd import TsunodaSentenceBoundaryDisambiguation
+from kabosu_core.language.ja.nlp.bunkai.base.annotation import Annotations
 
 
 def test_okay():
