@@ -1,0 +1,49 @@
+# =================================================================
+ja-jtalkdic-ud-jawki-*.csv
+from 
+q9uri/jtalkdic-ud-jawiki
+
+jtalkdic-ud-jawiki created from  utuhiro78/moszcdic-ut-jawiki
+
+A dictionary generated from the [Japanese Wikipedia](https://ja.wikipedia.org/) for Mozc.
+
+license
+[CC BY-SA](https://ja.wikipedia.org/wiki/Wikipedia:ウィキペディアを二次利用する)
+
+# =================================================================
+
+ja-jtalkdic-ud-edict2-noacc.csv
+from q9uri/jtalkdic-ud-edict2
+jtalkdic-ud-edict2 created from  utuhiro78/moszcdic-ut-edict2
+
+A dictionary converted from [EDICT2](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project) for Mozc.
+
+[Creative Commons Attribution-ShareAlike Licence (V4.0)](https://www.edrdg.org/edrdg/licence.html)
+
+# =================================================================
+
+from q9uri/jtalkdic-ud-pesonal-names
+jtalkdic-ud-pesonal-names created from  utuhiro78/moszcdic-ut-pesonal-names
+
+A personal name dictionary for Mozc.
+
+## License
+
+created by utuhiro78
+Apache License, Version 2.0
+# =================================================================
+
+from q9uri/jtalkdic-ud-place-names
+jtalkdic-ud-place-names created from  utuhiro78/moszcdic-ut-place-names
+
+A dictionary converted from the [Japan Post's ZIP code data](https://www.post.japanpost.jp/zipcode/download.html) for Mozc.
+
+Thanks to the Japan Post's ZIP code data team.
+
+## License
+
+[Public Domain](https://www.post.japanpost.jp/zipcode/dl/readme.html)
+
+> 郵便番号データに限っては日本郵便株式会社は著作権を主張しません。
+
+# =================================================================
