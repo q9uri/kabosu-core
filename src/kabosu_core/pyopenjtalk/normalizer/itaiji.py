@@ -1,32 +1,5 @@
 
-# jinmei-variants.txtとjoyo-variants.txt、non-cjk.txtは以下のソフトウェアから使用した
-
-# 異体字データベース
-# https://kanji-database.sourceforge.net/
-
-#　Mit licence 
-# © 2009 CJKV (Chinese Japanese Korean Vietnamese) Ideograph Database
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
-import os
-from pathlib import Path
+from kabosu_core.asseets import ITAIJI_DIR
 
 #＜辞書を読み込む関数＞
 def load_text(filePath: str):
@@ -87,17 +60,15 @@ def load_text(filePath: str):
 #辞書を使用して異体字を置き換える処理
 def normalize_itaiji(input:str  ,debug_print:bool = False):
 
-    dir_path_str = os.path.dirname(os.path.abspath(__file__))
-    dir_path = Path(dir_path_str)
     itaiji_list = []
 
 
     #法務省・人名漢字表（2010年現在）の、別表２の１で同一の字種とされる漢字および人名漢字表 別表２の２で規定される異体字
-    dict_jinmei_path = str(dir_path / "./dict/jinmei-variants.txt")
+    dict_jinmei_path = str(ITAIJI_DIR / "jinmei-variants.txt")
     #文科省・常用漢字表に記載された異体字（2010年現在）
-    dict_joyo_path = str(dir_path / "./dict/joyo-variants.txt")
+    dict_joyo_path = str(ITAIJI_DIR / "joyo-variants.txt")
     #UCSにおける非漢字・擬似漢字と漢字の対応表
-    dict_non_cjk_path = str(dir_path / "./dict/non-cjk.txt")
+    dict_non_cjk_path = str(ITAIJI_DIR / "non-cjk.txt")
 
     #漢語大字典に記載されている異体字一覧
     #dict_non_cjk_path = str(dir_path / "/dict//hydzd-variants.txt")

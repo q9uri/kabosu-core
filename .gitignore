@@ -8,4 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
-src/kabosu_core/yomikata/*-artifacts
+
+src/kabosu_core/logs
+unuse

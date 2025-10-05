@@ -7,7 +7,7 @@ from pathlib import Path
 from skl2onnx import convert_sklearn
 from skl2onnx.common.data_types import FloatTensorType, StringTensorType
 
-from .nani_predict import X_COLS
+from kabosu_core.pyopenjtalk.nani_predict import X_COLS
 
 
 # モデルとエンコーダーをロード

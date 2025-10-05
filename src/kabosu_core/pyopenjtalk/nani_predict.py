@@ -3,11 +3,10 @@ from typing import Union
 
 import numpy as np
 
-from kabosu_core.pyopenjtalk.types import NjdObject
-
+from kabosu_core.pyopenjtalk import NjdObject
+from kabosu_core.asseets import YOMI_MODEL_DIR
 
 X_COLS = ["pos", "pos_group1", "pos_group2", "pron", "ctype", "cform"]
-MODEL_DIR = Path(__file__).parent
 
 # ONNX モデルをロード
 # 非常に軽量なモデルのため、import 時に ONNX モデルをロードするオーバーヘッドはほとんどない
@@ -15,11 +14,11 @@ try:
     from onnxruntime import InferenceSession
 
     enc_session = InferenceSession(
-        MODEL_DIR / "nani_enc.onnx",
+        YOMI_MODEL_DIR / "nani_enc.onnx",
         providers=["CPUExecutionProvider"],
     )
     model_session = InferenceSession(
-        MODEL_DIR / "nani_model.onnx",
+        YOMI_MODEL_DIR / "nani_model.onnx",
         providers=["CPUExecutionProvider"],
     )
 except ImportError:

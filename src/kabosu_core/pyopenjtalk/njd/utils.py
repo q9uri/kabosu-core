@@ -22,8 +22,8 @@
 #> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #/bAmFru).
 
-from kabosu_core.pyopenjtalk.types import NjdObject
-from kabosu_core.pyopenjtalk.yomi_model.nani_predict import predict
+from kabosu_core.pyopenjtalk import NjdObject
+from kabosu_core.pyopenjtalk.nani_predict import predict
 
 from typing import Any, Union
 from sudachipy import dictionary, tokenizer

@@ -1,4 +1,4 @@
-from kabosu_core.pyopenjtalk.types import NjdObject
+from kabosu_core.types import NjdObject
 
 def convert_to_keihan_acc(
     njd_features: list[NjdObject]
