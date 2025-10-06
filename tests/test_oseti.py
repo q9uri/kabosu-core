@@ -22,7 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 
 
-from kabosu_core.language.ja.nlp import oseti
+from kabosu_core.language.njd.ja.lib import oseti
 
 
 def test_lookup_wago():

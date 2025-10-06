@@ -23,8 +23,8 @@
 
 
 import pytest
-from kabosu_core.language.ja.g2p.yomikata.dictionary import Dictionary
-from kabosu_core.language.ja.g2p.yomikata.dbert import dBert
+from kabosu_core.language.njd.ja.lib.yomikata.dictionary import Dictionary
+from kabosu_core.language.njd.ja.lib.yomikata.dbert import dBert
 
 def test_yomikata_reader_furigana_test():
     text = 'そして、畳の表は、すでに幾年前に換えられたのか分らなかった。'
