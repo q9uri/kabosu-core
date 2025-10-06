@@ -22,7 +22,7 @@ from typing import Any, Optional
 
 from transformers.tokenization_utils import PreTrainedTokenizer, _is_control, _is_punctuation, _is_whitespace
 from transformers.utils import is_sentencepiece_available, is_sudachi_projection_available, logging
-from kabosu_core import vibrato
+from kabosu_core.language import vibrato
 
 if is_sentencepiece_available():
     import sentencepiece as spm
