@@ -1,89 +1,65 @@
-#================================================================
-#fugashi replacing vibrato
-#for oseti, mlask, g2pk4
-vibrato
-zstandard
-#================================================================
-# for oseti
-bunkai
-#================================================================
-# for pyopenjtalk
 onnxruntime
 numpy<2
-marine-plus
-sudachipy
-sudachidict_core
-jaconv
-jpreprocess
-kanalizer
-google-re2
-#================================================================
-# for yomikata
-# numpy<2
-# jaconv
+torch
+nvidia-ml-py
 pandas>=1.5.2
 scikit-learn
-speach
-torch
+
 transformers==4.53.0
 huggingface_hub
 datasets
-nvidia-ml-py
+
+vibrato
+zstandard
+sudachipy
+sudachidict_core
+sudachidict_full
+jpreprocess
+
+spacy
+ginza
+ja_ginza
+
+jaconv
+kanalizer
+pykakasi 
+
+nltk
 sentencepiece
+speach
+google-re2
+
+
 rich
 plac
 streamlit==1.17.0
-spacy
-# fugashi only use ko-dic
-# ipadic jumandic unidiclite use vibrato version
-#fugashi
-#ipadic==1.0.0
-#jumandic==1.0.0
-#unidic-lite
-sudachidict_full
-#================================================================
-# for marine-plus
-# numpy<2
-# torch 
 hydra-core
 hydra_colorlog
 tqdm
 joblib
-pykakasi 
 #================================================================
 # for marine-plus
 #scikit-learn = "^1.1.1"
-#Janome = "^0.4.2"
 #skl2onnx = "^1.13" #for train
 #packaging = "^21.3"
-#onnxruntime = "^1.12.1"
 #================================================================
 # for bunkai
 dataclasses-json 
-#janome 
 seqeval 
 spans 
-#tqdm 
-#numpy 
-#torch 
-#transformers 
+
 more_itertools
 emoji
 emojis
 toml 
 requests 
 regex
-#seqeval #for train
-#================================================================
-# for asapy
-ginza
-ja_ginza
 
-# for g2pk4
-google-re2
-nltk
-# for g2p_en
-#numpy<2
-#nltk
 inflect
 distance
+
+soundfile
+pydub
+librosa
+numpy==1.26.4
+pyworld-prebuilt==0.3.5.post1
