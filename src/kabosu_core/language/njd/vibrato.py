@@ -1,9 +1,9 @@
 from typing import Literal
-from kabosu_core.asseets import (
-    UNIDIC_LITE_DIR,
-    IPADIC_DIR,
-    JUMANDIC_DIR,
-    KO_DIC_DIR
+from kabosu_core.assets import (
+    UNIDIC_LITE_PATH,
+    IPADIC_PATH,
+    JUMANDIC_PATH,
+    KO_DIC_PATH,
 )
 
 class Tagger():
@@ -28,27 +28,27 @@ class Tagger():
 
             if self.dictionary == "ipa-dic":
                 
-                with open(IPADIC_DIR, 'rb') as fp:
+                with open(IPADIC_PATH, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
 
             
             elif self.dictionary == "jumandic":
                
-                with open(JUMANDIC_DIR, 'rb') as fp:
+                with open(JUMANDIC_PATH, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
       
 
             elif self.dictionary == "unidic-lite":
                
-                with open(UNIDIC_LITE_DIR, 'rb') as fp:
+                with open(UNIDIC_LITE_PATH, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
 
             elif self.dictionary == "ko-dic":
                
-                with open(KO_DIC_DIR, 'rb') as fp:
+                with open(KO_DIC_PATH, 'rb') as fp:
                     with dctx.stream_reader(fp) as dict_reader:
                         self.tagger = vibrato.Vibrato(dict_reader.read())
 
