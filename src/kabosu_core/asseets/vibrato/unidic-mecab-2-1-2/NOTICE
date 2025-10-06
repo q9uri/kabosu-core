@@ -1,7 +1,0 @@
-This software includes a binary version of data from
-
-  https://clrd.ninjal.ac.jp/unidic_archive/cwj/2.1.2/unidic-mecab-2.1.2_src.zip
-
-where the connection ids are remapped using CORE data in BCCWJ (except the PN category)
-
-  https://clrd.ninjal.ac.jp/bccwj/.
