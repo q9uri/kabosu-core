@@ -11,3 +11,5 @@ wheels/
 
 src/kabosu_core/language/ja/g2p/logs
 unuse
+src/kabosu_core/assets/*
+!src/kabosu_core/assets/__init__.py
