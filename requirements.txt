@@ -12,7 +12,6 @@ datasets
 vibrato
 zstandard
 sudachipy
-sudachidict_core
 sudachidict_full
 jpreprocess
 
@@ -61,5 +60,4 @@ distance
 soundfile
 pydub
 librosa
-numpy==1.26.4
 pyworld-prebuilt==0.3.5.post1
