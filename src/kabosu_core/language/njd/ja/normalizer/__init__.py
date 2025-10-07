@@ -34,7 +34,6 @@ def normalize_text(
         itaiji: bool = True,
         kanalizer: bool = True,
         yomikata: bool = True,
-        use_ko2ja: bool = True
     ) -> str:
     """
     ### input 
@@ -75,9 +74,5 @@ def normalize_text(
                 
             yomi = kanalizer_convert(word)
             text = text.replace(word, yomi)
-    
-    if use_ko2ja:
-        from kabosu_core.language.njd.ja.normalizer.korean import ko2ja
-        text = ko2ja(text)
         
     return text

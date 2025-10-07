@@ -1,8 +1,7 @@
 import pytest
-from kabosu_core import NjdObject
-from kabosu_core import pyopenjtalk
 
-
+from kabosu_core import language as  pyopenjtalk
+from kabosu_core.language import NjdObject
 
 
 def _print_results(njd_features: list[NjdObject], labels: list[str]):

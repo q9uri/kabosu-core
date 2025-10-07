@@ -31,16 +31,15 @@ from kabosu_core.language.njd.ja.lib.marine.utils.util import (
     get_accent_nucleus_in_high_low_accent_stauts_seq,
 )
 
-
-BASE_DIR = Path(str(importlib_resources.files("kabosu_core")))
-
+from kabosu_core.assets import ASSETS_DIR
+BASE_DIR = ASSETS_DIR.parent
 
 @pytest.fixture
 def default_config() -> DictConfig:
     config_path = BASE_DIR / "language/njd/ja/lib/marine/bin/conf/train/config.yaml"
 
     # initialize config
-    with initialize_config_dir(config_dir=str(config_path.parent), version_base="1.1"):
+    with initialize_config_dir(config_dir=config_path, version_base="1.1"):
         config = compose(config_name=config_path.name)
     GlobalHydra.instance().clear()
 

@@ -22,21 +22,25 @@
 #> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #/bAmFru).
 
-from kabosu_core.language.njd.ja.hougen import convert_to_keihan_acc
-from kabosu_core.language.njd.ja.talk_styles import convert_to_babytalk, convert_to_dakuten
+
 from typing import Union
 from kabosu_core.language.types import NjdObject
-from kabosu_core.language.njd.ja.utils import (
+
+from kabosu_core.language.njd.ja.modify_acc import (
     merge_njd_marine_features,
     modify_acc_after_chaining,
-    modify_kanji_yomi,
-    process_odori_features,
     retreat_acc_nuc,
     modify_filler_accent,
+)
+from kabosu_core.language.njd.ja.modify_yomi import modify_kanji_yomi
+from kabosu_core.language.njd.ja.odoriji import process_odori_features
+from kabosu_core.language.njd.ja.utils import (
     preserve_noun_accent,
     MULTI_READ_KANJI_LIST
 )
 from kabosu_core.assets import MARINE_MODEL_DIR, MARINE_VOCAB_DIR
+from kabosu_core.language.njd.ja.hougen import convert_to_keihan_acc
+from kabosu_core.language.njd.ja.talk_styles import convert_talkstyle
 
 from jpreprocess import JPreprocess
 
@@ -116,9 +120,9 @@ def apply_postprocessing(
         njd_features = convert_to_keihan_acc(njd_features)
 
     if babytalk:
-        njd_features = convert_to_babytalk(njd_features)
+        njd_features = convert_talkstyle(njd_features, "babytalk")
 
     if dakuten:
-        njd_features = convert_to_dakuten(njd_features)
+        njd_features = convert_talkstyle(njd_features, "dakuon")
 
     return njd_features
