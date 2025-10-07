@@ -33,9 +33,9 @@ class Dictionary(Reader):
         """
 
         if tagger == "unidic":
-            from kabosu_core.language.ja.njd import vibrato as MeCab
+            from kabosu_core.language import vibrato
 
-            self.tagger = MeCab.Tagger(dictionary="unidic-lite")
+            self.tagger = vibrato.Tagger(dictionary="unidic-lite")
             self.token_to_surface = lambda word: word[0]
             self.token_to_pos = lambda word: word[1]
             self.token_to_kana = (
@@ -44,9 +44,9 @@ class Dictionary(Reader):
                 else word[0]
             )
         elif tagger == "ipadic":
-            from kabosu_core.language.ja.njd import vibrato as MeCab
+            from kabosu_core.language import vibrato 
 
-            self.tagger = MeCab.Tagger(dictionary="ipa-dic")
+            self.tagger = vibrato.Tagger(dictionary="ipa-dic")
             self.token_to_surface = lambda word: word[0]
             self.token_to_pos = lambda word: word[1]
             self.token_to_kana = (
@@ -55,9 +55,9 @@ class Dictionary(Reader):
                 else jaconv.kata2hira(str(word[0]))
             )
         elif tagger == "juman":
-            from kabosu_core.language.ja.njd import vibrato as MeCab
+            from kabosu_core.language import vibrato
 
-            self.tagger = MeCab.Tagger(dictionary="jumandic")
+            self.tagger = vibrato.Tagger(dictionary="jumandic")
             self.token_to_surface = lambda word: word[0]
             self.token_to_pos = lambda word: word[1]
             self.token_to_kana = (

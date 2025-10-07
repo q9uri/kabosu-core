@@ -18,19 +18,19 @@ from kabosu_core.language import vibrato as MeCab
 #    nltk.download('cmudict')
 # included cmudict
 
-from kabosu_core.language.ko.g2p.special import jyeo, ye, consonant_ui, josa_ui, vowel_ui, jamo, rieulgiyeok, rieulbieub, verb_nieun, balb, palatalize, modifying_rieul
-from kabosu_core.language.ko.g2p.regular import link1, link2, link3, link4
-from kabosu_core.language.ko.g2p.utils import annotate, compose, group, gloss, parse_table, get_rule_id2text
-from kabosu_core.language.ko.g2p.normalaizer.english import convert_eng
-from kabosu_core.language.ko.g2p.normalaizer.numerals import convert_num
+from kabosu_core.language.njd.ko.special import jyeo, ye, consonant_ui, josa_ui, vowel_ui, jamo, rieulgiyeok, rieulbieub, verb_nieun, balb, palatalize, modifying_rieul
+from kabosu_core.language.njd.ko.regular import link1, link2, link3, link4
+from kabosu_core.language.njd.ko.utils import annotate, compose, group, gloss, parse_table, get_rule_id2text
+from kabosu_core.language.njd.ko.normalaizer.english import convert_eng
+from kabosu_core.language.njd.ko.normalaizer.numerals import convert_num
 
 #==============================================================
 #added from kdrkdrkdr/g2pk3
-from kabosu_core.language.ko.g2p.normalaizer.japanese import convert_jpn
-from kabosu_core.language.ko.g2p.korean import join_jamos, split_syllables
+from kabosu_core.language.njd.ko.normalaizer.japanese import convert_jpn
+from kabosu_core.language.njd.ko.korean import join_jamos, split_syllables
 #=============================================================
 
-from kabosu_core.asseets import G2PK4_DICT_DIR, NLTK_DIR
+from kabosu_core.assets import G2PK4_DICT_DIR, NLTK_DIR
 
 
 class G2p(object):

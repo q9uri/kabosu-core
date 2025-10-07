@@ -36,7 +36,7 @@ from kabosu_core.language.njd.ja.utils import (
     preserve_noun_accent,
     MULTI_READ_KANJI_LIST
 )
-from kabosu_core.assets import MARINE_MODEL_DIR
+from kabosu_core.assets import MARINE_MODEL_DIR, MARINE_VOCAB_DIR
 
 from jpreprocess import JPreprocess
 
@@ -66,7 +66,7 @@ def estimate_accent(njd_features: list[NjdObject]) -> list[NjdObject]:
     """
     global _global_marine
     if _global_marine is None:
-        load_marine_model(MARINE_MODEL_DIR, MARINE_MODEL_DIR)
+        load_marine_model(MARINE_MODEL_DIR, MARINE_VOCAB_DIR)
         assert _global_marine is not None
     from marine.utils.openjtalk_util import convert_njd_feature_to_marine_feature
 

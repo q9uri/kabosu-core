@@ -216,7 +216,7 @@ from sys import stderr
 from itertools import chain
 import json
 import re
-from kabosu_core.asseets import JAMO_DICT_DIR
+from kabosu_core.assets import JAMO_DICT_DIR
 
 
 _JAMO_OFFSET = 44032

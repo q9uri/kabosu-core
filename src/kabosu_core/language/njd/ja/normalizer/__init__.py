@@ -6,11 +6,10 @@ import kanalizer
 from kabosu_core.language.njd.ja.lib.yomikata.dbert import dBert
 from kabosu_core.language.njd.ja.lib.yomikata.dictionary import Dictionary
 
-try:
-    _global_reader = dBert()
-    _global_dictreader = Dictionary()
-except:
-    print("please download yomikata model")
+
+_global_reader = dBert()
+_global_dictreader = Dictionary()
+
 
 
 from kabosu_core.language.njd.ja.normalizer.itaiji import normalize_itaiji
@@ -78,7 +77,7 @@ def normalize_text(
             text = text.replace(word, yomi)
     
     if use_ko2ja:
-        from kabosu_core.language.ja.g2p.pyopenjtalk.normalizer.korean import ko2ja
+        from kabosu_core.language.njd.ja.normalizer.korean import ko2ja
         text = ko2ja(text)
         
     return text
