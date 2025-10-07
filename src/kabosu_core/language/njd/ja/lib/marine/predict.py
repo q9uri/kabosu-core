@@ -38,9 +38,6 @@ from kabosu_core.language.njd.ja.lib.marine.utils.util import (
 from kabosu_core.assets import MARINE_MODEL_DIR, MARINE_VOCAB_DIR
 
 
-MARINE_VOCAB_DIR = str(MARINE_VOCAB_DIR)
-MARINE_MODEL_DIR = str(MARINE_MODEL_DIR)
-
 class Predictor:
     """Interface for inference of accent model."""
 
@@ -71,7 +68,7 @@ class Predictor:
     ) -> None:
         if model_dir is None:
 
-            self.model_dir = MARINE_MODEL_DIR
+            self.model_dir = str(MARINE_MODEL_DIR)
 
         elif isinstance(model_dir, str):
             self.model_dir = Path(model_dir)
@@ -119,7 +116,7 @@ class Predictor:
     ) -> None:
         # Setup for vocab for post-process
         if postprocess_vocab_dir is None:
-            self.postprocess_vocab_dir = MARINE_VOCAB_DIR
+            self.postprocess_vocab_dir = str(MARINE_VOCAB_DIR)
 
         elif isinstance(postprocess_vocab_dir, str):
             self.postprocess_vocab_dir = Path(postprocess_vocab_dir)
