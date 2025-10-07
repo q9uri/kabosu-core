@@ -4,7 +4,7 @@ import tempfile
 from pathlib import Path
 from typing import Final
 
-from kabosu_core.language.ja.g2p.marine.logger import getLogger
+from kabosu_core.language.njd.ja.lib.marine.logger import getLogger
 
 
 try:
