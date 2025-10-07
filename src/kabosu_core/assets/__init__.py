@@ -6,6 +6,15 @@ ASSETS_DIR = Path(__file__).parent
 
 JA_NLP_ASSETS_DIR = ASSETS_DIR / "ja/nlp"
 MLASK_DIR = JA_NLP_ASSETS_DIR / "mlask"
+OSETI_DIR = JA_NLP_ASSETS_DIR / "oseti"
+
+JA_G2P_ASSETS_DIR = ASSETS_DIR / "ja/g2p"
+YOMI_MODEL_DIR = JA_G2P_ASSETS_DIR / "pyopenjtalk/yomi_model"
+ITAIJI_DIR = JA_G2P_ASSETS_DIR / "pyopenjtalk/itaiji"
+
+MARINE_MODEL_DIR = JA_G2P_ASSETS_DIR / "marine/model"
+MARINE_VOCAB_DIR = JA_G2P_ASSETS_DIR / "marine/dict"
+YOMIKATA_MODEL_DIR = JA_G2P_ASSETS_DIR / "yomikata/dbert-artifacts"
 
 VIBRATO_DICT_DIR = ASSETS_DIR / "multi/nlp/vibrato"
 UNIDIC_LITE_PATH = VIBRATO_DICT_DIR / "unidic-mecab-2-1-2/system.dic.zst"

@@ -9,7 +9,7 @@ wheels/
 # Virtual environments
 .venv
 
-src/kabosu_core/language/ja/g2p/logs
+src/kabosu_core/language/njd/ja/lib/logs
 unuse
 src/kabosu_core/assets/*
 !src/kabosu_core/assets/__init__.py

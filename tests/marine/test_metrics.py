@@ -8,7 +8,7 @@ import pytest
 import torch
 from numpy.testing import assert_almost_equal
 
-from kabosu_core.language.ja.g2p.marine.utils.metrics import MultiTaskMetrics, SentenceLevelAccuracy
+from kabosu_core.language.njd.ja.lib.marine.utils.metrics import MultiTaskMetrics, SentenceLevelAccuracy
 
 
 logger = getLogger("test")

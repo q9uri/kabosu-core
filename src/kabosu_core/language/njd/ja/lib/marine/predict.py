@@ -28,7 +28,6 @@ from kabosu_core.language.njd.ja.lib.marine.types import (
 )
 from kabosu_core.language.njd.ja.lib.marine.utils.openjtalk_util import convert_open_jtalk_format_label
 from kabosu_core.language.njd.ja.lib.marine.utils.post_process import apply_postprocess_dict, load_postprocess_vocab
-from kabosu_core.language.njd.ja.lib.marine.utils.pretrained import retrieve_pretrained_model
 from kabosu_core.language.njd.ja.lib.marine.utils.util import (
     _convert_ap_based_accent_to_mora_based_accent,
     convert_label_by_accent_representation_model,
@@ -36,10 +35,11 @@ from kabosu_core.language.njd.ja.lib.marine.utils.util import (
     sequence_mask,
 )
 
+from kabosu_core.assets import MARINE_MODEL_DIR, MARINE_VOCAB_DIR
 
-BASE_DIR = Path(str(importlib_resources.files("kabosu_core")))
-DEFAULT_POSTPROCESS_VOCAB_DIR = BASE_DIR / "marine/dict"
 
+MARINE_VOCAB_DIR = str(MARINE_VOCAB_DIR)
+MARINE_MODEL_DIR = str(MARINE_MODEL_DIR)
 
 class Predictor:
     """Interface for inference of accent model."""
@@ -70,10 +70,9 @@ class Predictor:
         self, model_dir: str | Path | None, version: str | None, device: str
     ) -> None:
         if model_dir is None:
-            if version is None:
-                self.model_dir = Path(retrieve_pretrained_model())
-            else:
-                self.model_dir = Path(retrieve_pretrained_model(version))
+
+            self.model_dir = MARINE_MODEL_DIR
+
         elif isinstance(model_dir, str):
             self.model_dir = Path(model_dir)
 
@@ -120,7 +119,7 @@ class Predictor:
     ) -> None:
         # Setup for vocab for post-process
         if postprocess_vocab_dir is None:
-            self.postprocess_vocab_dir = DEFAULT_POSTPROCESS_VOCAB_DIR
+            self.postprocess_vocab_dir = MARINE_VOCAB_DIR
 
         elif isinstance(postprocess_vocab_dir, str):
             self.postprocess_vocab_dir = Path(postprocess_vocab_dir)

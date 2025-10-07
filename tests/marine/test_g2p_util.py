@@ -1,7 +1,7 @@
 from logging import getLogger
 
-from kabosu_core.language.ja.g2p.marine.utils.g2p_util.accent import set_accent_status
-from kabosu_core.language.ja.g2p.marine.utils.g2p_util.g2p import pron2mora, pron2phon
+from kabosu_core.language.njd.ja.lib.marine.utils.g2p_util.accent import set_accent_status
+from kabosu_core.language.njd.ja.lib.marine.utils.g2p_util.g2p import pron2mora, pron2phon
 
 
 logger = getLogger("test")

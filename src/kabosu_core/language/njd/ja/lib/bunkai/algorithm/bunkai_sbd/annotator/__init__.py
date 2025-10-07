@@ -8,7 +8,7 @@ from kabosu_core.language.njd.ja.lib.bunkai.algorithm.bunkai_sbd.annotator.lineb
 from kabosu_core.language.njd.ja.lib.bunkai.algorithm.bunkai_sbd.annotator.linebreak_force_annotator import LinebreakForceAnnotator
 from kabosu_core.language.njd.ja.lib.bunkai.algorithm.bunkai_sbd.annotator.morph_annotator import MorphAnnotatorJanome
 from kabosu_core.language.njd.ja.lib.bunkai.algorithm.bunkai_sbd.annotator.number_exception_annotator import NumberExceptionAnnotator
-
+from kabosu_core.language.njd.ja.lib.bunkai.algorithm.bunkai_sbd.annotator.basic_annotator import BasicRule
 __all__ = [
     "BasicRule",
     "EmotionExpressionAnnotator",

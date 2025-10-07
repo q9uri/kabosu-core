@@ -26,7 +26,7 @@ from typing import List, Optional, Union
 from filelock import FileLock
 from transformers import PreTrainedTokenizer, is_tf_available, is_torch_available
 
-from kabosu_core.language.ja.nlp.bunkai.algorithm.lbd.custom_tokenizers import VibratoSubwordsTokenizer
+from kabosu_core.language.njd.ja.lib.bunkai.algorithm.lbd.custom_tokenizers import VibratoSubwordsTokenizer
 
 logger = logging.getLogger(__name__)
 

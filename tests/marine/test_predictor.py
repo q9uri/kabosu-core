@@ -1,7 +1,7 @@
 import pytest
 
-from kabosu_core.language.ja.g2p.marine.predict import Predictor
-from kabosu_core.language.ja.g2p.marine.types import MarineFeature
+from kabosu_core.language.njd.ja.lib.marine.predict import Predictor
+from kabosu_core.language.njd.ja.lib.marine.types import MarineFeature
 
 
 @pytest.fixture

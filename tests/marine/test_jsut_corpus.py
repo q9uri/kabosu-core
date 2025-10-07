@@ -1,6 +1,6 @@
 from logging import getLogger
 
-from kabosu_core.language.ja.g2p.marine.bin.jsut2corpus import parse_jsut_annotation
+from kabosu_core.language.njd.ja.lib.marine.bin.jsut2corpus import parse_jsut_annotation
 
 
 logger = getLogger("test")
