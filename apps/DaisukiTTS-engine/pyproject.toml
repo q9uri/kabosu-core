@@ -1,0 +1,136 @@
+[tool.taskipy.tasks]
+serve = "python run.py"
+lint = "ruff check --fix ."
+format = "ruff format ."
+mypy = "mypy ."
+typos = "typos"
+test = "pytest"
+update-snapshots = "pytest --snapshot-update"
+update-licenses = "bash tools/create_venv_and_generate_licenses.bash"
+build = "task update-licenses && pyinstaller --noconfirm run.spec"
+copy = "cp -r ./resources ./dist/run && cp ./engine_manifest.json ./dist/run"
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "W", "UP", "D", "D213"]
+ignore = [
+  "E501", # line-too-long
+  "D200", # AivisSpeech Engine ではコーディングスタイルに合わないため運用しない
+  "D202", # AivisSpeech Engine ではコーディングスタイルに合わないため運用しない
+  "D205", # AivisSpeech Engine ではコーディングスタイルに合わないため運用しない
+  "D400", # missing-trailing-period。日本語の「。」に対応していないため。
+  "D403", # first-word-uncapitalized。日本語とは無関係であるため。日英混合時の挙動に一貫性が無いため。
+]
+unfixable = [
+  "F401", # unused-import
+  "F841"  # unused-variable
+]
+
+[tool.ruff.lint.per-file-ignores]
+"test/**/test_*.py" = ["D103"] # undocumented-public-function。pytest の対象 test_*() が D103 の対象になり、関数名から内容が自明でも docstring を強制されるため。
+
+[tool.ruff.lint.isort]
+known-first-party = ["voicevox_engine"]
+known-third-party = ["numpy"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+strict = true
+plugins = "numpy.typing.mypy_plugin,pydantic.mypy"
+python_version = "3.11"
+exclude = ["dist"]
+ignore_missing_imports = true
+warn_unreachable = false
+warn_unused_ignores = false
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::pydantic.warnings.PydanticDeprecatedSince20"]
+
+[tool.typos.default.extend-words]
+datas = "datas" # PyInstaller's argument
+
+[tool.typos.files]
+extend-exclude = [
+  "resources",
+  "test/e2e/single_api/engine_info/__snapshots__/test_engine_manifest/test_get_engine_manifest_200.json",
+  "poetry.*",
+  "README.md",
+]
+
+[project]
+name = "DaisukiTTS_Engine"
+version = "0.3.0" # TODO: できればversionを自動管理する
+requires-python = "==3.11.9"
+dependencies = [
+  "natsumikan",
+  "style-bert-vits2",
+  "numpy==1.26.4",
+  "fastapi-slim==0.116.2",
+  "jinja2==3.1.6", # NOTE: required by fastapi.templating.Jinja2Templates (fastapi-slim's unmanaged dependency)
+  "python-multipart==0.0.20", # NOTE: required by fastapi.Form (fastapi-slim's unmanaged dependency)
+  "uvicorn==0.34.0",
+  "soundfile==0.13.1",
+  "pyyaml==6.0.1",
+  "pyworld-prebuilt==0.3.5.post1",
+  "semver==3.0.0",
+  "platformdirs==4.2.0",
+  "soxr==0.5.0",
+  "pydantic==2.7.3",
+  "starlette==0.45.3",
+  "jaconv==0.4.0",
+  "httpx==0.28.1",
+  "gputil==1.4.0",
+  "psutil==6.1.1",
+  "py-cpuinfo==9.0.0",
+  "truststore==0.10.0",
+  "aivmlib==1.2.1",
+  "onnxruntime==1.22.1",
+  "onnxruntime-directml==1.22.0 ; sys_platform == 'win32'",
+  "onnxruntime-gpu==1.22.0 ; platform_machine == 'x86_64' and sys_platform == 'linux'",
+  "wmi==1.5.1 ; sys_platform == 'win32'",
+]
+# truststore は HTTPS 通信時にシステムにインストールされた証明書ストアを使うために必要
+## ref: https://github.com/psf/requests/issues/2966
+## ref: https://truststore.readthedocs.io/en/latest/
+
+# aivmlib は AIVMX ファイルのメタデータ読み取りに必要
+
+
+[dependency-groups]
+dev = [
+  "mypy==1.10.0",
+  "pytest==8.2.0",
+  "coveralls==4.0.1",
+  "httpx==0.28.1", # NOTE: required by fastapi.testclient.TestClient (fastapi-slim's unmanaged dependency)
+  "syrupy==4.6.1",
+  "types-pyyaml==6.0.12",
+  "pip-licenses==5.0.0", # NOTE: must be specified exactly (c.f. #1281)
+  "pre-commit==4.0.1",
+  "pip-audit==2.7.3",
+  "ruff==0.11.1",
+  "typos==1.31.1",
+]
+
+build = ["pyinstaller>=6",
+          "pip-licenses==5.0.0", # NOTE: must be specified exactly (c.f. #1281)
+          "taskipy==1.14.1"
+]
+
+[tool.uv.sources]
+style-bert-vits2 = { git = "https://github.com/q9uri/Daisuki-Bert-VITS2", rev = "21146ff923db1771bac6d0f0f5327ca3e45aabaa" }
+natsumikan = { git = "https://github.com/q9uri/natsumikan", rev = "150572bafeb56a45c645518dd8ddf339b89893c3" }
+
+# OS に応じて適切な ONNX Runtime プラグインをインストール
+
+# onnxruntime (CPU): onnxruntime-directml / onnxruntime-gpu 非対応の環境すべて
+# onnxruntime (DirectML): Windows のみ
+# onnxruntime (GPU): Linux x64 のみ
+
+

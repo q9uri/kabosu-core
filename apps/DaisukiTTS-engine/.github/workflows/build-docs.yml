@@ -1,0 +1,54 @@
+# API docs HTML ファイルを生成し、`gh-pages` ブランチへの push によって GitHub Pages 上のドキュメントとして公開
+
+name: Upload Docs
+
+on:
+  push:
+    branches:
+      - "master"
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: "3.11.9"
+  PUBLISH_DIR: "./docs/api"
+  PUBLISH_BRANCH: "gh-pages"
+  DESTINATION_DIR: "api"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  upload-doc:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: <Setup> Check out the repository
+        uses: actions/checkout@v4
+
+      - name: <Setup> Prepare Python Runtime / Python Dependencies
+        uses: ./.github/actions/prepare_python
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: <Setup> Install Poetry
+        run: python -m pip install poetry
+
+      - name: <Setup> Cache Poetry
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-${{ runner.arch }}-poetry-${{ hashFiles('**/poetry.lock') }}
+
+      - name: <Setup> Install Python dependencies
+        run: poetry install --only=main
+
+      - name: <Build> Make documents
+        run: PYTHONPATH=. poetry run python tools/make_docs.py
+
+      - name: <Deploy> Deploy documents to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.PUBLISH_DIR }}
+          publish_branch: ${{ env.PUBLISH_BRANCH }}
+          destination_dir: ${{ env.DESTINATION_DIR }}

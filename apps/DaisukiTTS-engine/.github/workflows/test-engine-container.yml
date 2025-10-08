@@ -1,0 +1,106 @@
+name: Test Docker Release Build
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        type: string
+        required: true
+      repo_url:
+        type: string
+        required: false
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        description: "テストしたいタグ名"
+        required: true
+
+env:
+  PYTHON_VERSION: "3.11.9"
+  IMAGE_NAME: ghcr.io/q9uri/daisuki-tts-engine
+  VERSION: |- # version指定時はversionを、それ以外はタグ名を使用
+    ${{ (github.event.inputs || inputs).version }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test:
+    runs-on: [ubuntu-22.04]
+    strategy:
+      fail-fast: false
+      matrix:
+        tag:
+          - ""
+          - cpu
+
+    steps:
+      - name: <Setup> Check out the repository
+        uses: actions/checkout@v4
+
+      - name: <Setup> Prepare Python Runtime / Python Dependencies
+        uses: ./.github/actions/prepare_python
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: <Setup> Install Poetry
+        run: python -m pip install poetry
+
+      - name: <Setup> Cache Poetry
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-${{ runner.arch }}-poetry-${{ hashFiles('**/poetry.lock') }}
+
+      - name: <Setup> Cache Engine Data
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/DaisukiTTS-Engine
+          key: ${{ runner.os }}-${{ runner.arch }}-engine-data
+
+      - name: <Setup> Install Python dependencies
+        run: poetry install --with=dev
+
+      - name: <Setup> Declare variables
+        id: docker_vars
+        run: |
+          if [ "${{ matrix.tag }}" != "" ]; then
+            echo "image_tag=${{ env.IMAGE_NAME }}:${{ matrix.tag }}-${{ env.VERSION }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "image_tag=${{ env.IMAGE_NAME }}:${{ env.VERSION }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: <Setup> Pull ENGINE application docker image
+        run: docker pull "${{ steps.docker_vars.outputs.image_tag }}"
+
+      - name: <Setup> Run ENGINE application docker container
+        run: docker run -d -p 10101:10101 -v ~/.local/share/AivisSpeech-Engine:/home/user/.local/share/AivisSpeech-Engine-Dev "${{ steps.docker_vars.outputs.image_tag }}"
+
+      # Docker コンテナが起動してから、レスポンスが返ってくるまで待機する
+      # リトライは20回まで `/version` にアクセスしてレスポンスのステータスコードをチェック
+      # - ステータスコードが `200` の場合は正常終了します
+      # - ステータスコードが `200` 以外の場合は、15秒間スリープしてリトライします
+      - name: <Setup> Warm up ENGINE server by waiting
+        run: |
+          set +e # curlのエラーを無視する
+
+          url="http://127.0.0.1:10101/version"
+          max_attempts=20
+          sleep_interval=15
+
+          for i in $(seq 1 "$max_attempts"); do
+            status=$(curl -o /dev/null -s -w '%{http_code}\n' "$url")
+            if [ "$status" -eq 200 ]; then
+              echo "Container is ready! Response status code: ${status}"
+              exit 0
+            else
+              echo "Attempt ${i}/${max_attempts}: Response status code $status"
+              sleep "${sleep_interval}"
+            fi
+          done
+          exit 1
+
+      - name: <Test> Test ENGINE application docker container
+        run: poetry run python tools/check_release_build.py --skip_run_process --skip_check_manifest --dist_dir dist/

@@ -1,0 +1,79 @@
+{
+    "manifest_version": "0.13.1",
+    "name": "DaisukiTTS Engine",
+    "brand_name": "DaisukiTTS",
+    "uuid": "1b4a5014-d9fd-11ee-b97d-83c170a68ed3",
+    "version": "999.999.999",
+    "url": "https://github.com/q9uri/DaisukiTTS",
+    "command": "run",
+    "port": 10101,
+    "icon": "resources/engine_manifest_assets/icon.png",
+    "default_sampling_rate": 44100,
+    "frame_rate": 172.265625,
+    "terms_of_service": "resources/engine_manifest_assets/terms_of_service.md",
+    "update_infos": "resources/engine_manifest_assets/update_infos.json",
+    "dependency_licenses": "resources/engine_manifest_assets/dependency_licenses.json",
+    "supported_vvlib_manifest_version": null,
+    "supported_features": {
+        "adjust_mora_pitch": {
+            "type": "bool",
+            "value": false,
+            "name": "モーラごとの音高の調整"
+        },
+        "adjust_phoneme_length": {
+            "type": "bool",
+            "value": false,
+            "name": "音素ごとの長さの調整"
+        },
+        "adjust_speed_scale": {
+            "type": "bool",
+            "value": true,
+            "name": "全体の話速の調整"
+        },
+        "adjust_pitch_scale": {
+            "type": "bool",
+            "value": true,
+            "name": "全体の音高の調整"
+        },
+        "adjust_intonation_scale": {
+            "type": "bool",
+            "value": true,
+            "name": "全体の抑揚の調整"
+        },
+        "adjust_volume_scale": {
+            "type": "bool",
+            "value": true,
+            "name": "全体の音量の調整"
+        },
+        "adjust_pause_length": {
+            "type": "bool",
+            "value": false,
+            "name": "句読点などの無音時間の調整"
+        },
+        "interrogative_upspeak": {
+            "type": "bool",
+            "value": false,
+            "name": "疑問文の自動調整"
+        },
+        "synthesis_morphing" : {
+            "type": "bool",
+            "value": false,
+            "name": "2種類のスタイルでモーフィングした音声を合成"
+        },
+        "sing" : {
+            "type": "bool",
+            "value": false,
+            "name": "歌唱音声合成"
+        },
+        "manage_library": {
+            "type": "bool",
+            "value": false,
+            "name": "音声ライブラリのインストール・アンインストール"
+        },
+        "return_resource_url": {
+            "type": "bool",
+            "value": false,
+            "name": "キャラクター情報のリソースを URL で返送"
+        }
+    }
+}

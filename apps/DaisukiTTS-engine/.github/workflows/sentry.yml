@@ -1,0 +1,50 @@
+name: Sentry Release
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+    paths:
+      - 'voicevox_engine/**'
+      - '.github/workflows/sentry.yml'
+
+jobs:
+  create-sentry-release:
+    name: Create Sentry Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set release version
+        id: set_version
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/}" >> "$GITHUB_ENV"
+          else
+            echo "RELEASE_VERSION=${GITHUB_SHA}" >> "$GITHUB_ENV"
+          fi
+
+      - name: Install Sentry CLI
+        run: pip install sentry-cli
+
+      - name: Create Sentry release
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: 'aivis-project'
+          SENTRY_PROJECT: 'aivisspeech-engine'
+          RELEASE_VERSION: ${{ env.RELEASE_VERSION }}
+        run: |
+          RELEASE_NAME="AivisSpeech-Engine@${{ env.RELEASE_VERSION }}"
+
+          sentry-cli releases new "$RELEASE_NAME"
+          sentry-cli releases set-commits "$RELEASE_NAME" --auto
+          sentry-cli releases finalize "$RELEASE_NAME"
+          sentry-cli releases deploys "$RELEASE_NAME" new -e production

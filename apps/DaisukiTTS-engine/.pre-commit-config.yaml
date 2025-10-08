@@ -1,0 +1,38 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: local
+    hooks:
+      - id: check-linting
+        name: check-linting
+        entry: poetry run ruff check
+        language: system
+        types: [file, python]
+        stages: [pre-push]
+        pass_filenames: false
+      - id: check-formatting
+        name: check-formatting
+        entry: poetry run ruff format --check
+        language: system
+        types: [file, python]
+        stages: [pre-push]
+        pass_filenames: false
+      - id: check-typing
+        name: check-typing
+        entry: poetry run mypy .
+        language: system
+        types: [file, python]
+        stages: [pre-push]
+        pass_filenames: false
+      - id: poetry-check # `pyproject.toml` と `poetry.lock` が整合する
+        name: poetry-check
+        entry: poetry check
+        language: python
+        stages: [pre-push]
+        pass_filenames: false
+      - id: update-licenses
+        name: update-licenses
+        entry: poetry run task update-licenses
+        language: system
+        stages: [pre-push]
+        pass_filenames: false

@@ -1,0 +1,105 @@
+name: Test Release Build
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        type: string
+        required: true
+      repo_url:
+        type: string
+        required: false
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        description: "テストしたいタグ名"
+        required: true
+      repo_url:
+        type: string
+        description: "リポジトリの URL (省略可能)"
+        required: false
+
+env:
+  PYTHON_VERSION: "3.11.9"
+  REPO_URL:
+    |- # repo_url指定時はrepo_urlを、それ以外はgithubのリポジトリURLを使用
+    ${{ (github.event.inputs || inputs).repo_url || format('{0}/{1}', github.server_url, github.repository) }}
+  VERSION: |- # version指定時はversionを、それ以外はタグ名を使用
+    ${{ (github.event.inputs || inputs).version }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2022
+            target: Windows-x64
+          - os: macos-13
+            target: macOS-x64
+          - os: macos-14
+            target: macOS-arm64
+          - os: ubuntu-22.04
+            target: Linux-x64
+          - os: ubuntu-22.04-arm
+            target: Linux-arm64
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: <Setup> Declare variables
+        id: vars
+        run: |
+          echo "release_url=${{ env.REPO_URL }}/releases/download/${{ env.VERSION }}" >> "$GITHUB_OUTPUT"
+          echo "package_name=DaisukiTTS-Engine-${{ matrix.target }}-${{ env.VERSION }}" >> "$GITHUB_OUTPUT"
+
+      - name: <Setup> Check out the repository
+        uses: actions/checkout@v4
+
+      - name: <Setup> Prepare Python Runtime / Python Dependencies
+        uses: ./.github/actions/prepare_python
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: <Setup> Install Poetry
+        run: python -m pip install poetry
+
+      - name: <Setup> Cache Poetry
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-${{ runner.arch }}-poetry-${{ hashFiles('**/poetry.lock') }}
+
+      - name: <Setup> Cache Engine Data
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/AivisSpeech-Engine
+          key: ${{ runner.os }}-${{ runner.arch }}-engine-data
+
+      - name: <Setup> Download ENGINE package
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p download
+          package_name="${{ steps.vars.outputs.package_name }}"
+          gh release download "${{ env.VERSION }}" -p "${package_name}.7z.txt" -D download
+          while IFS= read -r file; do
+            gh release download "${{ env.VERSION }}" -p "$file" -D download
+          done < "download/${package_name}.7z.txt"
+          7z x "download/$(head -n1 download/${package_name}.7z.txt)"
+          mv "${{ matrix.target }}" dist/
+
+      - name: <Setup> Set up permission
+        if: startsWith(matrix.target, 'linux') || startsWith(matrix.target, 'macos')
+        run: chmod +x dist/run
+
+      - name: <Setup> Install Python test dependencies
+        run: poetry install --with=dev
+
+      - name: <Test> Test ENGINE package
+        run: poetry run python tools/check_release_build.py --dist_dir dist/
