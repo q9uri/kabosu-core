@@ -1,0 +1,64 @@
+/core
+    /__init__.py #ダミー
+
+/llm
+    /decoder
+        /__init__.py #ダミー
+    /rag 
+        /__init__.py #ダミー
+    /embed
+        /__init__.py #ダミー
+/io
+    /tts
+        /__init__.py #ダミー
+
+        /bigvgan
+            /__init__.py #ダミー
+
+    /asr
+        /__init__.py #ダミー
+
+    /vision
+        /__init__.py #ダミー
+
+/language
+    /janome
+    /njd.py #openjtalk風の構造
+        /en
+        /ja
+            /lib # 保守されていないLibraryをインクルードしたもの。改良もしている
+                /asapy # asaのpyhon実装 ginzaをcabochaの代わりに使用
+                /asari # 感情分析 Library トークナイザをjanome(ipadic)からvibratoに変更
+                /bunkai # 境界線分割機 トークナイザをjanome(ipadic)からvibratoに変更
+                /marine # 日本語アクセント推定
+                /yomikata #dbertを使った日本語の複数読みのある漢字の読みの推定（修正）
+                /mlask.py #感情分析Library　トークナイザをmecab-python3(ipadic)からvibratoに変更
+                /oseti.py #感情分析Library　トークナイザをmecab-python3(ipadic)からvibratoに変更
+                __init__.py #ダミー
+
+            /normalizer #todo: openjtalk互換apiからしか読んでいないのでどうするか
+                /itaiji.py #異体字を常用漢字に変換する
+                /__init__.py #
+                                英語の読み推定
+                                半角から全角に変換
+                                yomikataを使用し読み修正
+                                kanalaizerを使用し半角英字をカタカナに推論
+
+
+            /hougen.py #　オプションでアクセントを京阪アクセントにする処理
+            /modify_acc.py # pyopenjtalk-plusから取ってきたアクセント規則
+            /modify_yomi.py # pyopenjtalk-plusから取ってきた読み修正
+            /odoriji.py # pyopenjtalk-plusから取ってきた躍り字の読み修正
+            /talk_styles.py #よみを赤ちゃん言葉や濁音化させるオプション用
+            /__init__.py
+
+        /ko # g2pk,g2pkk,g2pk2,g2pk3,python-jamoをマージしたもの
+            # トークナイザをko-mecabからvibratoに変更
+
+        /__init__.py
+
+    /vibrato.py #vibrato python wrpper
+    /types.py
+    /__init__.py #ダミー
+
+__init__.py #ダミー
