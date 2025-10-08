@@ -1,0 +1,247 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "style-bert-vits2"
+dynamic = ["version"]
+description = "Style-Bert-VITS2: Bert-VITS2 with more controllable voice styles."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0"
+keywords = []
+authors = [
+    { name = "litagin02", email = "139731664+litagin02@users.noreply.github.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+    "aivmlib>=1.2.1",
+    "cmudict",
+    "cn2an",
+    "jaconv",
+    "kabosu-plus",
+    "loguru",
+    "nltk<=3.8.1",
+    "num2words",
+    "numba",
+    "numpy<2",
+    "psutil==6.1.1",
+    "pydantic>=2.0",
+    "pypinyin",
+    "pyworld-prebuilt",
+    "safetensors",
+    # transformers 4.50.0 以降、なぜか ku-nlp/deberta-v2-large-japanese-char-wwm (日本語用 BERT) が
+    # ロード時にハングアップするため、やむを得ず当面の間 4.50.0 未満に固定する
+    # ref: https://github.com/huggingface/transformers/issues/36803
+    "transformers==4.53.0",
+    "umap-learn>=0.5.9.post2",
+]
+
+[project.optional-dependencies]
+torch = [
+    "accelerate",
+    "torch>=2.1",
+]
+onnxruntime = [
+    "onnxruntime; (sys_platform != 'linux' or platform_machine != 'x86_64') and sys_platform != 'win32'",
+    "onnxruntime-directml; sys_platform == 'win32'",
+    "onnxruntime-gpu; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[project.urls]
+Documentation = "https://github.com/litagin02/Style-Bert-VITS2#readme"
+Issues = "https://github.com/litagin02/Style-Bert-VITS2/issues"
+Source = "https://github.com/litagin02/Style-Bert-VITS2"
+
+[tool.hatch.version]
+path = "style_bert_vits2/constants.py"
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+    ".vscode",
+    "dict_data/default.csv",
+    "docs",
+    "style_bert_vits2",
+    "tests",
+    "LGPL_LICENSE",
+    "LICENSE",
+    "pyproject.toml",
+    "README.md",
+]
+exclude = [".git", ".gitignore", ".gitattributes"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["style_bert_vits2"]
+
+# for PyTorch inference
+[tool.hatch.envs.test]
+dependencies = [
+    "coverage[toml]>=6.5",
+    "pytest",
+    "scipy",
+]
+features = ["torch"]
+[tool.hatch.envs.test.scripts]
+# Usage: `hatch run test:test`
+test = "pytest -s tests/test_main.py::test_synthesize_cpu"
+# Usage: `hatch run test:test-cuda`
+test-cuda = "pytest -s tests/test_main.py::test_synthesize_cuda"
+# Usage: `hatch run test:coverage`
+test-cov = "coverage run -m pytest -s tests/test_main.py::test_synthesize_cpu"
+# Usage: `hatch run test:cov-report`
+cov-report = ["- coverage combine", "coverage report"]
+# Usage: `hatch run test:cov`
+cov = ["test-cov", "cov-report"]
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11"]
+
+# for ONNX inference (without PyTorch dependency)
+[tool.hatch.envs.test-onnx]
+dependencies = [
+    "coverage[toml]>=6.5",
+    "pytest",
+    "scipy",
+]
+features = ["onnxruntime"]
+[tool.hatch.envs.test-onnx.scripts]
+# Usage: `hatch run test-onnx:test`
+test = "pytest -s tests/test_main.py::test_synthesize_onnx_cpu"
+# Usage: `hatch run test-onnx:test-cuda`
+test-cuda = "pytest -s tests/test_main.py::test_synthesize_onnx_cuda"
+# Usage: `hatch run test-onnx:test-tensorrt`
+test-tensorrt = "pytest -s tests/test_main.py::test_synthesize_onnx_tensorrt"
+# Usage: `hatch run test-onnx:test-directml`
+test-directml = "pytest -s tests/test_main.py::test_synthesize_onnx_directml"
+# Usage: `hatch run test-onnx:test-coreml`
+test-coreml = "pytest -s tests/test_main.py::test_synthesize_onnx_coreml"
+# Usage: `hatch run test-onnx:coverage`
+test-cov = "coverage run -m pytest -s tests/test_main.py::test_synthesize_onnx_cpu"
+# Usage: `hatch run test-onnx:cov-report`
+cov-report = ["- coverage combine", "coverage report"]
+# Usage: `hatch run test-onnx:cov`
+cov = ["test-cov", "cov-report"]
+[[tool.hatch.envs.test-onnx.matrix]]
+python = ["3.10", "3.11"]
+
+
+[tool.hatch.envs.style]
+dependencies = [
+    "ruff",
+    "pyright",
+    "pytest",
+    "scipy",
+]
+features = ["torch", "onnxruntime"]
+[tool.hatch.envs.style.scripts]
+# Usage: `hatch run style:check`
+check = [
+    "ruff check . ; pyright",
+]
+# Usage: `hatch run style:fmt`
+fmt = [
+    "ruff check --fix . && ruff format . ; pyright",
+]
+
+[tool.coverage.run]
+source_pkgs = ["style_bert_vits2", "tests"]
+branch = true
+parallel = true
+omit = ["style_bert_vits2/constants.py"]
+
+[tool.coverage.paths]
+style_bert_vits2 = ["style_bert_vits2", "*/style-bert-vits2/style_bert_vits2"]
+tests = ["tests", "*/style-bert-vits2/tests"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.ruff]
+# 1行の長さを最大88文字に設定
+line-length = 88
+# インデントの幅を4スペースに設定
+indent-width = 4
+# Python 3.10 を利用する
+target-version = "py310"
+# 以下のディレクトリは対象から除外する
+extend-exclude = [
+    "Data/",
+    "inputs/",
+    "model_assets/",
+    "static/",
+]
+
+[tool.ruff.lint]
+# flake8, pycodestyle, pyupgrade, isort, Ruff 固有のルールを使う
+select = ["F", "E", "W", "UP", "I", "RUF"]
+ignore = [
+    "E402",    # Module level import not at top of file を抑制 (style_bert_vits2 モジュール外のコードで発生する)
+    "E501",    # 1行の長さを超えている場合の警告を抑制
+    "E722",    # Do not use bare 'except' を抑制
+    "E731",    # Do not assign a `lambda` expression, use a `def` を抑制
+    "E741",    # Ambiguous variable name を抑制
+    "F401",    # Module imported but unused を抑制
+    "F841",    # Local variable is assigned to but never used を抑制
+    "RUF001",  # 全角記号など `ambiguous unicode character` も使いたいため
+    "RUF002",  # 全角記号など `ambiguous unicode character` も使いたいため
+    "RUF003",  # 全角記号など `ambiguous unicode character` も使いたいため
+    "RUF005",  # collection-literal-concatenation を抑制
+    "RUF017",  # quadratic-list-summation を抑制
+    "RUF034",  # useless-if-else を抑制
+]
+
+[tool.ruff.lint.isort]
+# インポートブロックの後に2行空ける
+lines-after-imports = 2
+
+[tool.ruff.format]
+# ダブルクオートを使う
+quote-style = "double"
+# インデントにはスペースを使う
+indent-style = "space"
+
+[tool.pyright]
+# 型チェック対象の Python バージョンを指定
+pythonVersion = "3.11"
+# TypeCheckingMode を strict に設定（VSCode の設定と同等）
+typeCheckingMode = "strict"
+# プロジェクトルートを指定
+pythonPlatform = "All"
+# インクルードするパッケージパス
+include = [
+    "style_bert_vits2/",
+    "tests/",
+]
+# 除外するパス
+exclude = [
+    "**/__pycache__",
+    "**/.venv",
+    "**/node_modules",
+]
+# VSCode の settings.json の diagnosticSeverityOverrides に対応する設定
+reportConstantRedefinition = "none"
+reportDeprecated = "none"  # 修正コストの観点で抑制
+reportGeneralTypeIssues = "warning"
+reportMissingParameterType = "warning"
+reportMissingImports = "none"  # 全部の依存関係をインストールすると重いので抑制
+reportMissingTypeStubs = "none"
+reportPrivateImportUsage = "none"
+reportPrivateUsage = "warning"
+reportShadowedImports = "none"
+reportUnnecessaryComparison = "none"
+reportUnknownArgumentType = "none"
+reportUnknownLambdaType = "none"
+reportUnknownMemberType = "none"
+reportUnknownParameterType = "warning"
+reportUnknownVariableType = "none"
+reportUnusedFunction = "none"
+reportUnusedVariable = "information"
+
+[tool.uv.sources]
+kabosu-plus = { git = "https://github.com/q9uri/kabosu-plus", rev = "17b3e400742ca28fee2641fde3323e0454e99ef8" }
