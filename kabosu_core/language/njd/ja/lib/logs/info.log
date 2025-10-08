@@ -1,0 +1,2814 @@
+INFO 2025-10-07 09:46:00,358 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:46:50,202 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:47:28,788 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:47:55,206 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:50:31,133 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:54:00,219 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:55:45,115 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:57:37,016 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 09:58:40,804 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:01:41,039 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:02:23,193 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:04:42,005 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:05:36,210 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:05:37,363 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.0 ソレデワ / 3
+
+INFO 2025-10-07 10:05:37,366 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	s00 o01 r00 e11 d00 e11 w00 a01
+
+INFO 2025-10-07 10:05:37,367 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	s00 o01 r00 e11 d00 e11 w00 a01
+
+INFO 2025-10-07 10:05:37,368 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,369 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.1 カジノオ / 1
+
+INFO 2025-10-07 10:05:37,370 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:05:37,371 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:05:37,373 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,373 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.2 オクッテイル / 0
+
+INFO 2025-10-07 10:05:37,374 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	o01 k00 u10 cl11 t00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:05:37,375 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	o01 k00 u10 cl11 t00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:05:37,376 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,377 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.3 ハジマッタ / 0
+
+INFO 2025-10-07 10:05:37,378 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	h00 a01 j00 i11 m00 a10 cl11 t00 a11
+
+INFO 2025-10-07 10:05:37,378 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	h00 a01 j00 i11 m00 a10 cl11 t00 a11
+
+INFO 2025-10-07 10:05:37,379 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,380 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.4 ギインリッポー / 4
+
+INFO 2025-10-07 10:05:37,381 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	g00 i01 i10 N11 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:05:37,381 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	g00 i01 i10 N11 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:05:37,383 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,384 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.5 シンデイル / 0
+
+INFO 2025-10-07 10:05:37,384 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	sh00 i00 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:05:37,385 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	sh00 i00 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:05:37,386 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,387 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.6 ユキオンナオ / 3
+
+INFO 2025-10-07 10:05:37,388 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	y00 u01 k00 i11 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:05:37,388 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	y00 u01 k00 i11 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:05:37,389 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,390 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.7 ツーワリョーガ / 3
+
+INFO 2025-10-07 10:05:37,390 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	ts00 uu11 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:05:37,391 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	ts00 uu11 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:05:37,393 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,393 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.8 アソンデイル / 0
+
+INFO 2025-10-07 10:05:37,394 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	a01 s00 o10 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:05:37,395 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	a01 s00 o10 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:05:37,396 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,396 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.9 トーナンアジアオ / 5
+
+INFO 2025-10-07 10:05:37,397 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	t00 oo11 n00 a10 N11 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:05:37,398 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	t00 oo11 n00 a10 N11 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:05:37,398 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,400 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.10 サイセーシマス / 6
+
+INFO 2025-10-07 10:05:37,401 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	s00 a01 i11 s00 ee11 sh00 i11 m00 a11 s00 u01
+
+INFO 2025-10-07 10:05:37,402 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	s00 a01 i11 s00 ee11 sh00 i11 m00 a11 s00 u01
+
+INFO 2025-10-07 10:05:37,402 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,403 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.11 トーゴーガタリゾートノ / 8
+
+INFO 2025-10-07 10:05:37,404 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	t00 oo11 g00 oo11 g00 a11 t00 a11 r00 i11 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:05:37,404 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	t00 oo11 g00 oo11 g00 a11 t00 a11 r00 i11 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:05:37,406 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,407 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.12 ンダモシタン / 4
+
+INFO 2025-10-07 10:05:37,408 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	N01 d00 a11 m00 o11 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:05:37,408 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	N01 d00 a11 m00 o11 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:05:37,409 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,410 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.13 チョーセンスル / 0
+
+INFO 2025-10-07 10:05:37,410 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	ch00 oo11 s00 e10 N11 s00 u11 r00 u11
+
+INFO 2025-10-07 10:05:37,411 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	ch00 oo11 s00 e10 N11 s00 u11 r00 u11
+
+INFO 2025-10-07 10:05:37,413 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,413 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.14 ヘンコーオ / 0
+
+INFO 2025-10-07 10:05:37,414 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	h00 e00 N11 k00 oo11 o11
+
+INFO 2025-10-07 10:05:37,415 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	h00 e00 N11 k00 oo11 o11
+
+INFO 2025-10-07 10:05:37,416 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,417 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.15 バチーンッテ / 2
+
+INFO 2025-10-07 10:05:37,418 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:05:37,418 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:05:37,419 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,419 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.16 バーンアウトワ / 4
+
+INFO 2025-10-07 10:05:37,420 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	b00 aa10 N11 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:05:37,421 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	b00 aa10 N11 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:05:37,423 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,424 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.17 ンー / 1
+
+INFO 2025-10-07 10:05:37,424 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	NN11
+
+INFO 2025-10-07 10:05:37,425 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	NN11
+
+INFO 2025-10-07 10:05:37,425 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,426 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.18 ンー / 0
+
+INFO 2025-10-07 10:05:37,428 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	NN01
+
+INFO 2025-10-07 10:05:37,428 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	NN01
+
+INFO 2025-10-07 10:05:37,428 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,430 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.19 ジャンケンー / 1
+
+INFO 2025-10-07 10:05:37,431 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:05:37,431 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:05:37,432 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,433 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.20 オニーチャンー / 2
+
+INFO 2025-10-07 10:05:37,434 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:05:37,435 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:05:37,435 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,436 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.21 ッー / 1
+
+INFO 2025-10-07 10:05:37,437 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	cl11
+
+INFO 2025-10-07 10:05:37,438 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	cl11
+
+INFO 2025-10-07 10:05:37,439 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,439 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.22 ッー / 0
+
+INFO 2025-10-07 10:05:37,440 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	cl01
+
+INFO 2025-10-07 10:05:37,441 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	cl01
+
+INFO 2025-10-07 10:05:37,441 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:05:37,444 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.0 ソレデワ / 3
+
+INFO 2025-10-07 10:05:37,446 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	s00 o01 r00 e01 d00 e11 w00 a01
+
+INFO 2025-10-07 10:05:37,447 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	s00 o01 r00 e01 d00 e11 w00 a01
+
+INFO 2025-10-07 10:05:37,447 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,448 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.1 カジノオ / 1
+
+INFO 2025-10-07 10:05:37,449 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:05:37,449 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:05:37,450 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,451 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.2 オクッテイル / 0
+
+INFO 2025-10-07 10:05:37,452 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	o01 k00 u00 cl01 t00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:05:37,453 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	o01 k00 u00 cl01 t00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:05:37,453 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,454 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.3 ハジマッタ / 0
+
+INFO 2025-10-07 10:05:37,456 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	h00 a01 j00 i01 m00 a00 cl01 t00 a01
+
+INFO 2025-10-07 10:05:37,457 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	h00 a01 j00 i01 m00 a00 cl01 t00 a01
+
+INFO 2025-10-07 10:05:37,458 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,459 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.4 ギインリッポー / 4
+
+INFO 2025-10-07 10:05:37,459 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	g00 i01 i00 N01 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:05:37,460 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	g00 i01 i00 N01 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:05:37,461 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,461 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.5 シンデイル / 0
+
+INFO 2025-10-07 10:05:37,463 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	sh00 i00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:05:37,464 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	sh00 i00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:05:37,465 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,466 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.6 ユキオンナオ / 3
+
+INFO 2025-10-07 10:05:37,466 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	y00 u01 k00 i01 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:05:37,468 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	y00 u01 k00 i01 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:05:37,468 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,468 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.7 ツーワリョーガ / 3
+
+INFO 2025-10-07 10:05:37,470 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	ts00 uu01 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:05:37,472 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	ts00 uu01 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:05:37,473 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,473 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.8 アソンデイル / 0
+
+INFO 2025-10-07 10:05:37,474 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	a01 s00 o00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:05:37,474 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	a01 s00 o00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:05:37,476 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,477 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.9 トーナンアジアオ / 5
+
+INFO 2025-10-07 10:05:37,478 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	t00 oo01 n00 a00 N01 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:05:37,478 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	t00 oo01 n00 a00 N01 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:05:37,479 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,480 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.10 サイセーシマス / 6
+
+INFO 2025-10-07 10:05:37,480 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	s00 a01 i01 s00 ee01 sh00 i01 m00 a11 s00 u01
+
+INFO 2025-10-07 10:05:37,481 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	s00 a01 i01 s00 ee01 sh00 i01 m00 a11 s00 u01
+
+INFO 2025-10-07 10:05:37,483 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,483 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.11 トーゴーガタリゾートノ / 8
+
+INFO 2025-10-07 10:05:37,484 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	t00 oo01 g00 oo01 g00 a01 t00 a01 r00 i01 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:05:37,485 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	t00 oo01 g00 oo01 g00 a01 t00 a01 r00 i01 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:05:37,486 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,487 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.12 ンダモシタン / 4
+
+INFO 2025-10-07 10:05:37,488 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	N01 d00 a01 m00 o01 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:05:37,488 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	N01 d00 a01 m00 o01 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:05:37,489 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,490 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.13 チョーセンスル / 0
+
+INFO 2025-10-07 10:05:37,491 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	ch00 oo01 s00 e00 N01 s00 u01 r00 u01
+
+INFO 2025-10-07 10:05:37,491 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	ch00 oo01 s00 e00 N01 s00 u01 r00 u01
+
+INFO 2025-10-07 10:05:37,493 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,494 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.14 ヘンコーオ / 0
+
+INFO 2025-10-07 10:05:37,494 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	h00 e00 N01 k00 oo01 o01
+
+INFO 2025-10-07 10:05:37,495 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	h00 e00 N01 k00 oo01 o01
+
+INFO 2025-10-07 10:05:37,496 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,497 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.15 バチーンッテ / 2
+
+INFO 2025-10-07 10:05:37,498 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:05:37,498 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:05:37,500 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,501 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.16 バーンアウトワ / 4
+
+INFO 2025-10-07 10:05:37,501 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	b00 aa00 N01 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:05:37,502 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	b00 aa00 N01 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:05:37,503 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,504 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.17 ンー / 1
+
+INFO 2025-10-07 10:05:37,504 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	NN11
+
+INFO 2025-10-07 10:05:37,506 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	NN11
+
+INFO 2025-10-07 10:05:37,506 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,507 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.18 ンー / 0
+
+INFO 2025-10-07 10:05:37,508 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	NN01
+
+INFO 2025-10-07 10:05:37,509 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	NN01
+
+INFO 2025-10-07 10:05:37,509 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,511 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.19 ジャンケンー / 1
+
+INFO 2025-10-07 10:05:37,511 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:05:37,512 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:05:37,513 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,513 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.20 オニーチャンー / 2
+
+INFO 2025-10-07 10:05:37,514 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:05:37,514 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:05:37,516 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,517 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.21 ッー / 1
+
+INFO 2025-10-07 10:05:37,518 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	cl11
+
+INFO 2025-10-07 10:05:37,519 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	cl11
+
+INFO 2025-10-07 10:05:37,519 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,520 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.22 ッー / 0
+
+INFO 2025-10-07 10:05:37,520 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	cl01
+
+INFO 2025-10-07 10:05:37,521 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	cl01
+
+INFO 2025-10-07 10:05:37,522 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:05:37,525 [test:test_g2p_util.py:test_mora_split:171]
+No.0 ソレデワ
+
+INFO 2025-10-07 10:05:37,526 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ソ', 'レ', 'デ', 'ワ']
+
+INFO 2025-10-07 10:05:37,527 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ソ', 'レ', 'デ', 'ワ']
+
+INFO 2025-10-07 10:05:37,528 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,529 [test:test_g2p_util.py:test_mora_split:171]
+No.1 カジノオ
+
+INFO 2025-10-07 10:05:37,529 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['カ', 'ジ', 'ノ', 'オ']
+
+INFO 2025-10-07 10:05:37,530 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['カ', 'ジ', 'ノ', 'オ']
+
+INFO 2025-10-07 10:05:37,531 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,531 [test:test_g2p_util.py:test_mora_split:171]
+No.2 シンデイル
+
+INFO 2025-10-07 10:05:37,532 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['シ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:05:37,533 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['シ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:05:37,535 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,536 [test:test_g2p_util.py:test_mora_split:171]
+No.3 ユキオンナオ
+
+INFO 2025-10-07 10:05:37,536 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ユ', 'キ', 'オ', 'ン', 'ナ', 'オ']
+
+INFO 2025-10-07 10:05:37,537 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ユ', 'キ', 'オ', 'ン', 'ナ', 'オ']
+
+INFO 2025-10-07 10:05:37,538 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,539 [test:test_g2p_util.py:test_mora_split:171]
+No.4 ツーワリョーガ
+
+INFO 2025-10-07 10:05:37,540 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ツ', 'ー', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:05:37,541 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ツ', 'ー', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:05:37,542 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,542 [test:test_g2p_util.py:test_mora_split:171]
+No.5 ツーヮワリョーガ
+
+INFO 2025-10-07 10:05:37,544 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ツ', 'ー', 'ヮ', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:05:37,545 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ツ', 'ー', 'ヮ', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:05:37,546 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,546 [test:test_g2p_util.py:test_mora_split:171]
+No.6 アソンデイル
+
+INFO 2025-10-07 10:05:37,547 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ア', 'ソ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:05:37,548 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ア', 'ソ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:05:37,549 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,549 [test:test_g2p_util.py:test_mora_split:171]
+No.7 トーナンアジアオ
+
+INFO 2025-10-07 10:05:37,550 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ト', 'ー', 'ナ', 'ン', 'ア', 'ジ', 'ア', 'オ']
+
+INFO 2025-10-07 10:05:37,551 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ト', 'ー', 'ナ', 'ン', 'ア', 'ジ', 'ア', 'オ']
+
+INFO 2025-10-07 10:05:37,551 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,553 [test:test_g2p_util.py:test_mora_split:171]
+No.8 サイセーシマス
+
+INFO 2025-10-07 10:05:37,554 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['サ', 'イ', 'セ', 'ー', 'シ', 'マ', 'ス']
+
+INFO 2025-10-07 10:05:37,555 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['サ', 'イ', 'セ', 'ー', 'シ', 'マ', 'ス']
+
+INFO 2025-10-07 10:05:37,556 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,557 [test:test_g2p_util.py:test_mora_split:171]
+No.9 トーゴーガタリゾートノ
+
+INFO 2025-10-07 10:05:37,557 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ト', 'ー', 'ゴ', 'ー', 'ガ', 'タ', 'リ', 'ゾ', 'ー', 'ト', 'ノ']
+
+INFO 2025-10-07 10:05:37,558 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ト', 'ー', 'ゴ', 'ー', 'ガ', 'タ', 'リ', 'ゾ', 'ー', 'ト', 'ノ']
+
+INFO 2025-10-07 10:05:37,559 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,560 [test:test_g2p_util.py:test_mora_split:171]
+No.10 ンダモシタン
+
+INFO 2025-10-07 10:05:37,561 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ン', 'ダ', 'モ', 'シ', 'タ', 'ン']
+
+INFO 2025-10-07 10:05:37,561 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ン', 'ダ', 'モ', 'シ', 'タ', 'ン']
+
+INFO 2025-10-07 10:05:37,563 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,564 [test:test_g2p_util.py:test_mora_split:171]
+No.11 チョーセンスル
+
+INFO 2025-10-07 10:05:37,564 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['チョ', 'ー', 'セ', 'ン', 'ス', 'ル']
+
+INFO 2025-10-07 10:05:37,565 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['チョ', 'ー', 'セ', 'ン', 'ス', 'ル']
+
+INFO 2025-10-07 10:05:37,566 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,567 [test:test_g2p_util.py:test_mora_split:171]
+No.12 ヘンコーオ
+
+INFO 2025-10-07 10:05:37,567 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ヘ', 'ン', 'コ', 'ー', 'オ']
+
+INFO 2025-10-07 10:05:37,568 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ヘ', 'ン', 'コ', 'ー', 'オ']
+
+INFO 2025-10-07 10:05:37,570 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,571 [test:test_g2p_util.py:test_mora_split:171]
+No.13 ヘンコーオォ
+
+INFO 2025-10-07 10:05:37,571 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ヘ', 'ン', 'コ', 'ー', 'オ', 'ォ']
+
+INFO 2025-10-07 10:05:37,572 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ヘ', 'ン', 'コ', 'ー', 'オ', 'ォ']
+
+INFO 2025-10-07 10:05:37,573 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,574 [test:test_g2p_util.py:test_mora_split:171]
+No.14 バチーンッテ
+
+INFO 2025-10-07 10:05:37,574 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['バ', 'チ', 'ー', 'ン', 'ッ', 'テ']
+
+INFO 2025-10-07 10:05:37,575 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['バ', 'チ', 'ー', 'ン', 'ッ', 'テ']
+
+INFO 2025-10-07 10:05:37,577 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,578 [test:test_g2p_util.py:test_mora_split:171]
+No.15 バーンアウトワ
+
+INFO 2025-10-07 10:05:37,579 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['バ', 'ー', 'ン', 'ア', 'ウ', 'ト', 'ワ']
+
+INFO 2025-10-07 10:05:37,579 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['バ', 'ー', 'ン', 'ア', 'ウ', 'ト', 'ワ']
+
+INFO 2025-10-07 10:05:37,580 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,581 [test:test_g2p_util.py:test_mora_split:171]
+No.16 ンー
+
+INFO 2025-10-07 10:05:37,582 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ン', 'ー']
+
+INFO 2025-10-07 10:05:37,583 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ン', 'ー']
+
+INFO 2025-10-07 10:05:37,584 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,585 [test:test_g2p_util.py:test_mora_split:171]
+No.17 ジャンケンー
+
+INFO 2025-10-07 10:05:37,586 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ジャ', 'ン', 'ケ', 'ン', 'ー']
+
+INFO 2025-10-07 10:05:37,586 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ジャ', 'ン', 'ケ', 'ン', 'ー']
+
+INFO 2025-10-07 10:05:37,587 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,588 [test:test_g2p_util.py:test_mora_split:171]
+No.18 オニーチャンー
+
+INFO 2025-10-07 10:05:37,589 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['オ', 'ニ', 'ー', 'チャ', 'ン', 'ー']
+
+INFO 2025-10-07 10:05:37,590 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['オ', 'ニ', 'ー', 'チャ', 'ン', 'ー']
+
+INFO 2025-10-07 10:05:37,591 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,592 [test:test_g2p_util.py:test_mora_split:171]
+No.19 ッー
+
+INFO 2025-10-07 10:05:37,592 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ッ', 'ー']
+
+INFO 2025-10-07 10:05:37,593 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ッ', 'ー']
+
+INFO 2025-10-07 10:05:37,594 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,594 [test:test_g2p_util.py:test_mora_split:171]
+No.20 ッョ
+
+INFO 2025-10-07 10:05:37,596 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ッ', 'ョ']
+
+INFO 2025-10-07 10:05:37,597 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ッ', 'ョ']
+
+INFO 2025-10-07 10:05:37,598 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,598 [test:test_g2p_util.py:test_mora_split:171]
+No.21 オクッテイル
+
+INFO 2025-10-07 10:05:37,599 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['オ', 'ク', 'ッ', 'テ', 'イ', 'ル']
+
+INFO 2025-10-07 10:05:37,600 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['オ', 'ク', 'ッ', 'テ', 'イ', 'ル']
+
+INFO 2025-10-07 10:05:37,601 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,601 [test:test_g2p_util.py:test_mora_split:171]
+No.22 ハジマッタ
+
+INFO 2025-10-07 10:05:37,602 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ハ', 'ジ', 'マ', 'ッ', 'タ']
+
+INFO 2025-10-07 10:05:37,603 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ハ', 'ジ', 'マ', 'ッ', 'タ']
+
+INFO 2025-10-07 10:05:37,605 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:05:37,605 [test:test_g2p_util.py:test_mora_split:171]
+No.23 ギインリッポー
+
+INFO 2025-10-07 10:05:37,606 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ギ', 'イ', 'ン', 'リ', 'ッ', 'ポ', 'ー']
+
+INFO 2025-10-07 10:05:37,607 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ギ', 'イ', 'ン', 'リ', 'ッ', 'ポ', 'ー']
+
+INFO 2025-10-07 10:05:37,608 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:06:35,315 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:07:39,687 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:09:08,478 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:10:52,836 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:10:54,081 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:12:00,855 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:12:01,943 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:13:20,094 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:13:21,152 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:17:04,298 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:17:05,380 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:17:43,836 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:17:44,936 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:19:07,929 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:19:09,009 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:21:29,452 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:21:30,523 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:25:21,043 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:25:22,093 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:25:23,383 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:23,390 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:23,491 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:25:23,492 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:25:24,035 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:24,041 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:24,132 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:25:24,133 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:25:24,306 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:24,314 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:24,414 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:25:24,416 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:25:24,645 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:24,652 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:25:24,746 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:25:24,748 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:28:13,830 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:28:14,883 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:28:16,183 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:16,189 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:16,287 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:28:16,288 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:28:16,764 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:16,771 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:16,861 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:28:16,863 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:28:17,024 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:17,033 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:17,133 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:28:17,134 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:28:17,355 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:17,362 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:28:17,460 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:28:17,461 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:32:37,370 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:32:38,436 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:32:39,725 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:39,732 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:39,833 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:32:39,834 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:32:40,332 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:40,338 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:40,429 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:32:40,431 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:32:40,595 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:40,606 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:40,711 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:32:40,713 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:32:40,948 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:40,954 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:32:41,047 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:32:41,048 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:33:52,102 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:33:53,149 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:33:54,444 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:33:54,451 [kabosu_core.language.njd.ja.lib.marine.data.feature.feature_set:feature_set.py:_load_vocab:57]
+Vocab loaded from D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\marine\model\vocab.pkl : 5493 words
+
+INFO 2025-10-07 10:33:54,548 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_phrase_boundary has shared encoder with intonation_phrase_boundary
+
+INFO 2025-10-07 10:33:54,549 [kabosu_core.language.njd.ja.lib.marine.models.util:util.py:init_model:46]
+accent_status has shared encoder with accent_phrase_boundary
+
+INFO 2025-10-07 10:34:19,954 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:34:21,030 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:34:22,761 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.0 ソレデワ / 3
+
+INFO 2025-10-07 10:34:22,762 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	s00 o01 r00 e11 d00 e11 w00 a01
+
+INFO 2025-10-07 10:34:22,763 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	s00 o01 r00 e11 d00 e11 w00 a01
+
+INFO 2025-10-07 10:34:22,764 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,765 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.1 カジノオ / 1
+
+INFO 2025-10-07 10:34:22,766 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:34:22,768 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:34:22,769 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,769 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.2 オクッテイル / 0
+
+INFO 2025-10-07 10:34:22,770 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	o01 k00 u10 cl11 t00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:34:22,771 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	o01 k00 u10 cl11 t00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:34:22,772 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,773 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.3 ハジマッタ / 0
+
+INFO 2025-10-07 10:34:22,773 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	h00 a01 j00 i11 m00 a10 cl11 t00 a11
+
+INFO 2025-10-07 10:34:22,774 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	h00 a01 j00 i11 m00 a10 cl11 t00 a11
+
+INFO 2025-10-07 10:34:22,776 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,777 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.4 ギインリッポー / 4
+
+INFO 2025-10-07 10:34:22,778 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	g00 i01 i10 N11 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:34:22,779 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	g00 i01 i10 N11 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:34:22,779 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,780 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.5 シンデイル / 0
+
+INFO 2025-10-07 10:34:22,781 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	sh00 i00 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:34:22,782 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	sh00 i00 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:34:22,783 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,784 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.6 ユキオンナオ / 3
+
+INFO 2025-10-07 10:34:22,784 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	y00 u01 k00 i11 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:34:22,786 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	y00 u01 k00 i11 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:34:22,787 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,788 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.7 ツーワリョーガ / 3
+
+INFO 2025-10-07 10:34:22,788 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	ts00 uu11 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:34:22,789 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	ts00 uu11 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:34:22,790 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,790 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.8 アソンデイル / 0
+
+INFO 2025-10-07 10:34:22,792 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	a01 s00 o10 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:34:22,793 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	a01 s00 o10 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:34:22,793 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,795 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.9 トーナンアジアオ / 5
+
+INFO 2025-10-07 10:34:22,796 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	t00 oo11 n00 a10 N11 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:34:22,797 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	t00 oo11 n00 a10 N11 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:34:22,798 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,799 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.10 サイセーシマス / 6
+
+INFO 2025-10-07 10:34:22,800 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	s00 a01 i11 s00 ee11 sh00 i11 m00 a11 s00 u01
+
+INFO 2025-10-07 10:34:22,801 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	s00 a01 i11 s00 ee11 sh00 i11 m00 a11 s00 u01
+
+INFO 2025-10-07 10:34:22,802 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,803 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.11 トーゴーガタリゾートノ / 8
+
+INFO 2025-10-07 10:34:22,803 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	t00 oo11 g00 oo11 g00 a11 t00 a11 r00 i11 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:34:22,804 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	t00 oo11 g00 oo11 g00 a11 t00 a11 r00 i11 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:34:22,806 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,807 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.12 ンダモシタン / 4
+
+INFO 2025-10-07 10:34:22,808 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	N01 d00 a11 m00 o11 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:34:22,809 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	N01 d00 a11 m00 o11 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:34:22,809 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,810 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.13 チョーセンスル / 0
+
+INFO 2025-10-07 10:34:22,811 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	ch00 oo11 s00 e10 N11 s00 u11 r00 u11
+
+INFO 2025-10-07 10:34:22,812 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	ch00 oo11 s00 e10 N11 s00 u11 r00 u11
+
+INFO 2025-10-07 10:34:22,813 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,813 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.14 ヘンコーオ / 0
+
+INFO 2025-10-07 10:34:22,814 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	h00 e00 N11 k00 oo11 o11
+
+INFO 2025-10-07 10:34:22,816 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	h00 e00 N11 k00 oo11 o11
+
+INFO 2025-10-07 10:34:22,816 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,817 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.15 バチーンッテ / 2
+
+INFO 2025-10-07 10:34:22,818 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:34:22,819 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:34:22,819 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,820 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.16 バーンアウトワ / 4
+
+INFO 2025-10-07 10:34:22,821 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	b00 aa10 N11 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:34:22,822 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	b00 aa10 N11 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:34:22,823 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,824 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.17 ンー / 1
+
+INFO 2025-10-07 10:34:22,824 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	NN11
+
+INFO 2025-10-07 10:34:22,825 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	NN11
+
+INFO 2025-10-07 10:34:22,825 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,827 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.18 ンー / 0
+
+INFO 2025-10-07 10:34:22,828 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	NN01
+
+INFO 2025-10-07 10:34:22,829 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	NN01
+
+INFO 2025-10-07 10:34:22,829 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,830 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.19 ジャンケンー / 1
+
+INFO 2025-10-07 10:34:22,831 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:34:22,832 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:34:22,832 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,833 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.20 オニーチャンー / 2
+
+INFO 2025-10-07 10:34:22,834 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:34:22,835 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:34:22,837 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,837 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.21 ッー / 1
+
+INFO 2025-10-07 10:34:22,838 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	cl11
+
+INFO 2025-10-07 10:34:22,839 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	cl11
+
+INFO 2025-10-07 10:34:22,840 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,841 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.22 ッー / 0
+
+INFO 2025-10-07 10:34:22,841 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	cl01
+
+INFO 2025-10-07 10:34:22,842 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	cl01
+
+INFO 2025-10-07 10:34:22,843 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:34:22,845 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.0 ソレデワ / 3
+
+INFO 2025-10-07 10:34:22,846 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	s00 o01 r00 e01 d00 e11 w00 a01
+
+INFO 2025-10-07 10:34:22,847 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	s00 o01 r00 e01 d00 e11 w00 a01
+
+INFO 2025-10-07 10:34:22,847 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,848 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.1 カジノオ / 1
+
+INFO 2025-10-07 10:34:22,849 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:34:22,849 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:34:22,851 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,852 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.2 オクッテイル / 0
+
+INFO 2025-10-07 10:34:22,853 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	o01 k00 u00 cl01 t00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:34:22,854 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	o01 k00 u00 cl01 t00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:34:22,855 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,855 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.3 ハジマッタ / 0
+
+INFO 2025-10-07 10:34:22,856 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	h00 a01 j00 i01 m00 a00 cl01 t00 a01
+
+INFO 2025-10-07 10:34:22,857 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	h00 a01 j00 i01 m00 a00 cl01 t00 a01
+
+INFO 2025-10-07 10:34:22,858 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,859 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.4 ギインリッポー / 4
+
+INFO 2025-10-07 10:34:22,859 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	g00 i01 i00 N01 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:34:22,861 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	g00 i01 i00 N01 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:34:22,862 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,863 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.5 シンデイル / 0
+
+INFO 2025-10-07 10:34:22,864 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	sh00 i00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:34:22,865 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	sh00 i00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:34:22,866 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,866 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.6 ユキオンナオ / 3
+
+INFO 2025-10-07 10:34:22,867 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	y00 u01 k00 i01 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:34:22,868 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	y00 u01 k00 i01 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:34:22,869 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,869 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.7 ツーワリョーガ / 3
+
+INFO 2025-10-07 10:34:22,870 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	ts00 uu01 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:34:22,871 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	ts00 uu01 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:34:22,872 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,873 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.8 アソンデイル / 0
+
+INFO 2025-10-07 10:34:22,873 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	a01 s00 o00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:34:22,874 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	a01 s00 o00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:34:22,876 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,877 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.9 トーナンアジアオ / 5
+
+INFO 2025-10-07 10:34:22,878 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	t00 oo01 n00 a00 N01 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:34:22,879 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	t00 oo01 n00 a00 N01 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:34:22,879 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,880 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.10 サイセーシマス / 6
+
+INFO 2025-10-07 10:34:22,881 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	s00 a01 i01 s00 ee01 sh00 i01 m00 a11 s00 u01
+
+INFO 2025-10-07 10:34:22,882 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	s00 a01 i01 s00 ee01 sh00 i01 m00 a11 s00 u01
+
+INFO 2025-10-07 10:34:22,882 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,883 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.11 トーゴーガタリゾートノ / 8
+
+INFO 2025-10-07 10:34:22,884 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	t00 oo01 g00 oo01 g00 a01 t00 a01 r00 i01 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:34:22,884 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	t00 oo01 g00 oo01 g00 a01 t00 a01 r00 i01 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:34:22,886 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,887 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.12 ンダモシタン / 4
+
+INFO 2025-10-07 10:34:22,888 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	N01 d00 a01 m00 o01 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:34:22,889 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	N01 d00 a01 m00 o01 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:34:22,889 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,890 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.13 チョーセンスル / 0
+
+INFO 2025-10-07 10:34:22,891 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	ch00 oo01 s00 e00 N01 s00 u01 r00 u01
+
+INFO 2025-10-07 10:34:22,892 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	ch00 oo01 s00 e00 N01 s00 u01 r00 u01
+
+INFO 2025-10-07 10:34:22,893 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,893 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.14 ヘンコーオ / 0
+
+INFO 2025-10-07 10:34:22,895 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	h00 e00 N01 k00 oo01 o01
+
+INFO 2025-10-07 10:34:22,896 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	h00 e00 N01 k00 oo01 o01
+
+INFO 2025-10-07 10:34:22,896 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,897 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.15 バチーンッテ / 2
+
+INFO 2025-10-07 10:34:22,898 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:34:22,899 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:34:22,899 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,900 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.16 バーンアウトワ / 4
+
+INFO 2025-10-07 10:34:22,901 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	b00 aa00 N01 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:34:22,901 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	b00 aa00 N01 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:34:22,902 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,903 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.17 ンー / 1
+
+INFO 2025-10-07 10:34:22,904 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	NN11
+
+INFO 2025-10-07 10:34:22,904 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	NN11
+
+INFO 2025-10-07 10:34:22,906 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,907 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.18 ンー / 0
+
+INFO 2025-10-07 10:34:22,908 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	NN01
+
+INFO 2025-10-07 10:34:22,909 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	NN01
+
+INFO 2025-10-07 10:34:22,909 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,910 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.19 ジャンケンー / 1
+
+INFO 2025-10-07 10:34:22,910 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:34:22,911 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:34:22,912 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,913 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.20 オニーチャンー / 2
+
+INFO 2025-10-07 10:34:22,914 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:34:22,914 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:34:22,916 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,917 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.21 ッー / 1
+
+INFO 2025-10-07 10:34:22,918 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	cl11
+
+INFO 2025-10-07 10:34:22,918 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	cl11
+
+INFO 2025-10-07 10:34:22,919 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,919 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.22 ッー / 0
+
+INFO 2025-10-07 10:34:22,920 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	cl01
+
+INFO 2025-10-07 10:34:22,921 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	cl01
+
+INFO 2025-10-07 10:34:22,922 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:34:22,924 [test:test_g2p_util.py:test_mora_split:171]
+No.0 ソレデワ
+
+INFO 2025-10-07 10:34:22,924 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ソ', 'レ', 'デ', 'ワ']
+
+INFO 2025-10-07 10:34:22,926 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ソ', 'レ', 'デ', 'ワ']
+
+INFO 2025-10-07 10:34:22,927 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,928 [test:test_g2p_util.py:test_mora_split:171]
+No.1 カジノオ
+
+INFO 2025-10-07 10:34:22,929 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['カ', 'ジ', 'ノ', 'オ']
+
+INFO 2025-10-07 10:34:22,929 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['カ', 'ジ', 'ノ', 'オ']
+
+INFO 2025-10-07 10:34:22,930 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,931 [test:test_g2p_util.py:test_mora_split:171]
+No.2 シンデイル
+
+INFO 2025-10-07 10:34:22,932 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['シ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:34:22,933 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['シ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:34:22,934 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,934 [test:test_g2p_util.py:test_mora_split:171]
+No.3 ユキオンナオ
+
+INFO 2025-10-07 10:34:22,936 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ユ', 'キ', 'オ', 'ン', 'ナ', 'オ']
+
+INFO 2025-10-07 10:34:22,937 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ユ', 'キ', 'オ', 'ン', 'ナ', 'オ']
+
+INFO 2025-10-07 10:34:22,938 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,939 [test:test_g2p_util.py:test_mora_split:171]
+No.4 ツーワリョーガ
+
+INFO 2025-10-07 10:34:22,939 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ツ', 'ー', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:34:22,940 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ツ', 'ー', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:34:22,941 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,942 [test:test_g2p_util.py:test_mora_split:171]
+No.5 ツーヮワリョーガ
+
+INFO 2025-10-07 10:34:22,943 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ツ', 'ー', 'ヮ', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:34:22,944 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ツ', 'ー', 'ヮ', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:34:22,944 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,946 [test:test_g2p_util.py:test_mora_split:171]
+No.6 アソンデイル
+
+INFO 2025-10-07 10:34:22,947 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ア', 'ソ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:34:22,948 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ア', 'ソ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:34:22,949 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,949 [test:test_g2p_util.py:test_mora_split:171]
+No.7 トーナンアジアオ
+
+INFO 2025-10-07 10:34:22,950 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ト', 'ー', 'ナ', 'ン', 'ア', 'ジ', 'ア', 'オ']
+
+INFO 2025-10-07 10:34:22,951 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ト', 'ー', 'ナ', 'ン', 'ア', 'ジ', 'ア', 'オ']
+
+INFO 2025-10-07 10:34:22,952 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,953 [test:test_g2p_util.py:test_mora_split:171]
+No.8 サイセーシマス
+
+INFO 2025-10-07 10:34:22,954 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['サ', 'イ', 'セ', 'ー', 'シ', 'マ', 'ス']
+
+INFO 2025-10-07 10:34:22,955 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['サ', 'イ', 'セ', 'ー', 'シ', 'マ', 'ス']
+
+INFO 2025-10-07 10:34:22,955 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,957 [test:test_g2p_util.py:test_mora_split:171]
+No.9 トーゴーガタリゾートノ
+
+INFO 2025-10-07 10:34:22,958 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ト', 'ー', 'ゴ', 'ー', 'ガ', 'タ', 'リ', 'ゾ', 'ー', 'ト', 'ノ']
+
+INFO 2025-10-07 10:34:22,959 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ト', 'ー', 'ゴ', 'ー', 'ガ', 'タ', 'リ', 'ゾ', 'ー', 'ト', 'ノ']
+
+INFO 2025-10-07 10:34:22,960 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,961 [test:test_g2p_util.py:test_mora_split:171]
+No.10 ンダモシタン
+
+INFO 2025-10-07 10:34:22,961 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ン', 'ダ', 'モ', 'シ', 'タ', 'ン']
+
+INFO 2025-10-07 10:34:22,962 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ン', 'ダ', 'モ', 'シ', 'タ', 'ン']
+
+INFO 2025-10-07 10:34:22,963 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,964 [test:test_g2p_util.py:test_mora_split:171]
+No.11 チョーセンスル
+
+INFO 2025-10-07 10:34:22,965 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['チョ', 'ー', 'セ', 'ン', 'ス', 'ル']
+
+INFO 2025-10-07 10:34:22,966 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['チョ', 'ー', 'セ', 'ン', 'ス', 'ル']
+
+INFO 2025-10-07 10:34:22,967 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,967 [test:test_g2p_util.py:test_mora_split:171]
+No.12 ヘンコーオ
+
+INFO 2025-10-07 10:34:22,968 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ヘ', 'ン', 'コ', 'ー', 'オ']
+
+INFO 2025-10-07 10:34:22,969 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ヘ', 'ン', 'コ', 'ー', 'オ']
+
+INFO 2025-10-07 10:34:22,970 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,971 [test:test_g2p_util.py:test_mora_split:171]
+No.13 ヘンコーオォ
+
+INFO 2025-10-07 10:34:22,972 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ヘ', 'ン', 'コ', 'ー', 'オ', 'ォ']
+
+INFO 2025-10-07 10:34:22,974 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ヘ', 'ン', 'コ', 'ー', 'オ', 'ォ']
+
+INFO 2025-10-07 10:34:22,975 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,975 [test:test_g2p_util.py:test_mora_split:171]
+No.14 バチーンッテ
+
+INFO 2025-10-07 10:34:22,977 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['バ', 'チ', 'ー', 'ン', 'ッ', 'テ']
+
+INFO 2025-10-07 10:34:22,978 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['バ', 'チ', 'ー', 'ン', 'ッ', 'テ']
+
+INFO 2025-10-07 10:34:22,979 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,980 [test:test_g2p_util.py:test_mora_split:171]
+No.15 バーンアウトワ
+
+INFO 2025-10-07 10:34:22,981 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['バ', 'ー', 'ン', 'ア', 'ウ', 'ト', 'ワ']
+
+INFO 2025-10-07 10:34:22,981 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['バ', 'ー', 'ン', 'ア', 'ウ', 'ト', 'ワ']
+
+INFO 2025-10-07 10:34:22,983 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,983 [test:test_g2p_util.py:test_mora_split:171]
+No.16 ンー
+
+INFO 2025-10-07 10:34:22,984 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ン', 'ー']
+
+INFO 2025-10-07 10:34:22,985 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ン', 'ー']
+
+INFO 2025-10-07 10:34:22,986 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,986 [test:test_g2p_util.py:test_mora_split:171]
+No.17 ジャンケンー
+
+INFO 2025-10-07 10:34:22,987 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ジャ', 'ン', 'ケ', 'ン', 'ー']
+
+INFO 2025-10-07 10:34:22,988 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ジャ', 'ン', 'ケ', 'ン', 'ー']
+
+INFO 2025-10-07 10:34:22,989 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,989 [test:test_g2p_util.py:test_mora_split:171]
+No.18 オニーチャンー
+
+INFO 2025-10-07 10:34:22,990 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['オ', 'ニ', 'ー', 'チャ', 'ン', 'ー']
+
+INFO 2025-10-07 10:34:22,991 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['オ', 'ニ', 'ー', 'チャ', 'ン', 'ー']
+
+INFO 2025-10-07 10:34:22,992 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,993 [test:test_g2p_util.py:test_mora_split:171]
+No.19 ッー
+
+INFO 2025-10-07 10:34:22,993 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ッ', 'ー']
+
+INFO 2025-10-07 10:34:22,994 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ッ', 'ー']
+
+INFO 2025-10-07 10:34:22,996 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,996 [test:test_g2p_util.py:test_mora_split:171]
+No.20 ッョ
+
+INFO 2025-10-07 10:34:22,997 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ッ', 'ョ']
+
+INFO 2025-10-07 10:34:22,998 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ッ', 'ョ']
+
+INFO 2025-10-07 10:34:22,999 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:22,999 [test:test_g2p_util.py:test_mora_split:171]
+No.21 オクッテイル
+
+INFO 2025-10-07 10:34:23,001 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['オ', 'ク', 'ッ', 'テ', 'イ', 'ル']
+
+INFO 2025-10-07 10:34:23,002 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['オ', 'ク', 'ッ', 'テ', 'イ', 'ル']
+
+INFO 2025-10-07 10:34:23,003 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:23,003 [test:test_g2p_util.py:test_mora_split:171]
+No.22 ハジマッタ
+
+INFO 2025-10-07 10:34:23,004 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ハ', 'ジ', 'マ', 'ッ', 'タ']
+
+INFO 2025-10-07 10:34:23,005 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ハ', 'ジ', 'マ', 'ッ', 'タ']
+
+INFO 2025-10-07 10:34:23,006 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:34:23,006 [test:test_g2p_util.py:test_mora_split:171]
+No.23 ギインリッポー
+
+INFO 2025-10-07 10:34:23,007 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ギ', 'イ', 'ン', 'リ', 'ッ', 'ポ', 'ー']
+
+INFO 2025-10-07 10:34:23,008 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ギ', 'イ', 'ン', 'リ', 'ッ', 'ポ', 'ー']
+
+INFO 2025-10-07 10:34:23,009 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:26,813 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-07 10:36:27,924 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-07 10:36:29,691 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.0 ソレデワ / 3
+
+INFO 2025-10-07 10:36:29,693 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	s00 o01 r00 e11 d00 e11 w00 a01
+
+INFO 2025-10-07 10:36:29,694 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	s00 o01 r00 e11 d00 e11 w00 a01
+
+INFO 2025-10-07 10:36:29,695 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,696 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.1 カジノオ / 1
+
+INFO 2025-10-07 10:36:29,697 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:36:29,699 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:36:29,700 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,701 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.2 オクッテイル / 0
+
+INFO 2025-10-07 10:36:29,702 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	o01 k00 u10 cl11 t00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:36:29,703 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	o01 k00 u10 cl11 t00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:36:29,704 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,704 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.3 ハジマッタ / 0
+
+INFO 2025-10-07 10:36:29,705 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	h00 a01 j00 i11 m00 a10 cl11 t00 a11
+
+INFO 2025-10-07 10:36:29,706 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	h00 a01 j00 i11 m00 a10 cl11 t00 a11
+
+INFO 2025-10-07 10:36:29,707 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,708 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.4 ギインリッポー / 4
+
+INFO 2025-10-07 10:36:29,710 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	g00 i01 i10 N11 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:36:29,710 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	g00 i01 i10 N11 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:36:29,711 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,713 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.5 シンデイル / 0
+
+INFO 2025-10-07 10:36:29,714 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	sh00 i00 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:36:29,714 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	sh00 i00 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:36:29,715 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,716 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.6 ユキオンナオ / 3
+
+INFO 2025-10-07 10:36:29,717 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	y00 u01 k00 i11 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:36:29,717 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	y00 u01 k00 i11 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:36:29,718 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,719 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.7 ツーワリョーガ / 3
+
+INFO 2025-10-07 10:36:29,721 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	ts00 uu11 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:36:29,721 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	ts00 uu11 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:36:29,722 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,723 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.8 アソンデイル / 0
+
+INFO 2025-10-07 10:36:29,724 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	a01 s00 o10 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:36:29,725 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	a01 s00 o10 N11 d00 e11 i11 r00 u11
+
+INFO 2025-10-07 10:36:29,726 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,727 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.9 トーナンアジアオ / 5
+
+INFO 2025-10-07 10:36:29,728 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	t00 oo11 n00 a10 N11 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:36:29,729 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	t00 oo11 n00 a10 N11 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:36:29,730 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,731 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.10 サイセーシマス / 6
+
+INFO 2025-10-07 10:36:29,732 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	s00 a01 i11 s00 ee11 sh00 i11 m00 a11 s00 u01
+
+INFO 2025-10-07 10:36:29,733 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	s00 a01 i11 s00 ee11 sh00 i11 m00 a11 s00 u01
+
+INFO 2025-10-07 10:36:29,734 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,734 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.11 トーゴーガタリゾートノ / 8
+
+INFO 2025-10-07 10:36:29,735 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	t00 oo11 g00 oo11 g00 a11 t00 a11 r00 i11 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:36:29,736 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	t00 oo11 g00 oo11 g00 a11 t00 a11 r00 i11 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:36:29,737 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,738 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.12 ンダモシタン / 4
+
+INFO 2025-10-07 10:36:29,738 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	N01 d00 a11 m00 o11 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:36:29,740 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	N01 d00 a11 m00 o11 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:36:29,741 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,741 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.13 チョーセンスル / 0
+
+INFO 2025-10-07 10:36:29,742 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	ch00 oo11 s00 e10 N11 s00 u11 r00 u11
+
+INFO 2025-10-07 10:36:29,743 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	ch00 oo11 s00 e10 N11 s00 u11 r00 u11
+
+INFO 2025-10-07 10:36:29,744 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,744 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.14 ヘンコーオ / 0
+
+INFO 2025-10-07 10:36:29,745 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	h00 e00 N11 k00 oo11 o11
+
+INFO 2025-10-07 10:36:29,746 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	h00 e00 N11 k00 oo11 o11
+
+INFO 2025-10-07 10:36:29,747 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,747 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.15 バチーンッテ / 2
+
+INFO 2025-10-07 10:36:29,748 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:36:29,749 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:36:29,750 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,751 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.16 バーンアウトワ / 4
+
+INFO 2025-10-07 10:36:29,752 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	b00 aa10 N11 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:36:29,753 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	b00 aa10 N11 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:36:29,754 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,754 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.17 ンー / 1
+
+INFO 2025-10-07 10:36:29,755 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	NN11
+
+INFO 2025-10-07 10:36:29,755 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	NN11
+
+INFO 2025-10-07 10:36:29,756 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,757 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.18 ンー / 0
+
+INFO 2025-10-07 10:36:29,758 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	NN01
+
+INFO 2025-10-07 10:36:29,758 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	NN01
+
+INFO 2025-10-07 10:36:29,759 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,759 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.19 ジャンケンー / 1
+
+INFO 2025-10-07 10:36:29,761 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:36:29,762 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:36:29,763 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,763 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.20 オニーチャンー / 2
+
+INFO 2025-10-07 10:36:29,764 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:36:29,765 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:36:29,765 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,766 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.21 ッー / 1
+
+INFO 2025-10-07 10:36:29,767 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	cl11
+
+INFO 2025-10-07 10:36:29,768 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	cl11
+
+INFO 2025-10-07 10:36:29,769 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,770 [test:test_g2p_util.py:test_g2p_as_high_low:70]
+No.22 ッー / 0
+
+INFO 2025-10-07 10:36:29,771 [test:test_g2p_util.py:test_g2p_as_high_low:71]
+answer	:	cl01
+
+INFO 2025-10-07 10:36:29,771 [test:test_g2p_util.py:test_g2p_as_high_low:72]
+expected	:	cl01
+
+INFO 2025-10-07 10:36:29,772 [test:test_g2p_util.py:test_g2p_as_high_low:73]
+---------
+
+INFO 2025-10-07 10:36:29,774 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.0 ソレデワ / 3
+
+INFO 2025-10-07 10:36:29,775 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	s00 o01 r00 e01 d00 e11 w00 a01
+
+INFO 2025-10-07 10:36:29,775 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	s00 o01 r00 e01 d00 e11 w00 a01
+
+INFO 2025-10-07 10:36:29,776 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,777 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.1 カジノオ / 1
+
+INFO 2025-10-07 10:36:29,778 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:36:29,779 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	k00 a11 j00 i01 n00 o01 o01
+
+INFO 2025-10-07 10:36:29,779 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,781 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.2 オクッテイル / 0
+
+INFO 2025-10-07 10:36:29,781 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	o01 k00 u00 cl01 t00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:36:29,782 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	o01 k00 u00 cl01 t00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:36:29,783 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,784 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.3 ハジマッタ / 0
+
+INFO 2025-10-07 10:36:29,784 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	h00 a01 j00 i01 m00 a00 cl01 t00 a01
+
+INFO 2025-10-07 10:36:29,785 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	h00 a01 j00 i01 m00 a00 cl01 t00 a01
+
+INFO 2025-10-07 10:36:29,786 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,787 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.4 ギインリッポー / 4
+
+INFO 2025-10-07 10:36:29,788 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	g00 i01 i00 N01 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:36:29,788 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	g00 i01 i00 N01 r00 i10 cl01 p00 oo01
+
+INFO 2025-10-07 10:36:29,790 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,790 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.5 シンデイル / 0
+
+INFO 2025-10-07 10:36:29,791 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	sh00 i00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:36:29,792 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	sh00 i00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:36:29,793 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,794 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.6 ユキオンナオ / 3
+
+INFO 2025-10-07 10:36:29,794 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	y00 u01 k00 i01 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:36:29,795 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	y00 u01 k00 i01 o10 N01 n00 a01 o01
+
+INFO 2025-10-07 10:36:29,796 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,797 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.7 ツーワリョーガ / 3
+
+INFO 2025-10-07 10:36:29,797 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	ts00 uu01 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:36:29,798 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	ts00 uu01 w00 a11 ry00 oo01 g00 a01
+
+INFO 2025-10-07 10:36:29,800 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,800 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.8 アソンデイル / 0
+
+INFO 2025-10-07 10:36:29,801 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	a01 s00 o00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:36:29,803 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	a01 s00 o00 N01 d00 e01 i01 r00 u01
+
+INFO 2025-10-07 10:36:29,803 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,804 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.9 トーナンアジアオ / 5
+
+INFO 2025-10-07 10:36:29,805 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	t00 oo01 n00 a00 N01 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:36:29,806 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	t00 oo01 n00 a00 N01 a11 j00 i01 a01 o01
+
+INFO 2025-10-07 10:36:29,806 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,807 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.10 サイセーシマス / 6
+
+INFO 2025-10-07 10:36:29,808 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	s00 a01 i01 s00 ee01 sh00 i01 m00 a11 s00 u01
+
+INFO 2025-10-07 10:36:29,808 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	s00 a01 i01 s00 ee01 sh00 i01 m00 a11 s00 u01
+
+INFO 2025-10-07 10:36:29,809 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,810 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.11 トーゴーガタリゾートノ / 8
+
+INFO 2025-10-07 10:36:29,811 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	t00 oo01 g00 oo01 g00 a01 t00 a01 r00 i01 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:36:29,812 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	t00 oo01 g00 oo01 g00 a01 t00 a01 r00 i01 z00 oo11 t00 o01 n00 o01
+
+INFO 2025-10-07 10:36:29,813 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,814 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.12 ンダモシタン / 4
+
+INFO 2025-10-07 10:36:29,814 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	N01 d00 a01 m00 o01 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:36:29,815 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	N01 d00 a01 m00 o01 sh00 i11 t00 a00 N01
+
+INFO 2025-10-07 10:36:29,817 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,818 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.13 チョーセンスル / 0
+
+INFO 2025-10-07 10:36:29,818 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	ch00 oo01 s00 e00 N01 s00 u01 r00 u01
+
+INFO 2025-10-07 10:36:29,819 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	ch00 oo01 s00 e00 N01 s00 u01 r00 u01
+
+INFO 2025-10-07 10:36:29,820 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,821 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.14 ヘンコーオ / 0
+
+INFO 2025-10-07 10:36:29,821 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	h00 e00 N01 k00 oo01 o01
+
+INFO 2025-10-07 10:36:29,822 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	h00 e00 N01 k00 oo01 o01
+
+INFO 2025-10-07 10:36:29,823 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,824 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.15 バチーンッテ / 2
+
+INFO 2025-10-07 10:36:29,824 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:36:29,826 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	b00 a01 ch00 ii10 N01 cl01 t00 e01
+
+INFO 2025-10-07 10:36:29,827 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,828 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.16 バーンアウトワ / 4
+
+INFO 2025-10-07 10:36:29,828 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	b00 aa00 N01 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:36:29,829 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	b00 aa00 N01 a11 u01 t00 o01 w00 a01
+
+INFO 2025-10-07 10:36:29,830 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,830 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.17 ンー / 1
+
+INFO 2025-10-07 10:36:29,831 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	NN11
+
+INFO 2025-10-07 10:36:29,832 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	NN11
+
+INFO 2025-10-07 10:36:29,833 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,833 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.18 ンー / 0
+
+INFO 2025-10-07 10:36:29,834 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	NN01
+
+INFO 2025-10-07 10:36:29,834 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	NN01
+
+INFO 2025-10-07 10:36:29,836 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,837 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.19 ジャンケンー / 1
+
+INFO 2025-10-07 10:36:29,838 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:36:29,838 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	j00 a10 N01 k00 e00 NN01
+
+INFO 2025-10-07 10:36:29,839 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,840 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.20 オニーチャンー / 2
+
+INFO 2025-10-07 10:36:29,840 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:36:29,841 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	o01 n00 ii11 ch00 a00 NN01
+
+INFO 2025-10-07 10:36:29,842 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,843 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.21 ッー / 1
+
+INFO 2025-10-07 10:36:29,844 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	cl11
+
+INFO 2025-10-07 10:36:29,844 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	cl11
+
+INFO 2025-10-07 10:36:29,846 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,846 [test:test_g2p_util.py:test_g2p_as_binary:123]
+No.22 ッー / 0
+
+INFO 2025-10-07 10:36:29,847 [test:test_g2p_util.py:test_g2p_as_binary:124]
+answer	:	cl01
+
+INFO 2025-10-07 10:36:29,848 [test:test_g2p_util.py:test_g2p_as_binary:125]
+expected	:	cl01
+
+INFO 2025-10-07 10:36:29,848 [test:test_g2p_util.py:test_g2p_as_binary:126]
+---------
+
+INFO 2025-10-07 10:36:29,850 [test:test_g2p_util.py:test_mora_split:171]
+No.0 ソレデワ
+
+INFO 2025-10-07 10:36:29,851 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ソ', 'レ', 'デ', 'ワ']
+
+INFO 2025-10-07 10:36:29,852 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ソ', 'レ', 'デ', 'ワ']
+
+INFO 2025-10-07 10:36:29,853 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,854 [test:test_g2p_util.py:test_mora_split:171]
+No.1 カジノオ
+
+INFO 2025-10-07 10:36:29,854 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['カ', 'ジ', 'ノ', 'オ']
+
+INFO 2025-10-07 10:36:29,856 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['カ', 'ジ', 'ノ', 'オ']
+
+INFO 2025-10-07 10:36:29,857 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,858 [test:test_g2p_util.py:test_mora_split:171]
+No.2 シンデイル
+
+INFO 2025-10-07 10:36:29,858 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['シ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:36:29,859 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['シ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:36:29,860 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,861 [test:test_g2p_util.py:test_mora_split:171]
+No.3 ユキオンナオ
+
+INFO 2025-10-07 10:36:29,862 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ユ', 'キ', 'オ', 'ン', 'ナ', 'オ']
+
+INFO 2025-10-07 10:36:29,863 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ユ', 'キ', 'オ', 'ン', 'ナ', 'オ']
+
+INFO 2025-10-07 10:36:29,864 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,864 [test:test_g2p_util.py:test_mora_split:171]
+No.4 ツーワリョーガ
+
+INFO 2025-10-07 10:36:29,866 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ツ', 'ー', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:36:29,867 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ツ', 'ー', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:36:29,868 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,868 [test:test_g2p_util.py:test_mora_split:171]
+No.5 ツーヮワリョーガ
+
+INFO 2025-10-07 10:36:29,869 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ツ', 'ー', 'ヮ', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:36:29,870 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ツ', 'ー', 'ヮ', 'ワ', 'リョ', 'ー', 'ガ']
+
+INFO 2025-10-07 10:36:29,871 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,872 [test:test_g2p_util.py:test_mora_split:171]
+No.6 アソンデイル
+
+INFO 2025-10-07 10:36:29,872 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ア', 'ソ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:36:29,873 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ア', 'ソ', 'ン', 'デ', 'イ', 'ル']
+
+INFO 2025-10-07 10:36:29,874 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,875 [test:test_g2p_util.py:test_mora_split:171]
+No.7 トーナンアジアオ
+
+INFO 2025-10-07 10:36:29,877 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ト', 'ー', 'ナ', 'ン', 'ア', 'ジ', 'ア', 'オ']
+
+INFO 2025-10-07 10:36:29,878 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ト', 'ー', 'ナ', 'ン', 'ア', 'ジ', 'ア', 'オ']
+
+INFO 2025-10-07 10:36:29,879 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,880 [test:test_g2p_util.py:test_mora_split:171]
+No.8 サイセーシマス
+
+INFO 2025-10-07 10:36:29,880 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['サ', 'イ', 'セ', 'ー', 'シ', 'マ', 'ス']
+
+INFO 2025-10-07 10:36:29,881 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['サ', 'イ', 'セ', 'ー', 'シ', 'マ', 'ス']
+
+INFO 2025-10-07 10:36:29,882 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,883 [test:test_g2p_util.py:test_mora_split:171]
+No.9 トーゴーガタリゾートノ
+
+INFO 2025-10-07 10:36:29,884 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ト', 'ー', 'ゴ', 'ー', 'ガ', 'タ', 'リ', 'ゾ', 'ー', 'ト', 'ノ']
+
+INFO 2025-10-07 10:36:29,884 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ト', 'ー', 'ゴ', 'ー', 'ガ', 'タ', 'リ', 'ゾ', 'ー', 'ト', 'ノ']
+
+INFO 2025-10-07 10:36:29,885 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,886 [test:test_g2p_util.py:test_mora_split:171]
+No.10 ンダモシタン
+
+INFO 2025-10-07 10:36:29,887 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ン', 'ダ', 'モ', 'シ', 'タ', 'ン']
+
+INFO 2025-10-07 10:36:29,888 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ン', 'ダ', 'モ', 'シ', 'タ', 'ン']
+
+INFO 2025-10-07 10:36:29,889 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,890 [test:test_g2p_util.py:test_mora_split:171]
+No.11 チョーセンスル
+
+INFO 2025-10-07 10:36:29,891 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['チョ', 'ー', 'セ', 'ン', 'ス', 'ル']
+
+INFO 2025-10-07 10:36:29,891 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['チョ', 'ー', 'セ', 'ン', 'ス', 'ル']
+
+INFO 2025-10-07 10:36:29,892 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,893 [test:test_g2p_util.py:test_mora_split:171]
+No.12 ヘンコーオ
+
+INFO 2025-10-07 10:36:29,894 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ヘ', 'ン', 'コ', 'ー', 'オ']
+
+INFO 2025-10-07 10:36:29,894 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ヘ', 'ン', 'コ', 'ー', 'オ']
+
+INFO 2025-10-07 10:36:29,895 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,896 [test:test_g2p_util.py:test_mora_split:171]
+No.13 ヘンコーオォ
+
+INFO 2025-10-07 10:36:29,897 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ヘ', 'ン', 'コ', 'ー', 'オ', 'ォ']
+
+INFO 2025-10-07 10:36:29,898 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ヘ', 'ン', 'コ', 'ー', 'オ', 'ォ']
+
+INFO 2025-10-07 10:36:29,900 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,900 [test:test_g2p_util.py:test_mora_split:171]
+No.14 バチーンッテ
+
+INFO 2025-10-07 10:36:29,901 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['バ', 'チ', 'ー', 'ン', 'ッ', 'テ']
+
+INFO 2025-10-07 10:36:29,901 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['バ', 'チ', 'ー', 'ン', 'ッ', 'テ']
+
+INFO 2025-10-07 10:36:29,902 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,903 [test:test_g2p_util.py:test_mora_split:171]
+No.15 バーンアウトワ
+
+INFO 2025-10-07 10:36:29,904 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['バ', 'ー', 'ン', 'ア', 'ウ', 'ト', 'ワ']
+
+INFO 2025-10-07 10:36:29,905 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['バ', 'ー', 'ン', 'ア', 'ウ', 'ト', 'ワ']
+
+INFO 2025-10-07 10:36:29,907 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,907 [test:test_g2p_util.py:test_mora_split:171]
+No.16 ンー
+
+INFO 2025-10-07 10:36:29,908 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ン', 'ー']
+
+INFO 2025-10-07 10:36:29,908 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ン', 'ー']
+
+INFO 2025-10-07 10:36:29,909 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,910 [test:test_g2p_util.py:test_mora_split:171]
+No.17 ジャンケンー
+
+INFO 2025-10-07 10:36:29,911 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ジャ', 'ン', 'ケ', 'ン', 'ー']
+
+INFO 2025-10-07 10:36:29,913 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ジャ', 'ン', 'ケ', 'ン', 'ー']
+
+INFO 2025-10-07 10:36:29,914 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,914 [test:test_g2p_util.py:test_mora_split:171]
+No.18 オニーチャンー
+
+INFO 2025-10-07 10:36:29,915 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['オ', 'ニ', 'ー', 'チャ', 'ン', 'ー']
+
+INFO 2025-10-07 10:36:29,916 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['オ', 'ニ', 'ー', 'チャ', 'ン', 'ー']
+
+INFO 2025-10-07 10:36:29,916 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,917 [test:test_g2p_util.py:test_mora_split:171]
+No.19 ッー
+
+INFO 2025-10-07 10:36:29,918 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ッ', 'ー']
+
+INFO 2025-10-07 10:36:29,918 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ッ', 'ー']
+
+INFO 2025-10-07 10:36:29,920 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,921 [test:test_g2p_util.py:test_mora_split:171]
+No.20 ッョ
+
+INFO 2025-10-07 10:36:29,922 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ッ', 'ョ']
+
+INFO 2025-10-07 10:36:29,923 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ッ', 'ョ']
+
+INFO 2025-10-07 10:36:29,923 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,924 [test:test_g2p_util.py:test_mora_split:171]
+No.21 オクッテイル
+
+INFO 2025-10-07 10:36:29,925 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['オ', 'ク', 'ッ', 'テ', 'イ', 'ル']
+
+INFO 2025-10-07 10:36:29,926 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['オ', 'ク', 'ッ', 'テ', 'イ', 'ル']
+
+INFO 2025-10-07 10:36:29,926 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,927 [test:test_g2p_util.py:test_mora_split:171]
+No.22 ハジマッタ
+
+INFO 2025-10-07 10:36:29,928 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ハ', 'ジ', 'マ', 'ッ', 'タ']
+
+INFO 2025-10-07 10:36:29,928 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ハ', 'ジ', 'マ', 'ッ', 'タ']
+
+INFO 2025-10-07 10:36:29,930 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-07 10:36:29,931 [test:test_g2p_util.py:test_mora_split:171]
+No.23 ギインリッポー
+
+INFO 2025-10-07 10:36:29,932 [test:test_g2p_util.py:test_mora_split:172]
+answer	:	['ギ', 'イ', 'ン', 'リ', 'ッ', 'ポ', 'ー']
+
+INFO 2025-10-07 10:36:29,933 [test:test_g2p_util.py:test_mora_split:173]
+expected	:	['ギ', 'イ', 'ン', 'リ', 'ッ', 'ポ', 'ー']
+
+INFO 2025-10-07 10:36:29,934 [test:test_g2p_util.py:test_mora_split:174]
+---------
+
+INFO 2025-10-08 08:45:38,025 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-08 08:45:39,797 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
+INFO 2025-10-08 08:48:40,638 [root:dbert.py:__init__:43]
+Running on cpu
+
+INFO 2025-10-08 08:48:41,951 [root:dbert.py:load:126]
+Loaded model from directory D:\root\Program\ProgramCode\TTS\g2p\kabosu-core\src\kabosu_core\assets\ja\g2p\yomikata\dbert-artifacts
+
