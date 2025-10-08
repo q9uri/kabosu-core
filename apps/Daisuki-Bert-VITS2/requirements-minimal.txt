@@ -1,14 +1,12 @@
 # accelerate
 aivmlib
-cmudict
 cn2an
 # faster-whisper==0.10.1
 # GPUtil
 # gradio>=4.32
-jaconv
+
 # librosa==0.9.2
 loguru
-nltk<=3.8.1
 numpy<2
 onnx
 onnxconverter-common
@@ -18,12 +16,18 @@ psutil==6.1.1
 # punctuators
 # pyannote.audio>=3.1.0
 # pyloudnorm
-kabosu-plus @ git+https://github.com/q9uri/kabosu-plus@17b3e400742ca28fee2641fde3323e0454e99ef8
-pypinyin
-pyworld-prebuilt
 # stable_ts
 # tensorboard
 # torch
 # torchaudio
 transformers==4.53.0
 umap-learn
+
+cmudict
+pypinyin
+
+pyworld-prebuilt
+
+nltk<=3.8.1
+jaconv
+kabosu-plus @ git+https://github.com/q9uri/kabosu-plus@17b3e400742ca28fee2641fde3323e0454e99ef8
