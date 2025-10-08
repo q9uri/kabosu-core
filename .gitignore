@@ -12,4 +12,5 @@ wheels/
 src/kabosu_core/language/njd/ja/lib/logs
 unuse
 assets/*
-assets/__init__.py
+!assets/__init__.py
+user_data
