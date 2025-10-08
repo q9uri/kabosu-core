@@ -5,6 +5,8 @@
     /decoder
         /__init__.py #ダミー
     /rag 
+        /lightrag
+        
         /__init__.py #ダミー
     /embed
         /__init__.py #ダミー
