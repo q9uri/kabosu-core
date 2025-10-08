@@ -11,5 +11,5 @@ wheels/
 
 src/kabosu_core/language/njd/ja/lib/logs
 unuse
-src/kabosu_core/assets/*
-!src/kabosu_core/assets/__init__.py
+assets/*
+assets/__init__.py
