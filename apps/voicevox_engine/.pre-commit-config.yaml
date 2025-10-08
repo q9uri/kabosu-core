@@ -1,0 +1,50 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: local
+    hooks:
+      - id: check-linting
+        name: check-linting
+        entry: uv run ruff check
+        language: python
+        types: [file, python]
+        stages: [pre-push]
+        pass_filenames: false
+      - id: check-formatting
+        name: check-formatting
+        entry: uv run ruff format --check
+        language: python
+        types: [file, python]
+        stages: [pre-push]
+        pass_filenames: false
+      - id: check-typing
+        name: check-typing
+        entry: uv run mypy .
+        language: python
+        types: [file, python]
+        stages: [pre-push]
+        pass_filenames: false
+      - id: uv-check # `pyproject.toml` と `uv.lock` が整合する
+        name: uv-check
+        entry: uv lock --check
+        language: python
+        stages: [pre-push]
+        pass_filenames: false
+      - id: uv-export
+        name: uv-export
+        entry: uv export --no-annotate --no-hashes --no-header -o requirements.txt
+        language: python
+        stages: [pre-push]
+        pass_filenames: false
+      - id: uv-export-dev
+        name: uv-export-dev
+        entry: uv export --group dev --no-annotate --no-hashes --no-header -o requirements-dev.txt
+        language: python
+        stages: [pre-push]
+        pass_filenames: false
+      - id: uv-export-build
+        name: uv-export-build
+        entry: uv export --group build --no-annotate --no-hashes --no-header -o requirements-build.txt
+        language: python
+        stages: [pre-push]
+        pass_filenames: false

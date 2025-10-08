@@ -1,0 +1,90 @@
+name: test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, macos-latest, windows-latest]
+
+    steps:
+      - name: <Setup> Check out the repository
+        uses: actions/checkout@v4
+
+      - name: <Setup> Prepare Python Runtime / Python Dependencies
+        uses: ./.github/actions/prepare_python
+        with:
+          dependency-group: dev
+
+      - name: <Test> Validate uv.lock
+        run: |
+          uv lock
+          git diff --exit-code
+
+      - name: <Test> Check dependency lists
+        run: |
+          uv export --no-annotate --no-hashes --no-header -o requirements.txt.check
+          uv export --group dev --no-annotate --no-hashes --no-header -o requirements-dev.txt.check
+          uv export --group build --no-annotate --no-hashes --no-header -o requirements-build.txt.check
+
+          diff -q requirements.txt requirements.txt.check || \
+          diff -q requirements-dev.txt requirements-dev.txt.check || \
+          diff -q requirements-build.txt requirements-build.txt.check > /dev/null
+          if [ $? = 1 ]; then
+            echo "uv export has some diff"
+            exit 1
+          fi
+
+      - name: <Test> Check linting
+        run: uv run ruff check
+
+      - name: <Test> Check formatting
+        run: uv run ruff format --check
+
+      - name: <Test> Check typing
+        run: uv run mypy .
+
+      - name: <Test> Test codes and coverage
+        run: uv run coverage run --omit=test/* -m pytest
+
+      - name: <Deploy> Submit coverage results to Coveralls
+        if: runner.os == 'Linux'
+        # Coveralls へのアップロードが失敗しても CI は継続させる
+        run: uv run coveralls --service=github || echo "::warning::Coveralls failed, but continuing"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: <Test> Check licenses
+        run: OUTPUT_LICENSE_JSON_PATH=/dev/null bash tools/create_venv_and_generate_licenses.bash
+
+      - name: <Test> Test names by checking typo
+        if: runner.os == 'Linux'
+        run: uv run typos
+
+  lint-builders:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: <Setup> Check out the repository
+        uses: actions/checkout@v4
+
+      - name: <Setup> Install ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+      - name: <Test> Check shell files
+        run: git ls-files | grep -E '\.(ba)?sh' | xargs shellcheck
+
+      - name: <Test> Check workflow files
+        run: |
+          bash <(curl -f --retry 3 --retry-delay 5 https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+          ./actionlint

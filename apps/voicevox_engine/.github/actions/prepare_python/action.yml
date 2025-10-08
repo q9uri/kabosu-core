@@ -1,0 +1,24 @@
+name: "Prepare Python"
+description: "Python ランタイムと依存パッケージをインストールし、Python バージョンを出力する"
+
+inputs:
+  dependency-group:
+    description: "uv の依存パッケージインストール時に指定するグループ"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: <Setup> Install uv
+      uses: astral-sh/setup-uv@v5
+      with:
+        enable-cache: false # TODO: uvの上手いキャッシュのやり方を考える
+
+    - name: <Setup> Install Python dependencies
+      run: |
+        if [[ -n "${{ inputs.dependency-group }}" ]]; then
+          uv sync --group ${{ inputs.dependency-group }}
+        else
+          uv sync
+        fi
+      shell: bash
