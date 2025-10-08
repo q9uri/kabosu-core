@@ -1,0 +1,18 @@
+# serializer version: 1
+# name: test_get_root_200
+  '''
+  
+          <html>
+              <head>
+                  <title>VOICEVOX ENGINE OSS</title>
+              </head>
+              <body>
+                  <h1>VOICEVOX ENGINE OSS</h1>
+                  VOICEVOX ENGINE OSS へようこそ！
+                  <ul>
+                      <li><a href='/setting'>設定</a></li>
+                      <li><a href='/docs'>API ドキュメント</a></li>
+          </ul></body></html>
+          
+  '''
+# ---
