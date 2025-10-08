@@ -50,7 +50,6 @@ pycparser==2.22
 pydantic==2.11.3
 pydantic-core==2.33.1
 pygments==2.19.1
-pyopenjtalk @ git+https://github.com/VOICEVOX/pyopenjtalk@74703b034dd90a1f199f49bb70bf3b66b1728a86
 pyparsing==3.2.3
 pytest==8.3.5
 python-multipart==0.0.20
@@ -77,3 +76,5 @@ urllib3==2.4.0
 uvicorn==0.34.0
 virtualenv==20.30.0
 wcwidth==0.2.13
+
+pyopenjtalk @ git+https://github.com/VOICEVOX/pyopenjtalk@74703b034dd90a1f199f49bb70bf3b66b1728a86
